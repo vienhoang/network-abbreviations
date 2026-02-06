@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -381,11 +381,11 @@
                     <div className="container">
                         <header>
                             <h1>Network & Cybersecurity Abbreviations</h1>
-                            <p className="subtitle">Din referensguide för nätverksteknik och cybersäkerhet</p>
+                            <p className="subtitle">Your reference guide to network technology and cybersecurity.</p>
                         </header>
                         <div className="loading">
                             <div className="spinner"></div>
-                            <p>Laddar förkortningar...</p>
+                            <p>Loading abbreviations...</p>
                         </div>
                     </div>
                 );
@@ -399,7 +399,7 @@
                         </header>
                         <div className="no-results">
                             <div className="no-results-icon">⚠️</div>
-                            <p>Kunde inte ladda data: {error}</p>
+                            <p>Could not load data: {error}</p>
                         </div>
                     </div>
                 );
@@ -409,7 +409,7 @@
                 <div className="container">
                     <header>
                         <h1>Network & Cybersecurity Abbreviations</h1>
-                        <p className="subtitle">Din referensguide för nätverksteknik och cybersäkerhet</p>
+                        <p className="subtitle">Your reference guide to network technology and cybersecurity.</p>
                     </header>
 
                     <div className="search-container">
@@ -417,23 +417,23 @@
                             <span className="search-icon">🔍</span>
                             <input
                                 type="text"
-                                placeholder="Sök efter förkortning, namn eller beskrivning..."
+                                placeholder="Search by abbreviation, name or description..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 autoFocus
                             />
                         </div>
                         <div className="results-info">
-                            Visar {filteredResults.length} av {abbreviations.length} förkortningar
+                            Show {filteredResults.length} by {abbreviations.length} abbreviation
                         </div>
                     </div>
 
                     {filteredResults.length === 0 ? (
                         <div className="no-results">
                             <div className="no-results-icon">🔎</div>
-                            <p>Inga resultat hittades för "{searchTerm}"</p>
+                            <p>No results found for "{searchTerm}"</p>
                             <p style={{fontSize: '0.9rem', marginTop: '0.5rem', opacity: 0.8}}>
-                                Prova att söka på en annan förkortning eller term
+                                Try searching for a different abbreviation or term.
                             </p>
                         </div>
                     ) : (
@@ -459,7 +459,7 @@
                     <footer>
                         <div className="footer-content">
                             <div className="creator">
-                                Skapad av <strong>Vien</strong>
+                                Created by<strong>Vien Hoang</strong>
                             </div>
                             
                             <div className="donation-section">
@@ -469,23 +469,22 @@
                                 <div 
                                     className="bitcoin-address"
                                     onClick={() => {
-                                        navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh');
-                                        alert('Bitcoin-adress kopierad!');
+                                        navigator.clipboard.writeText('bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf');
+                                        alert('Bitcoin address copied!');
                                     }}
-                                    title="Klicka för att kopiera"
-                                >
-                                    bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh
+                                    title="Click to copy">
+                                    bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf
                                 </div>
                             </div>
 
                             <a 
-                                href="https://www.linkedin.com/in/vien-nguyen" 
+                                href="https://www.linkedin.com/in/vien-hoang-5077bb96/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="linkedin-link"
                             >
                                 <span>in</span>
-                                Besök min LinkedIn-profil
+                                Visit my LinkedIn profile
                             </a>
                         </div>
                     </footer>
