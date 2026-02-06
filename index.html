@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search and find explanations of networking and cybersecurity abbreviations. Your complete reference guide.">
     <title>Network & Cybersecurity Abbreviations</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -77,7 +79,6 @@
             left: 1.5rem;
             color: var(--text-secondary);
             font-size: 1.5rem;
-            pointer-events: none;
         }
 
         input[type="text"] {
@@ -108,6 +109,18 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 1.5rem;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .card {
@@ -117,14 +130,17 @@
             box-shadow: 0 4px 6px var(--shadow);
             transition: all 0.3s ease;
             border: 1px solid transparent;
-            opacity: 0;
-            animation: slideIn 0.4s ease forwards;
+            animation: slideIn 0.4s ease;
         }
 
         @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
             to {
                 opacity: 1;
-                transform: translateY(0);
+                transform: scale(1);
             }
         }
 
@@ -134,12 +150,19 @@
             border-color: var(--accent-color);
         }
 
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
         .abbreviation {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--accent-color);
             letter-spacing: 1px;
-            margin-bottom: 1rem;
         }
 
         .stands-for {
@@ -172,7 +195,7 @@
 
         .loading {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 3rem;
             color: white;
             font-size: 1.2rem;
         }
@@ -190,18 +213,6 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
-        }
-
-        .error {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .error-icon {
-            font-size: 4rem;
-            margin-bottom: 1rem;
         }
 
         footer {
@@ -286,232 +297,201 @@
             }
         }
 
-        mark {
+        .highlight {
             background: linear-gradient(120deg, #ffd700 0%, #ffed4e 100%);
             padding: 0 4px;
             border-radius: 3px;
             font-weight: 600;
         }
-
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Network & Cybersecurity Abbreviations</h1>
-            <p class="subtitle">Your reference guide for networking and cybersecurity.</p>
-        </header>
+    <div id="root"></div>
 
-        <div class="search-container">
-            <div class="search-wrapper">
-                <span class="search-icon">🔍</span>
-                <input
-                    type="text"
-                    id="searchInput"
-                    placeholder="Search for abbreviation, name, or description..."
-                    autocomplete="off"
-                    autofocus
-                >
-            </div>
-            <div class="results-info" id="resultsInfo">
-                Showing 0 of 0 abbreviations
-            </div>
-        </div>
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
 
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Loading abbreviations...</p>
-        </div>
+        function App() {
+            const [searchTerm, setSearchTerm] = useState('');
+            const [abbreviations, setAbbreviations] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
 
-        <div class="error hidden" id="error">
-            <div class="error-icon">⚠️</div>
-            <p>Failed to load data. Please refresh the page.</p>
-        </div>
-
-        <div class="results-container hidden" id="resultsContainer"></div>
-
-        <div class="no-results hidden" id="noResults">
-            <div class="no-results-icon">🔎</div>
-            <p>No results found for "<span id="searchTermDisplay"></span>"</p>
-            <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
-                Try searching for another abbreviation or term
-            </p>
-        </div>
-
-        <footer>
-            <div class="footer-content">
-                <div class="creator">
-                    Created by <strong>Vien</strong>
-                </div>
-                
-                <div class="donation-section">
-                    <div style="font-size: 0.9rem; opacity: 0.9;">
-                        💰 Bitcoin Donations
-                    </div>
-                    <div 
-                        class="bitcoin-address"
-                        id="btcAddress"
-                        title="Click to copy"
-                    >
-                        bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf
-                    </div>
-                </div>
-
-                <a 
-                    href="https://www.linkedin.com/in/vien-hoang-5077bb96/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="linkedin-link"
-                >
-                    <span>in</span>
-                    LinkedIn
-                </a>
-            </div>
-        </footer>
-    </div>
-
-    <script>
-        // DOM elements
-        const searchInput = document.getElementById('searchInput');
-        const resultsContainer = document.getElementById('resultsContainer');
-        const resultsInfo = document.getElementById('resultsInfo');
-        const noResults = document.getElementById('noResults');
-        const searchTermDisplay = document.getElementById('searchTermDisplay');
-        const btcAddress = document.getElementById('btcAddress');
-        const loading = document.getElementById('loading');
-        const error = document.getElementById('error');
-
-        let ABBREVIATIONS_DATA = [];
-        let filteredData = [];
-
-        // Fetch data from external JSON file
-        async function loadData() {
-            try {
-                const response = await fetch('network_abbr.json');
-                
-                if (!response.ok) {
-                    throw new Error('Failed to load data');
-                }
-                
-                ABBREVIATIONS_DATA = await response.json();
-                filteredData = ABBREVIATIONS_DATA;
-                
-                // Hide loading, show results
-                loading.classList.add('hidden');
-                resultsContainer.classList.remove('hidden');
-                
-                // Initial render
-                renderResults(ABBREVIATIONS_DATA);
-                
-            } catch (err) {
-                console.error('Error loading data:', err);
-                loading.classList.add('hidden');
-                error.classList.remove('hidden');
-            }
-        }
-
-        // Highlight matching text
-        function highlightText(text, search) {
-            if (!search) return text;
-            const regex = new RegExp(`(${search})`, 'gi');
-            return text.replace(regex, '<mark>$1</mark>');
-        }
-
-        // Render cards
-        function renderResults(data, searchTerm = '') {
-            resultsContainer.innerHTML = '';
-            
-            if (data.length === 0) {
-                resultsContainer.classList.add('hidden');
-                noResults.classList.remove('hidden');
-                searchTermDisplay.textContent = searchTerm;
-                return;
-            }
-
-            resultsContainer.classList.remove('hidden');
-            noResults.classList.add('hidden');
-
-            const fragment = document.createDocumentFragment();
-            
-            data.forEach((item, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.animationDelay = `${index * 0.05}s`;
-                
-                card.innerHTML = `
-                    <div class="abbreviation">${highlightText(item['Network Abbreviation'], searchTerm)}</div>
-                    <div class="stands-for">${highlightText(item['Stands For'], searchTerm)}</div>
-                    <div class="meaning">${highlightText(item['Meaning'], searchTerm)}</div>
-                `;
-                
-                fragment.appendChild(card);
-            });
-
-            resultsContainer.appendChild(fragment);
-            resultsInfo.textContent = `Showing ${data.length} of ${ABBREVIATIONS_DATA.length} abbreviations`;
-        }
-
-        // Filter data based on search
-        function filterData(searchTerm) {
-            if (!searchTerm.trim()) {
-                return ABBREVIATIONS_DATA;
-            }
-
-            const searchLower = searchTerm.toLowerCase();
-            
-            return ABBREVIATIONS_DATA.filter(item => {
-                const abbr = item['Network Abbreviation'].toLowerCase();
-                const standsFor = item['Stands For'].toLowerCase();
-                const meaning = item['Meaning'].toLowerCase();
-                
-                return abbr.includes(searchLower) || 
-                       standsFor.includes(searchLower) || 
-                       meaning.includes(searchLower);
-            });
-        }
-
-        // Debounce function for performance
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
+            // Simulerar AJAX-hämtning av JSON-data
+            useEffect(() => {
+                const fetchData = async () => {
+                    try {
+                        setLoading(true);
+                        // I produktion: ersätt med din JSON-fil URL
+                        // const response = await fetch('network_abbr.json');
+                        
+                        // För demo: använd inbäddad data eller extern URL
+                        const response = await fetch('network_abbr.json');
+                        
+                        if (!response.ok) {
+                            throw new Error('Failed to fetch data');
+                        }
+                        
+                        const data = await response.json();
+                        setAbbreviations(data);
+                        setLoading(false);
+                    } catch (err) {
+                        setError(err.message);
+                        setLoading(false);
+                        console.error('Error fetching data:', err);
+                    }
                 };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
+
+                // Simulera nätverksfördröjning för att visa laddningsanimation
+                setTimeout(fetchData, 500);
+            }, []);
+
+            // Filtrerar resultat baserat på sökterm (AJAX-liknande funktion)
+            const filteredResults = useMemo(() => {
+                if (!searchTerm.trim()) {
+                    return abbreviations;
+                }
+
+                const searchLower = searchTerm.toLowerCase();
+                
+                return abbreviations.filter(item => {
+                    const abbr = item['Network Abbreviation'].toLowerCase();
+                    const standsFor = item['Stands For'].toLowerCase();
+                    const meaning = item['Meaning'].toLowerCase();
+                    
+                    return abbr.includes(searchLower) || 
+                           standsFor.includes(searchLower) || 
+                           meaning.includes(searchLower);
+                });
+            }, [searchTerm, abbreviations]);
+
+            // Highlightar matchande text
+            const highlightText = (text, search) => {
+                if (!search.trim()) return text;
+                
+                const parts = text.split(new RegExp(`(${search})`, 'gi'));
+                return parts.map((part, i) => 
+                    part.toLowerCase() === search.toLowerCase() ? 
+                        <span key={i} className="highlight">{part}</span> : part
+                );
             };
+
+            if (loading) {
+                return (
+                    <div className="container">
+                        <header>
+                            <h1>Network & Cybersecurity Abbreviations</h1>
+                            <p className="subtitle">Your reference guide to network technology and cybersecurity.</p>
+                        </header>
+                        <div className="loading">
+                            <div className="spinner"></div>
+                            <p>Loading abbreviations...</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            if (error) {
+                return (
+                    <div className="container">
+                        <header>
+                            <h1>Network & Cybersecurity Abbreviations</h1>
+                        </header>
+                        <div className="no-results">
+                            <div className="no-results-icon">⚠️</div>
+                            <p>Could not load data: {error}</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            return (
+                <div className="container">
+                    <header>
+                        <h1>Network & Cybersecurity Abbreviations</h1>
+                        <p className="subtitle">Your reference guide to network technology and cybersecurity.</p>
+                    </header>
+
+                    <div className="search-container">
+                        <div className="search-wrapper">
+                            <span className="search-icon">🔍</span>
+                            <input
+                                type="text"
+                                placeholder="Search by abbreviation, name or description..."
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                autoFocus
+                            />
+                        </div>
+                        <div className="results-info">
+                            Showing {filteredResults.length} by {abbreviations.length} abbreviations
+                        </div>
+                    </div>
+
+                    {filteredResults.length === 0 ? (
+                        <div className="no-results">
+                            <div className="no-results-icon">🔎</div>
+                            <p>No results found for "{searchTerm}"</p>
+                            <p style={{fontSize: '0.9rem', marginTop: '0.5rem', opacity: 0.8}}>
+                                Try searching for a different abbreviation or term.
+                            </p>
+                        </div>
+                    ) : (
+                        <div className="results-container">
+                            {filteredResults.map((item, index) => (
+                                <div key={index} className="card">
+                                    <div className="card-header">
+                                        <div className="abbreviation">
+                                            {highlightText(item['Network Abbreviation'], searchTerm)}
+                                        </div>
+                                    </div>
+                                    <div className="stands-for">
+                                        {highlightText(item['Stands For'], searchTerm)}
+                                    </div>
+                                    <div className="meaning">
+                                        {highlightText(item['Meaning'], searchTerm)}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
+                    <footer>
+                        <div className="footer-content">
+                            <div className="creator">
+                                Created by <strong>Vien Hoang</strong>
+                            </div>
+                            
+                            <div className="donation-section">
+                                <div style={{fontSize: '0.9rem', opacity: 0.9}}>
+                                    💰 Bitcoin Donations
+                                </div>
+                                <div 
+                                    className="bitcoin-address"
+                                    onClick={() => {
+                                        navigator.clipboard.writeText('bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf');
+                                        alert('Bitcoin address copied!');
+                                    }}
+                                    title="Click to copy">
+                                    bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf
+                                </div>
+                            </div>
+
+                            <a 
+                                href="https://www.linkedin.com/in/vien-hoang-5077bb96/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="linkedin-link"
+                            >
+                                My LinkedIn
+                            </a>
+                        </div>
+                    </footer>
+                </div>
+            );
         }
 
-        // Search handler
-        const handleSearch = debounce((e) => {
-            const searchTerm = e.target.value;
-            filteredData = filterData(searchTerm);
-            renderResults(filteredData, searchTerm);
-        }, 150);
-
-        // Event listeners
-        searchInput.addEventListener('input', handleSearch);
-
-        // Bitcoin address copy
-        btcAddress.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText('bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf');
-                const originalText = btcAddress.textContent;
-                btcAddress.textContent = '✓ Copied!';
-                setTimeout(() => {
-                    btcAddress.textContent = originalText;
-                }, 2000);
-            } catch (err) {
-                alert('Bitcoin address copied!');
-            }
-        });
-
-        // Load data on page load
-        loadData();
+        ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
 </html>
