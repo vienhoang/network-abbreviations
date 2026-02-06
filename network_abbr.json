@@ -1,0 +1,572 @@
+[
+  {
+    "Network Abbreviation": "ABR",
+    "Stands For": "Area border router",
+    "Meaning": "A router that connects one OSPF area to the backbone area (Area 0), responsible for summarizing routes between areas."
+  },
+  {
+    "Network Abbreviation": "AD",
+    "Stands For": "Administrative Distance",
+    "Meaning": "is a value used by routers to determine which routing information is most trustworthy when multiple protocols offer different paths to the same destination."
+  },
+  {
+    "Network Abbreviation": "AMI",
+    "Stands For": "Amazon Machine Image",
+    "Meaning": "An Amazon Machine Image (AMI) is a special type of virtual appliance used to create a virtual machine within Amazon EC2."
+  },
+  {
+    "Network Abbreviation": "ASBR",
+    "Stands For": "Autonomous system border router ",
+    "Meaning": "A router that connects an OSPF autonomous system to external networks, redistributing routes from other routing protocols into OSPF."
+  },
+  {
+    "Network Abbreviation": "ASE",
+    "Stands For": "Autonomous System External",
+    "Meaning": "Routes that originate from outside the OSPF autonomous system and are redistributed into OSPF by an ASBR."
+  },
+  {
+    "Network Abbreviation": "BDR",
+    "Stands For": "Backup designated router",
+    "Meaning": "A backup router in OSPF that takes over the designated router role if the DR fails, reducing adjacency overhead in broadcast networks."
+  },
+  {
+    "Network Abbreviation": "BGP",
+    "Stands For": "Border Gateway Protocol",
+    "Meaning": "an external gateway protocol"
+  },
+  {
+    "Network Abbreviation": "CatOS",
+    "Stands For": "Catalyst Operating System",
+    "Meaning": "Older OS för Ciscos Catalyst switches"
+  },
+  {
+    "Network Abbreviation": "CHAP",
+    "Stands For": "challenge handshake authentication protocol",
+    "Meaning": "An authentication protocol that uses a three-way handshake and hashed passwords to verify identity more securely than PAP."
+  },
+  {
+    "Network Abbreviation": "CIDR",
+    "Stands For": "Classless Internet Domain Routing",
+    "Meaning": "A method for allocating IP addresses and routing that replaces classful addressing, allowing for more flexible subnet mask allocation."
+  },
+  {
+    "Network Abbreviation": "CoS",
+    "Stands For": "Class of Service",
+    "Meaning": "A field in Layer 2 frames used to prioritize different types of network traffic for quality of service."
+  },
+  {
+    "Network Abbreviation": "CVE",
+    "Stands For": "Common Vulnerabilities and Exposures",
+    "Meaning": "CVE stands for Common Vulnerabilities and Exposures. It is a system that provides a reference method for publicly known information-security vulnerabilities and exposures."
+  },
+  {
+    "Network Abbreviation": "DHCP",
+    "Stands For": "Dynamic Host Configuration Protocol",
+    "Meaning": "A network protocol that automatically assigns IP addresses and network configuration parameters to devices on a network."
+  },
+  {
+    "Network Abbreviation": "DMVPN",
+    "Stands For": "Dynamic Multipoint VPN",
+    "Meaning": "a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel."
+  },
+  {
+    "Network Abbreviation": "DNS",
+    "Stands For": "Domain Name System",
+    "Meaning": "A crucial system on the internet that acts as a \"phone book\" for domain names."
+  },
+  {
+    "Network Abbreviation": "DNSSEC",
+    "Stands For": "DNS Security Extensions",
+    "Meaning": "A suite of extensions to DNS that provides authentication of DNS data to prevent spoofing and cache poisoning attacks."
+  },
+  {
+    "Network Abbreviation": "DR",
+    "Stands For": "Designated router",
+    "Meaning": "A router elected in OSPF broadcast networks to reduce the number of adjacencies and manage link-state information exchange."
+  },
+  {
+    "Network Abbreviation": "EC2",
+    "Stands For": "Amazon Elastic Compute Cloud",
+    "Meaning": "Amazon Elastic Compute Cloud (EC2) is a part of Amazon 's cloud-computing platform, Amazon Web Services (AWS), that allows users to rent virtual computers on which to run their own computer applications."
+  },
+  {
+    "Network Abbreviation": "EGP",
+    "Stands For": "External Gateway Protocol",
+    "Meaning": "A category of routing protocols used to exchange routing information between different autonomous systems on the internet."
+  },
+  {
+    "Network Abbreviation": "EIGRP ",
+    "Stands For": "Enhanced Interior Gateway Routing Protocol",
+    "Meaning": "routing protocol, popular in Cisco environment"
+  },
+  {
+    "Network Abbreviation": "EXP",
+    "Stands For": "experimental bits ",
+    "Meaning": "The QoS EXP Matching feature allows you to classify and mark network traffic by modifying the Multiprotocol Label Switching (MPLS) experimental bits (EXP) field in IP packets."
+  },
+  {
+    "Network Abbreviation": "FCoE ",
+    "Stands For": "Fibre Channel over Ethernet",
+    "Meaning": "A protocol that encapsulates Fibre Channel frames over Ethernet networks, enabling storage and data networks to be consolidated."
+  },
+  {
+    "Network Abbreviation": "FEC",
+    "Stands For": "Fast EtherChannel",
+    "Meaning": "A technology that bundles multiple Fast Ethernet links together to increase bandwidth and provide redundancy."
+  },
+  {
+    "Network Abbreviation": "FTP",
+    "Stands For": "File Transfer Protocol",
+    "Meaning": "A standard network protocol used to transfer files between a client and server over TCP/IP networks."
+  },
+  {
+    "Network Abbreviation": "GEC",
+    "Stands For": "Gigabit EtherChannel",
+    "Meaning": "A technology that aggregates multiple Gigabit Ethernet links into a single logical connection for increased throughput and redundancy."
+  },
+  {
+    "Network Abbreviation": "GENEVE",
+    "Stands For": "Generic Network Virtualization Encapsulation",
+    "Meaning": "Generic Network Virtualization Encapsulation (Geneve) is a network encapsulation protocol created by the IETF in order to unify the efforts made by other initiatives like VXLAN and NVGRE, with the intent to eliminate the wild growth of encapsulation protocols."
+  },
+  {
+    "Network Abbreviation": "GGP",
+    "Stands For": "Gateway to Gateway Protocol ",
+    "Meaning": "An obsolete routing protocol that was used in the early ARPANET to exchange routing information between core routers."
+  },
+  {
+    "Network Abbreviation": "GRE",
+    "Stands For": "Generic Routing Encapsulation",
+    "Meaning": "A tunneling protocol that encapsulates a wide variety of network layer protocols inside virtual point-to-point links over an IP network."
+  },
+  {
+    "Network Abbreviation": "HDLC",
+    "Stands For": "High‑Level Data Link Control",
+    "Meaning": "A bit-oriented protocol used for point-to-point and multipoint data link layer communications in WANs."
+  },
+  {
+    "Network Abbreviation": "HTML",
+    "Stands For": "The HyperText Markup Language",
+    "Meaning": "The standard markup language used to create and structure content on the World Wide Web."
+  },
+  {
+    "Network Abbreviation": "HTTP",
+    "Stands For": "Hypertext Transfer Protocol ",
+    "Meaning": "An application layer protocol used for transmitting hypermedia documents, such as web pages, over the internet."
+  },
+  {
+    "Network Abbreviation": "IAM ",
+    "Stands For": "AWS Identity and Access Management",
+    "Meaning": "AWS Identity and Access Management (IAM) is a security service that enables you to securely manage access to AWS resources. It provides the tools to control who is authenticated (signed in) and authorized (has permissions) to use specific AWS services and resources."
+  },
+  {
+    "Network Abbreviation": "IANA",
+    "Stands For": "Internet Assigned Numbers Authority",
+    "Meaning": "The organization responsible for coordinating global IP address allocation, DNS root zone management, and protocol parameter assignment."
+  },
+  {
+    "Network Abbreviation": "ICMP ",
+    "Stands For": "Internet Control Message Protocol ",
+    "Meaning": "a supported protocol in the IP suite used for error reporting, operational information, and network diagnostics."
+  },
+  {
+    "Network Abbreviation": "IDS",
+    "Stands For": "Intrusion Detection System",
+    "Meaning": "A security system that monitors network traffic for suspicious activity and alerts administrators to potential threats."
+  },
+  {
+    "Network Abbreviation": "IGP",
+    "Stands For": "Internal Gateway Protocol",
+    "Meaning": "A category of routing protocols used within a single autonomous system to exchange routing information between routers."
+  },
+  {
+    "Network Abbreviation": "IKE",
+    "Stands For": "Internet Key Exchange",
+    "Meaning": "IKE is a protocol used to set up a secure, authenticated communication channel between devices. What does IKE stand for in networking? In networking, IKE stands for Internet Key Exchange. What is IKE policy? An IKE policy defines how devices authenticate and secure a connection."
+  },
+  {
+    "Network Abbreviation": "IMAP",
+    "Stands For": "Internet Message Access Protocol",
+    "Meaning": "Used by email clients to retreive email and attachments from remote server."
+  },
+  {
+    "Network Abbreviation": "IOC",
+    "Stands For": "Indicators of compromise",
+    "Meaning": "Artifacts or evidence found on networks or systems that indicate a potential security breach or malicious activity."
+  },
+  {
+    "Network Abbreviation": "IOS",
+    "Stands For": "Internetwork Operating System",
+    "Meaning": "Newer OS that took after CatOS"
+  },
+  {
+    "Network Abbreviation": "IPsec",
+    "Stands For": "Internet Protocol Security",
+    "Meaning": "is a protocol used to secure IP communications by encrypting and authenticating IP packets."
+  },
+  {
+    "Network Abbreviation": "LACP",
+    "Stands For": "Link Aggregation Protocol",
+    "Meaning": "Industry standard protocol (IEEE 802.3ad)"
+  },
+  {
+    "Network Abbreviation": "LAG",
+    "Stands For": "Link Aggregation",
+    "Meaning": "The process of combining multiple physical network links into a single logical link to increase bandwidth and provide redundancy."
+  },
+  {
+    "Network Abbreviation": "LDP",
+    "Stands For": "Label distribution protocol",
+    "Meaning": "A protocol used to establish and maintain label-switched paths in MPLS networks by distributing labels between routers."
+  },
+  {
+    "Network Abbreviation": "LER",
+    "Stands For": "label edge router",
+    "Meaning": "A router at the edge of an MPLS network that adds or removes MPLS labels to packets entering or leaving the network."
+  },
+  {
+    "Network Abbreviation": "LSA",
+    "Stands For": "link state advertisements",
+    "Meaning": "Packets used by OSPF routers to share information about network topology and routing updates with neighboring routers."
+  },
+  {
+    "Network Abbreviation": "LSDB",
+    "Stands For": "Link-State Database",
+    "Meaning": "The Link-State Database is at the heart of link-state routing protocols, including famously OSPF and IS-IS. LSDB stores a wealth of information about network topologies, such as routers, paths, and the status of network links."
+  },
+  {
+    "Network Abbreviation": "LSP",
+    "Stands For": "label-switched path",
+    "Meaning": "The path that labeled packets follow through an MPLS network from ingress to egress router."
+  },
+  {
+    "Network Abbreviation": "MAC",
+    "Stands For": "Media Access Control",
+    "Meaning": "A unique identifier that is assigned to a network interface"
+  },
+  {
+    "Network Abbreviation": "MDR",
+    "Stands For": "Managed Detection and Response",
+    "Meaning": "MDR stands for Managed Detection and Response, which is a cybersecurity service designed to help organizations proactively protect against cyber threats."
+  },
+  {
+    "Network Abbreviation": "MED",
+    "Stands For": "Multi-Exit Discriminator",
+    "Meaning": "A BGP attribute used to influence inbound traffic by suggesting preferred entry points into an autonomous system."
+  },
+  {
+    "Network Abbreviation": "MITM",
+    "Stands For": "man in the middle",
+    "Meaning": "An attack where an adversary intercepts and potentially alters communications between two parties without their knowledge."
+  },
+  {
+    "Network Abbreviation": "MPLS",
+    "Stands For": "Multi Protocol Label Switching",
+    "Meaning": "is a routing technique in telecommunications networks that directs data from one node to the next based on labels rather than network addresses."
+  },
+  {
+    "Network Abbreviation": "MPOE",
+    "Stands For": "minimum point of entry",
+    "Meaning": "The closest practical point to where the service provider's network ends and the customer's network begins in a building."
+  },
+  {
+    "Network Abbreviation": "MTU",
+    "Stands For": "Maximum Transmission Unit",
+    "Meaning": "The largest size packet or frame that can be sent in a single network transaction without fragmentation."
+  },
+  {
+    "Network Abbreviation": "NAS",
+    "Stands For": "network attached storage",
+    "Meaning": "A dedicated file storage device that provides data access to multiple clients over a network."
+  },
+  {
+    "Network Abbreviation": "NAT",
+    "Stands For": "Network Address Translation",
+    "Meaning": "a technique that modifies IP address information in packet headers, enabling multiple devices on a private network to share a single public IP address for internet communication."
+  },
+  {
+    "Network Abbreviation": "NLRI",
+    "Stands For": "Network Layer Reachability Information",
+    "Meaning": "Information carried in BGP updates that describes IP prefixes and their associated attributes for routing decisions."
+  },
+  {
+    "Network Abbreviation": "NOC",
+    "Stands For": "Network Operations Center",
+    "Meaning": "A NOC monitors the network's health, performance, availability, and ensures that everything is running stably."
+  },
+  {
+    "Network Abbreviation": "NSG",
+    "Stands For": "Network Security Group",
+    "Meaning": "A network security group (NSG) is a set of rules that controls incoming and outgoing traffic to and from a virtual network interface, subnet, or other network resource within a cloud environment."
+  },
+  {
+    "Network Abbreviation": "ONT",
+    "Stands For": "optical network terminal",
+    "Meaning": "A device that terminates a fiber optic connection and converts optical signals to electrical signals for customer equipment."
+  },
+  {
+    "Network Abbreviation": "OSI",
+    "Stands For": "Open Systems Interconnection ",
+    "Meaning": "OSI model is a conceptual framework that explains how computers communicate over a network. It was defined by the International Organization for Standardization (ISO) as a helpful framework when creating and studying network communication."
+  },
+  {
+    "Network Abbreviation": "OSPF",
+    "Stands For": "Open Shortest Path First",
+    "Meaning": "routing protocol, determine link cost. 100,000,000 divide by the bandwidth of the link in bits per second (bps)"
+  },
+  {
+    "Network Abbreviation": "OTN",
+    "Stands For": "optical transport networking",
+    "Meaning": "A digital wrapper technology for transporting various client signals over optical networks with enhanced performance monitoring."
+  },
+  {
+    "Network Abbreviation": "PAgP",
+    "Stands For": "Port Aggregation Protocol",
+    "Meaning": "Cisco proprietary protocol"
+  },
+  {
+    "Network Abbreviation": "PAP",
+    "Stands For": "password authentication protocol",
+    "Meaning": "A simple authentication protocol that transmits passwords in clear text, making it less secure than modern alternatives."
+  },
+  {
+    "Network Abbreviation": "PDU",
+    "Stands For": "Protocol Data Unit",
+    "Meaning": "The unit of data at a specific layer of the OSI model, such as frames at Layer 2 or packets at Layer 3."
+  },
+  {
+    "Network Abbreviation": "POP",
+    "Stands For": "Post Office Protocol",
+    "Meaning": "Used by email clients to retreive email and attachments from remote server."
+  },
+  {
+    "Network Abbreviation": "PPP",
+    "Stands For": "Point‑to‑Point Protocol",
+    "Meaning": "A data link layer protocol used to establish direct connections between two nodes over serial links, modems, or other media."
+  },
+  {
+    "Network Abbreviation": "PSTN",
+    "Stands For": "Public Switched Telephone Network ",
+    "Meaning": "PSTN is the aggregate of the world's telephone networks that are operated by national, regional, or local telephony operators. It provides infrastructure and services for public telephony."
+  },
+  {
+    "Network Abbreviation": "PVC",
+    "Stands For": "Permanent Virtual Circuit ",
+    "Meaning": "A permanently established virtual circuit in Frame Relay or ATM networks that provides a dedicated path between two endpoints."
+  },
+  {
+    "Network Abbreviation": "QoS",
+    "Stands For": "quality of service",
+    "Meaning": "Network management techniques that prioritize certain types of traffic to ensure performance levels for critical applications."
+  },
+  {
+    "Network Abbreviation": "RADIUS",
+    "Stands For": "Remote access dial-in user service",
+    "Meaning": "Remote Authentication Dial In User Service (RADIUS) is an Internet standard protocol that provides centralized authentication, accounting and IP management services for remote access users in a distributed dial-up network."
+  },
+  {
+    "Network Abbreviation": "RIB",
+    "Stands For": "Route Information Base",
+    "Meaning": "the routing table"
+  },
+  {
+    "Network Abbreviation": "RIP",
+    "Stands For": "Routing Information Protocol",
+    "Meaning": "A distance-vector routing protocol that uses hop count as a metric and is limited to 15 hops maximum."
+  },
+  {
+    "Network Abbreviation": "RPC",
+    "Stands For": "Remote Procedure Cal",
+    "Meaning": "A protocol that allows a program to execute procedures on a remote server as if they were local function calls."
+  },
+  {
+    "Network Abbreviation": "RSVP",
+    "Stands For": "resource reservation protocol",
+    "Meaning": "A protocol that allows applications to reserve network resources for quality of service guarantees along a path."
+  },
+  {
+    "Network Abbreviation": "RT",
+    "Stands For": "route target",
+    "Meaning": "An extended community attribute used in BGP to control the import and export of routes between VRF instances."
+  },
+  {
+    "Network Abbreviation": "SASE",
+    "Stands For": "Secure Access Service Edge",
+    "Meaning": "SASE is a cloud-native architecture that combines wide area networking (WAN) and security functions into a single service, enhancing security and simplifying management for modern businesses."
+  },
+  {
+    "Network Abbreviation": "SDH",
+    "Stands For": "synchronous digital hierarchy",
+    "Meaning": "The European standard for synchronous data transmission over fiber optic networks, equivalent to SONET."
+  },
+  {
+    "Network Abbreviation": "SIEM",
+    "Stands For": "Security Information and Event Management",
+    "Meaning": "SIEM, or Security Information and Event Management, is a cybersecurity solution that combines security information management (SIM) and security event management (SEM). It enables organizations to collect, analyze, and store security data across their IT environment, allowing for real-time monitoring and response to security threats."
+  },
+  {
+    "Network Abbreviation": "SLA",
+    "Stands For": "Service Level Agreement",
+    "Meaning": "A formal commitment between a service provider and customer that defines expected service levels and performance metrics."
+  },
+  {
+    "Network Abbreviation": "SMTP",
+    "Stands For": "Simple Mail Transfer Protocol",
+    "Meaning": "SMTP is a fundamental technology that powers the process of sending emails over the internet. It is an application layer protocol that facilitates the transmission of electronic mail from one user to another."
+  },
+  {
+    "Network Abbreviation": "SOAR",
+    "Stands For": "Security Orchestration Automated Response",
+    "Meaning": "Security Orchestration, Automation, and Response (SOAR) is a comprehensive solution designed to enhance the efficiency and effectiveness of security operations centers (SOCs)."
+  },
+  {
+    "Network Abbreviation": "SOC",
+    "Stands For": "Security Operations Center",
+    "Meaning": "A SOC monitors security, detects intrusions, analyzes threats, and handles incidents in real time."
+  },
+  {
+    "Network Abbreviation": "SOHO",
+    "Stands For": "Small Office and Home Office Networks",
+    "Meaning": "Networks designed for small businesses and home offices, typically supporting fewer than 10 users with basic networking needs."
+  },
+  {
+    "Network Abbreviation": "SONET",
+    "Stands For": "synchronous optical networking",
+    "Meaning": "A standardized protocol for transferring multiple digital bit streams synchronously over optical fiber using lasers or LEDs."
+  },
+  {
+    "Network Abbreviation": "SPAN",
+    "Stands For": "switched port analyzer",
+    "Meaning": "You can analyze network traffic passing through a port by using SPAN (Switched Port Analyzer), sometimes called port mirroring. This allows you to copy traffic as it moves to one port and make a copy of it on another. You can then capture this traffic using a tool like WireShark."
+  },
+  {
+    "Network Abbreviation": "SSH",
+    "Stands For": "Secure Shell",
+    "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
+  },
+  {
+    "Network Abbreviation": "STIX",
+    "Stands For": "Structured Threat Information eXpression",
+    "Meaning": "STIX is a standardized language that uses a JSON-based lexicon to express and share threat intelligence information in a readable and consistent format."
+  },
+  {
+    "Network Abbreviation": "STP",
+    "Stands For": "Spanning Tree Protocol",
+    "Meaning": "A Layer 2 protocol that prevents network loops in Ethernet networks by creating a loop-free logical topology."
+  },
+  {
+    "Network Abbreviation": "SVI",
+    "Stands For": "Switched Virtual Interface",
+    "Meaning": "A virtual interface on a Layer 3 switch that represents a VLAN, enabling inter-VLAN routing without the need for an external router."
+  },
+  {
+    "Network Abbreviation": "TACACS+",
+    "Stands For": "Terminal access controller access controll system",
+    "Meaning": "TACACS+ stands for Terminal Access Controller Access Control System. It is a Cisco proprietary AAA protocol. It separates each of the AAA functions. It uses TCP port 49 for communication. It encrypts all communications. TACACS+ works in a client/server architecture."
+  },
+  {
+    "Network Abbreviation": "TAXII",
+    "Stands For": "Trusted Automated eXchange of Intelligence Information",
+    "Meaning": "TAXII is the format through which threat intelligence data is transmitted. TAXII is a transport protocol that supports transferring STIX insights over Hyper Text Transfer Protocol Secure (HTTPS)."
+  },
+  {
+    "Network Abbreviation": "TCP",
+    "Stands For": "Transmission Control Protocol",
+    "Meaning": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of data between applications."
+  },
+  {
+    "Network Abbreviation": "TIP",
+    "Stands For": "Threat Intelligence Platform",
+    "Meaning": "Threat Intelligence Platforms (TIPs) are essential because they aggregate, enrich, and prioritize this data into actionable intelligence, integrate with existing security systems (like SIEM, SOAR, and EDR), and help analysts cut through noise to respond faster and more effectively."
+  },
+  {
+    "Network Abbreviation": "TLS",
+    "Stands For": "Transport Layer Security",
+    "Meaning": "A cryptographic protocol that provides secure communication over computer networks by encrypting data in transit."
+  },
+  {
+    "Network Abbreviation": "TLV",
+    "Stands For": "Type‑Length‑Value",
+    "Meaning": "Type-Length-Value (TLV) - also called Tag-Length-Value - is a common data encoding scheme used in communication protocols, file formats, and data serialization."
+  },
+  {
+    "Network Abbreviation": "UCS",
+    "Stands For": "Unified Computing System",
+    "Meaning": "UCS (Unified Computing System) is a data center platform from Cisco that integrates computing, networking, and storage resources into a unified, cohesive system. UCS is designed to simplify data center operations, improve scalability, and reduce total cost of ownership (TCO)."
+  },
+  {
+    "Network Abbreviation": "UDP",
+    "Stands For": "User Datagram Protocol",
+    "Meaning": "A connectionless transport layer protocol that provides fast, unreliable data transmission without error checking or flow control."
+  },
+  {
+    "Network Abbreviation": "UEBA",
+    "Stands For": "User and Entity Behavior Analytics",
+    "Meaning": "User and entity behavior analytics (UEBA) is a security approach that analyzes user and entity behavioral patterns to detect potential threats. UEBA tracks subtle changes in current behavior from established baselines to identify anomalies and uncover suspicious activity."
+  },
+  {
+    "Network Abbreviation": "URL",
+    "Stands For": "Uniform Resource Locator",
+    "Meaning": "This defines the network location of a specific resource on the network. HTTP or HTTPS URLs are typically used with web browsers."
+  },
+  {
+    "Network Abbreviation": "URN",
+    "Stands For": "Uniform Resource Name",
+    "Meaning": "This identifies only the namespace of the resource (web page, document, image, etc.) without reference to the protocol."
+  },
+  {
+    "Network Abbreviation": "VACL",
+    "Stands For": "VLAN Access Control List",
+    "Meaning": "An access control list applied to VLANs to filter traffic within the same VLAN or between VLANs on a switch."
+  },
+  {
+    "Network Abbreviation": "VDC",
+    "Stands For": "Virtual Device Context",
+    "Meaning": "A feature that allows a single physical Cisco Nexus switch to be partitioned into multiple virtual switches with independent configurations."
+  },
+  {
+    "Network Abbreviation": "VLSM",
+    "Stands For": "Variable Length Subnet Masks",
+    "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
+  },
+  {
+    "Network Abbreviation": "VLSM",
+    "Stands For": "Variable-Length Subnet Masking",
+    "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
+  },
+  {
+    "Network Abbreviation": "VoIP",
+    "Stands For": "Voice over IP",
+    "Meaning": "Technology that enables voice communications to be transmitted over IP networks instead of traditional telephone lines."
+  },
+  {
+    "Network Abbreviation": "VPC",
+    "Stands For": "Virtual Private Cloud",
+    "Meaning": "Amazon Virtual Private Cloud (Amazon VPC) is a service that allows you to launch AWS resources in a logically isolated virtual network that you define. "
+  },
+  {
+    "Network Abbreviation": "VPN",
+    "Stands For": "Virtual Private Network",
+    "Meaning": "A secure connection established over a public network that encrypts data and provides privacy for remote users."
+  },
+  {
+    "Network Abbreviation": "VRF",
+    "Stands For": "Virtual Routing and Forwarding",
+    "Meaning": "A technology that allows multiple routing tables to coexist on the same router, enabling network segmentation and isolation."
+  },
+  {
+    "Network Abbreviation": "VRF",
+    "Stands For": "Virtual Routing and Forwarding",
+    "Meaning": "A technology that allows multiple routing tables to coexist on the same router, enabling network segmentation and isolation."
+  },
+  {
+    "Network Abbreviation": "VSI",
+    "Stands For": "Virtual Server Instance",
+    "Meaning": "A virtualized server instance running on shared physical hardware in cloud or virtualized environments."
+  },
+  {
+    "Network Abbreviation": "ZTNA",
+    "Stands For": "ZTNA",
+    "Meaning": "ZTNA is a security model that requires strict identity verification for every user and device attempting to connect to applications and resources, regardless of their location."
+  }
+]
