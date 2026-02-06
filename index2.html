@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search and find explanations of networking and cybersecurity abbreviations. Your complete reference guide.">
+    <title>Network & Cybersecurity Abbreviations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background: #ecf0f1;
+            --card-background: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --border-color: #bdc3c7;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --hover-shadow: rgba(52, 152, 219, 0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            pointer-events: none;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 1.25rem 1.5rem 1.25rem 4rem;
+            font-size: 1.2rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: var(--background);
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--accent-color);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+        }
+
+        .results-info {
+            margin-top: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .results-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-background);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            opacity: 0;
+            animation: slideIn 0.4s ease forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px var(--hover-shadow);
+            border-color: var(--accent-color);
+        }
+
+        .abbreviation {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .stands-for {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .meaning {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding: 2rem 1rem;
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .creator {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .donation-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .bitcoin-address {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            word-break: break-all;
+            max-width: 500px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bitcoin-address:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        .linkedin-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: #0077b5;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .linkedin-link:hover {
+            background: #005885;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .results-container {
+                grid-template-columns: 1fr;
+            }
+
+            input[type="text"] {
+                font-size: 1rem;
+            }
+
+            .abbreviation {
+                font-size: 1.5rem;
+            }
+        }
+
+        mark {
+            background: linear-gradient(120deg, #ffd700 0%, #ffed4e 100%);
+            padding: 0 4px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Network & Cybersecurity Abbreviations</h1>
+            <p class="subtitle">Your reference guide for networking and cybersecurity.</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for abbreviation, name, or description..."
+                    autocomplete="off"
+                    autofocus
+                >
+            </div>
+            <div class="results-info" id="resultsInfo">
+                Showing 0 of 0 abbreviations
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading abbreviations...</p>
+        </div>
+
+        <div class="error hidden" id="error">
+            <div class="error-icon">⚠️</div>
+            <p>Failed to load data. Please refresh the page.</p>
+        </div>
+
+        <div class="results-container hidden" id="resultsContainer"></div>
+
+        <div class="no-results hidden" id="noResults">
+            <div class="no-results-icon">🔎</div>
+            <p>No results found for "<span id="searchTermDisplay"></span>"</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
+                Try searching for another abbreviation or term
+            </p>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="creator">
+                    Created by <strong>Vien</strong>
+                </div>
+                
+                <div class="donation-section">
+                    <div style="font-size: 0.9rem; opacity: 0.9;">
+                        💰 Bitcoin Donations
+                    </div>
+                    <div 
+                        class="bitcoin-address"
+                        id="btcAddress"
+                        title="Click to copy"
+                    >
+                        bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf
+                    </div>
+                </div>
+
+                <a 
+                    href="https://www.linkedin.com/in/vien-hoang-5077bb96/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="linkedin-link"
+                >
+                    <span>in</span>
+                    LinkedIn
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // DOM elements
+        const searchInput = document.getElementById('searchInput');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultsInfo = document.getElementById('resultsInfo');
+        const noResults = document.getElementById('noResults');
+        const searchTermDisplay = document.getElementById('searchTermDisplay');
+        const btcAddress = document.getElementById('btcAddress');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+
+        let ABBREVIATIONS_DATA = [];
+        let filteredData = [];
+
+        // Fetch data from external JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('network_abbr.json');
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load data');
+                }
+                
+                ABBREVIATIONS_DATA = await response.json();
+                filteredData = ABBREVIATIONS_DATA;
+                
+                // Hide loading, show results
+                loading.classList.add('hidden');
+                resultsContainer.classList.remove('hidden');
+                
+                // Initial render
+                renderResults(ABBREVIATIONS_DATA);
+                
+            } catch (err) {
+                console.error('Error loading data:', err);
+                loading.classList.add('hidden');
+                error.classList.remove('hidden');
+            }
+        }
+
+        // Highlight matching text
+        function highlightText(text, search) {
+            if (!search) return text;
+            const regex = new RegExp(`(${search})`, 'gi');
+            return text.replace(regex, '<mark>$1</mark>');
+        }
+
+        // Render cards
+        function renderResults(data, searchTerm = '') {
+            resultsContainer.innerHTML = '';
+            
+            if (data.length === 0) {
+                resultsContainer.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                searchTermDisplay.textContent = searchTerm;
+                return;
+            }
+
+            resultsContainer.classList.remove('hidden');
+            noResults.classList.add('hidden');
+
+            const fragment = document.createDocumentFragment();
+            
+            data.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style.animationDelay = `${index * 0.05}s`;
+                
+                card.innerHTML = `
+                    <div class="abbreviation">${highlightText(item['Network Abbreviation'], searchTerm)}</div>
+                    <div class="stands-for">${highlightText(item['Stands For'], searchTerm)}</div>
+                    <div class="meaning">${highlightText(item['Meaning'], searchTerm)}</div>
+                `;
+                
+                fragment.appendChild(card);
+            });
+
+            resultsContainer.appendChild(fragment);
+            resultsInfo.textContent = `Showing ${data.length} of ${ABBREVIATIONS_DATA.length} abbreviations`;
+        }
+
+        // Filter data based on search
+        function filterData(searchTerm) {
+            if (!searchTerm.trim()) {
+                return ABBREVIATIONS_DATA;
+            }
+
+            const searchLower = searchTerm.toLowerCase();
+            
+            return ABBREVIATIONS_DATA.filter(item => {
+                const abbr = item['Network Abbreviation'].toLowerCase();
+                const standsFor = item['Stands For'].toLowerCase();
+                const meaning = item['Meaning'].toLowerCase();
+                
+                return abbr.includes(searchLower) || 
+                       standsFor.includes(searchLower) || 
+                       meaning.includes(searchLower);
+            });
+        }
+
+        // Debounce function for performance
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Search handler
+        const handleSearch = debounce((e) => {
+            const searchTerm = e.target.value;
+            filteredData = filterData(searchTerm);
+            renderResults(filteredData, searchTerm);
+        }, 150);
+
+        // Event listeners
+        searchInput.addEventListener('input', handleSearch);
+
+        // Bitcoin address copy
+        btcAddress.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText('bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf');
+                const originalText = btcAddress.textContent;
+                btcAddress.textContent = '✓ Copied!';
+                setTimeout(() => {
+                    btcAddress.textContent = originalText;
+                }, 2000);
+            } catch (err) {
+                alert('Bitcoin address copied!');
+            }
+        });
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
