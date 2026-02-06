@@ -526,12 +526,7 @@
   },
   {
     "Network Abbreviation": "VLSM",
-    "Stands For": "Variable Length Subnet Masks",
-    "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
-  },
-  {
-    "Network Abbreviation": "VLSM",
-    "Stands For": "Variable-Length Subnet Masking",
+    "Stands For": "Variable Length Subnet Mask",
     "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
   },
   {
@@ -566,7 +561,7 @@
   },
   {
     "Network Abbreviation": "ZTNA",
-    "Stands For": "ZTNA",
+    "Stands For": "Zero Trust Network Access",
     "Meaning": "ZTNA is a security model that requires strict identity verification for every user and device attempting to connect to applications and resources, regardless of their location."
   }
 ]
