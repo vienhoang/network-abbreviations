@@ -7,7 +7,7 @@
   {
     "Network Abbreviation": "AD",
     "Stands For": "Administrative Distance",
-    "Meaning": "is a value used by routers to determine which routing information is most trustworthy when multiple protocols offer different paths to the same destination."
+    "Meaning": "AD is a value used by routers to determine which routing information is most trustworthy when multiple protocols offer different paths to the same destination."
   },
   {
     "Network Abbreviation": "AMI",
@@ -32,7 +32,12 @@
   {
     "Network Abbreviation": "BGP",
     "Stands For": "Border Gateway Protocol",
-    "Meaning": "an external gateway protocol"
+    "Meaning": "BGP is an external gateway protocol."
+  },
+  {
+    "Network Abbreviation": "CASB",
+    "Stands For": "Cloud Access Security Broker",
+    "Meaning": "CASB is a security intermediary between cloud users and cloud-based applications. CASBs manage and enforce all data security policies and practices, including authentication, authorization, alerts, and encryption."
   },
   {
     "Network Abbreviation": "CatOS",
@@ -65,9 +70,14 @@
     "Meaning": "A network protocol that automatically assigns IP addresses and network configuration parameters to devices on a network."
   },
   {
+    "Network Abbreviation": "DLP",
+    "Stands For": "Data Loss Prevention",
+    "Meaning": "DLP in cybersecurity refers to a set of tools, strategies, and processes designed to prevent the unauthorized access, use, or transmission of sensitive data. It ensures that confidential information, such as personally identifiable information (PII) or intellectual property (IP), remains secure and is not accidentally or maliciously shared outside an organization."
+  },
+  {
     "Network Abbreviation": "DMVPN",
     "Stands For": "Dynamic Multipoint VPN",
-    "Meaning": "a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel."
+    "Meaning": "DMVPN is a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel."
   },
   {
     "Network Abbreviation": "DNS",
@@ -85,6 +95,11 @@
     "Meaning": "A router elected in OSPF broadcast networks to reduce the number of adjacencies and manage link-state information exchange."
   },
   {
+    "Network Abbreviation": "DREAD",
+    "Stands For": "Damage. Reproducibility. Exploitability. Affected user., Discoverability",
+    "Meaning": "DREAD is a risk assessment and threat modeling system for computer security threats."
+  },
+  {
     "Network Abbreviation": "EC2",
     "Stands For": "Amazon Elastic Compute Cloud",
     "Meaning": "Amazon Elastic Compute Cloud (EC2) is a part of Amazon 's cloud-computing platform, Amazon Web Services (AWS), that allows users to rent virtual computers on which to run their own computer applications."
@@ -97,7 +112,7 @@
   {
     "Network Abbreviation": "EIGRP ",
     "Stands For": "Enhanced Interior Gateway Routing Protocol",
-    "Meaning": "routing protocol, popular in Cisco environment"
+    "Meaning": "EIGRP is a routing protocol, popular in Cisco environment."
   },
   {
     "Network Abbreviation": "EXP",
@@ -118,6 +133,11 @@
     "Network Abbreviation": "FTP",
     "Stands For": "File Transfer Protocol",
     "Meaning": "A standard network protocol used to transfer files between a client and server over TCP/IP networks."
+  },
+  {
+    "Network Abbreviation": "FWaaS",
+    "Stands For": "Firewall as a Service",
+    "Meaning": "Network security technology known as “firewall as a service” (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
   },
   {
     "Network Abbreviation": "GEC",
@@ -167,12 +187,17 @@
   {
     "Network Abbreviation": "ICMP ",
     "Stands For": "Internet Control Message Protocol ",
-    "Meaning": "a supported protocol in the IP suite used for error reporting, operational information, and network diagnostics."
+    "Meaning": "ICMP is a supported protocol in the IP suite used for error reporting, operational information, and network diagnostics."
   },
   {
     "Network Abbreviation": "IDS",
     "Stands For": "Intrusion Detection System",
     "Meaning": "A security system that monitors network traffic for suspicious activity and alerts administrators to potential threats."
+  },
+  {
+    "Network Abbreviation": "IDS",
+    "Stands For": "Intrusion Detection System",
+    "Meaning": "IDS in networking is a security mechanism that monitors network traffic to detect suspicious or malicious activities and alerts administrators when potential threats are identified. "
   },
   {
     "Network Abbreviation": "IGP",
@@ -200,9 +225,14 @@
     "Meaning": "Newer OS that took after CatOS"
   },
   {
+    "Network Abbreviation": "IPS",
+    "Stands For": "Intrusion Prevention System",
+    "Meaning": " It is a network security tool that monitors traffic, detects threats, and proactively blocks or mitigates them in real-time to protect the network"
+  },
+  {
     "Network Abbreviation": "IPsec",
     "Stands For": "Internet Protocol Security",
-    "Meaning": "is a protocol used to secure IP communications by encrypting and authenticating IP packets."
+    "Meaning": "IPsec is a protocol used to secure IP communications by encrypting and authenticating IP packets."
   },
   {
     "Network Abbreviation": "LACP",
@@ -262,7 +292,7 @@
   {
     "Network Abbreviation": "MPLS",
     "Stands For": "Multi Protocol Label Switching",
-    "Meaning": "is a routing technique in telecommunications networks that directs data from one node to the next based on labels rather than network addresses."
+    "Meaning": "MPLS is a routing technique in telecommunications networks that directs data from one node to the next based on labels rather than network addresses."
   },
   {
     "Network Abbreviation": "MPOE",
@@ -282,7 +312,12 @@
   {
     "Network Abbreviation": "NAT",
     "Stands For": "Network Address Translation",
-    "Meaning": "a technique that modifies IP address information in packet headers, enabling multiple devices on a private network to share a single public IP address for internet communication."
+    "Meaning": "NAT a technique that modifies IP address information in packet headers, enabling multiple devices on a private network to share a single public IP address for internet communication."
+  },
+  {
+    "Network Abbreviation": "NGFW",
+    "Stands For": "Next-generation firewall",
+    "Meaning": "A next-generation firewall (NGFW) is a network security device that identifies and controls applications, users, and content to enforce precise security policies. It inspects traffic beyond ports and protocols to detect threats and prevent misuse of legitimate applications."
   },
   {
     "Network Abbreviation": "NLRI",
@@ -312,7 +347,7 @@
   {
     "Network Abbreviation": "OSPF",
     "Stands For": "Open Shortest Path First",
-    "Meaning": "routing protocol, determine link cost. 100,000,000 divide by the bandwidth of the link in bits per second (bps)"
+    "Meaning": "OSPF is a routing protocol, determine link cost. 100,000,000 divide by the bandwidth of the link in bits per second (bps)"
   },
   {
     "Network Abbreviation": "OTN",
@@ -322,12 +357,17 @@
   {
     "Network Abbreviation": "PAgP",
     "Stands For": "Port Aggregation Protocol",
-    "Meaning": "Cisco proprietary protocol"
+    "Meaning": "PAgP is a Cisco Systems proprietary networking protocol, which is used for the automated, link aggregation of Ethernet switch ports, known as an EtherChannel."
   },
   {
     "Network Abbreviation": "PAP",
     "Stands For": "password authentication protocol",
     "Meaning": "A simple authentication protocol that transmits passwords in clear text, making it less secure than modern alternatives."
+  },
+  {
+    "Network Abbreviation": "PAT",
+    "Stands For": "Port Address Translation",
+    "Meaning": "PAT is a network technology that allows multiple devices on a local area network (LAN) to share a single public IP address for accessing the Internet. This is achieved by assigning unique port numbers to each session initiated by the devices."
   },
   {
     "Network Abbreviation": "PDU",
@@ -367,7 +407,7 @@
   {
     "Network Abbreviation": "RIB",
     "Stands For": "Route Information Base",
-    "Meaning": "the routing table"
+    "Meaning": "In computer networking, a routing table, or routing information base (RIB), is a data table stored in a router or a network host that lists the routes to particular network destinations, and in some cases, metrics (distances) associated with those routes."
   },
   {
     "Network Abbreviation": "RIP",
@@ -393,6 +433,16 @@
     "Network Abbreviation": "SASE",
     "Stands For": "Secure Access Service Edge",
     "Meaning": "SASE is a cloud-native architecture that combines wide area networking (WAN) and security functions into a single service, enhancing security and simplifying management for modern businesses."
+  },
+  {
+    "Network Abbreviation": "SASE",
+    "Stands For": "Secure Access Service Edge",
+    "Meaning": "SASE, is an enterprise networking and security category introduced by Gartner. SASE converges SD-WAN, a Cloud Network, and Security Service Edge (SSE) functions, including FWaaS, CASB, DLP, SWG, and ZTNA, into a unified, cloud-native service."
+  },
+  {
+    "Network Abbreviation": "SD-WAN",
+    "Stands For": "Software-Defined Wide Area Network",
+    "Meaning": "SD-WAN is a wide area network that uses software-defined networking technology, such as communicating over the Internet using overlay tunnels which are encrypted when destined for internal organization locations."
   },
   {
     "Network Abbreviation": "SDH",
@@ -440,6 +490,11 @@
     "Meaning": "You can analyze network traffic passing through a port by using SPAN (Switched Port Analyzer), sometimes called port mirroring. This allows you to copy traffic as it moves to one port and make a copy of it on another. You can then capture this traffic using a tool like WireShark."
   },
   {
+    "Network Abbreviation": "SPAN",
+    "Stands For": "Switch Port Analyzer",
+    "Meaning": "SPAN is a network monitoring function that copies traffic from one or more source ports to a destination port for analysis. It is not a protocol but a vendor-specific feature available on switches for packet capture and troubleshooting."
+  },
+  {
     "Network Abbreviation": "SSH",
     "Stands For": "Secure Shell",
     "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
@@ -455,14 +510,29 @@
     "Meaning": "A Layer 2 protocol that prevents network loops in Ethernet networks by creating a loop-free logical topology."
   },
   {
+    "Network Abbreviation": "STRIDE",
+    "Stands For": "Spoofing. Tampering. Repudiation. Information Disclosure. Denial of Service. Elevation of Privilege",
+    "Meaning": "The STRIDE model is a threat modeling framework developed by Microsoft that helps identify and classify potential security threats to systems. "
+  },
+  {
     "Network Abbreviation": "SVI",
     "Stands For": "Switched Virtual Interface",
     "Meaning": "A virtual interface on a Layer 3 switch that represents a VLAN, enabling inter-VLAN routing without the need for an external router."
   },
   {
+    "Network Abbreviation": "SWG",
+    "Stands For": "Secure Web Gateway",
+    "Meaning": "SWG is an on-premises or cloud-delivered network security technology that filters internet traffic and enforces corporate and regulatory policy compliance."
+  },
+  {
     "Network Abbreviation": "TACACS+",
     "Stands For": "Terminal access controller access controll system",
     "Meaning": "TACACS+ stands for Terminal Access Controller Access Control System. It is a Cisco proprietary AAA protocol. It separates each of the AAA functions. It uses TCP port 49 for communication. It encrypts all communications. TACACS+ works in a client/server architecture."
+  },
+  {
+    "Network Abbreviation": "TAP",
+    "Stands For": "Test Access Point",
+    "Meaning": "Test Access Point is a hardware device that is placed on a network segment, allowing you to access and monitor network traffic. Network taps allow traffic to flow without interruption or interference."
   },
   {
     "Network Abbreviation": "TAXII",
@@ -515,6 +585,11 @@
     "Meaning": "This identifies only the namespace of the resource (web page, document, image, etc.) without reference to the protocol."
   },
   {
+    "Network Abbreviation": "UTM",
+    "Stands For": "Unified Threat Management",
+    "Meaning": "UTM refers to when multiple security features or services are combined into a single device within your network."
+  },
+  {
     "Network Abbreviation": "VACL",
     "Stands For": "VLAN Access Control List",
     "Meaning": "An access control list applied to VLANs to filter traffic within the same VLAN or between VLANs on a switch."
@@ -543,11 +618,6 @@
     "Network Abbreviation": "VPN",
     "Stands For": "Virtual Private Network",
     "Meaning": "A secure connection established over a public network that encrypts data and provides privacy for remote users."
-  },
-  {
-    "Network Abbreviation": "VRF",
-    "Stands For": "Virtual Routing and Forwarding",
-    "Meaning": "A technology that allows multiple routing tables to coexist on the same router, enabling network segmentation and isolation."
   },
   {
     "Network Abbreviation": "VRF",
