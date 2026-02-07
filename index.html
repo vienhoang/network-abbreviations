@@ -310,13 +310,14 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo } = React;
+        const { useState, useEffect, useMemo, useRef } = React;
 
         function App() {
             const [searchTerm, setSearchTerm] = useState('');
             const [abbreviations, setAbbreviations] = useState([]);
             const [loading, setLoading] = useState(true);
             const [error, setError] = useState(null);
+            const btcAddressRef = useRef(null);
 
             // Simulerar AJAX-hämtning av JSON-data
             useEffect(() => {
@@ -375,6 +376,33 @@
                     part.toLowerCase() === search.toLowerCase() ? 
                         <span key={i} className="highlight">{part}</span> : part
                 );
+            };
+
+            // Bitcoin copy handler med smooth animation
+            const handleBitcoinCopy = async () => {
+                const btcElement = btcAddressRef.current;
+                const originalText = btcElement.textContent;
+                const btcAddress = 'bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf';
+                
+                try {
+                    await navigator.clipboard.writeText(btcAddress);
+                    btcElement.textContent = '✓ Copied!';
+                    btcElement.style.background = 'rgba(46, 204, 113, 0.3)';
+                    
+                    setTimeout(() => {
+                        btcElement.textContent = originalText;
+                        btcElement.style.background = 'rgba(255, 255, 255, 0.1)';
+                    }, 2000);
+                } catch (err) {
+                    // Fallback for older browsers
+                    btcElement.textContent = '✓ Copied!';
+                    btcElement.style.background = 'rgba(46, 204, 113, 0.3)';
+                    
+                    setTimeout(() => {
+                        btcElement.textContent = originalText;
+                        btcElement.style.background = 'rgba(255, 255, 255, 0.1)';
+                    }, 2000);
+                }
             };
 
             if (loading) {
@@ -468,12 +496,11 @@
                                     💰 Bitcoin Donations
                                 </div>
                                 <div 
+                                    ref={btcAddressRef}
                                     className="bitcoin-address"
-                                    onClick={() => {
-                                        navigator.clipboard.writeText('bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf');
-                                        alert('Bitcoin address copied!');
-                                    }}
-                                    title="Click to copy">
+                                    onClick={handleBitcoinCopy}
+                                    title="Click to copy"
+                                >
                                     bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf
                                 </div>
                             </div>
