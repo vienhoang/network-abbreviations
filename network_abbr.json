@@ -237,7 +237,7 @@
   {
     "Network Abbreviation": "IKE",
     "Stands For": "Internet Key Exchange",
-    "Meaning": "IKE is a protocol used to set up a secure, authenticated communication channel between devices. What does IKE stand for in networking? In networking, IKE stands for Internet Key Exchange. What is IKE policy? An IKE policy defines how devices authenticate and secure a connection."
+    "Meaning": "IKE is a protocol used to establish secure VPN connections by negotiating and managing encryption keys between two parties."
   },
   {
     "Network Abbreviation": "IMAP",
