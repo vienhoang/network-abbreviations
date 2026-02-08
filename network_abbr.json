@@ -15,6 +15,16 @@
     "Meaning": "An Amazon Machine Image (AMI) is a special type of virtual appliance used to create a virtual machine within Amazon EC2."
   },
   {
+    "Network Abbreviation": "ARP",
+    "Stands For": "Address Resolution Protocol",
+    "Meaning": "ARP is a layer 2 network protocol that maps IP addresses to the physical MAC addresses of devices on a network."
+  },
+  {
+    "Network Abbreviation": "ARP Poisoning",
+    "Stands For": "ARP poisoning",
+    "Meaning": "ARP poisoning is an attack where a hacker sends falsified ARP messages to a network to disrupt casual network performance. Such attacks can potentially cause companies and organizations data loss, system crashes, performance issues, and even reputational damage."
+  },
+  {
     "Network Abbreviation": "ASBR",
     "Stands For": "Autonomous system border router ",
     "Meaning": "A router that connects an OSPF autonomous system to external networks, redistributing routes from other routing protocols into OSPF."
@@ -23,6 +33,11 @@
     "Network Abbreviation": "ASE",
     "Stands For": "Autonomous System External",
     "Meaning": "Routes that originate from outside the OSPF autonomous system and are redistributed into OSPF by an ASBR."
+  },
+  {
+    "Network Abbreviation": "Audit Trail",
+    "Stands For": "audit trail",
+    "Meaning": "Audit trails provide a comprehensive record of user activities within a network or system, showing who did what and when. These logs play an important role in modern security, compliance, and fraud prevention, providing better system transparency and accountability."
   },
   {
     "Network Abbreviation": "BDR",
@@ -65,6 +80,11 @@
     "Meaning": "CVE stands for Common Vulnerabilities and Exposures. It is a system that provides a reference method for publicly known information-security vulnerabilities and exposures."
   },
   {
+    "Network Abbreviation": "DDoS",
+    "Stands For": "Distributed Denial of Service",
+    "Meaning": "DDoS is a type of cyberattack aimed at disrupting the normal functioning of a server, service, or network by overwhelming it with a flood of internet traffic. This attack is executed using multiple compromised devices, often referred to as a botnet, which work together to send excessive requests to the target, rendering it inaccessible to legitimate users."
+  },
+  {
     "Network Abbreviation": "DHCP",
     "Stands For": "Dynamic Host Configuration Protocol",
     "Meaning": "A network protocol that automatically assigns IP addresses and network configuration parameters to devices on a network."
@@ -80,9 +100,19 @@
     "Meaning": "DMVPN is a Cisco-developed solution that allows routers to dynamically create a full mesh of IPsec tunnels without having to manually configure every single tunnel."
   },
   {
+    "Network Abbreviation": "DMZ",
+    "Stands For": "Demilitarized Zone",
+    "Meaning": "DMZ in networking refers to a perimeter network that acts as a buffer between an organization's internal network (LAN) and untrusted external networks, such as the internet. It is designed to enhance security by isolating public-facing services from sensitive internal systems."
+  },
+  {
     "Network Abbreviation": "DNS",
     "Stands For": "Domain Name System",
     "Meaning": "A crucial system on the internet that acts as a \"phone book\" for domain names."
+  },
+  {
+    "Network Abbreviation": "DNS Spoofing",
+    "Stands For": "DNS spoofing",
+    "Meaning": "DNS Spoofing, also known as DNS Cache Poisoning, is a cyberattack where altered DNS records are used to redirect users to fraudulent websites that mimic legitimate ones. This attack exploits vulnerabilities in the DNS, which maps domain names."
   },
   {
     "Network Abbreviation": "DNSSEC",
@@ -192,12 +222,12 @@
   {
     "Network Abbreviation": "IDS",
     "Stands For": "Intrusion Detection System",
-    "Meaning": "A security system that monitors network traffic for suspicious activity and alerts administrators to potential threats."
+    "Meaning": "IDS in networking is a security mechanism that monitors network traffic to detect suspicious or malicious activities and alerts administrators when potential threats are identified. "
   },
   {
-    "Network Abbreviation": "IDS",
-    "Stands For": "Intrusion Detection System",
-    "Meaning": "IDS in networking is a security mechanism that monitors network traffic to detect suspicious or malicious activities and alerts administrators when potential threats are identified. "
+    "Network Abbreviation": "IETF",
+    "Stands For": "Internet Engineering Task Force",
+    "Meaning": "IETF is a nonprofit open standards organization that develops internet standards. It’s an international community of network designers, operators, vendors and researchers cooperating in a wide variety of working groups."
   },
   {
     "Network Abbreviation": "IGP",
@@ -223,6 +253,16 @@
     "Network Abbreviation": "IOS",
     "Stands For": "Internetwork Operating System",
     "Meaning": "Newer OS that took after CatOS"
+  },
+  {
+    "Network Abbreviation": "IP",
+    "Stands For": "Internet Protocol",
+    "Meaning": "IP is the fundamental communication protocol used for routing and addressing packets across networks, enabling devices to connect and communicate globally."
+  },
+  {
+    "Network Abbreviation": "IP adress ",
+    "Stands For": "Internet Protocol Address",
+    "Meaning": "An IP address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions: identifying the host or network interface and providing the location of the host in the network, thus enabling the establishment of a path to that host."
   },
   {
     "Network Abbreviation": "IPS",
@@ -320,6 +360,11 @@
     "Meaning": "A next-generation firewall (NGFW) is a network security device that identifies and controls applications, users, and content to enforce precise security policies. It inspects traffic beyond ports and protocols to detect threats and prevent misuse of legitimate applications."
   },
   {
+    "Network Abbreviation": "NIST",
+    "Stands For": "National Institute of Standards and Technology",
+    "Meaning": "NIST plays a critical role in shaping secure networking practices through its guidelines and frameworks. NIST's contributions to networking primarily focus on addressing the evolving challenges of enterprise networks, ensuring robust security, and enabling efficient management of IT resources."
+  },
+  {
     "Network Abbreviation": "NLRI",
     "Stands For": "Network Layer Reachability Information",
     "Meaning": "Information carried in BGP updates that describes IP prefixes and their associated attributes for routing decisions."
@@ -405,6 +450,11 @@
     "Meaning": "Remote Authentication Dial In User Service (RADIUS) is an Internet standard protocol that provides centralized authentication, accounting and IP management services for remote access users in a distributed dial-up network."
   },
   {
+    "Network Abbreviation": "RFC",
+    "Stands For": "Request for Comments",
+    "Meaning": "An RFC is a type of technical document that serves as the foundation for the development and standardization of internet technologies. These documents are published by the Internet Engineering Task Force (IETF) and describe protocols, procedures, and best practices for the internet."
+  },
+  {
     "Network Abbreviation": "RIB",
     "Stands For": "Route Information Base",
     "Meaning": "In computer networking, a routing table, or routing information base (RIB), is a data table stored in a router or a network host that lists the routes to particular network destinations, and in some cases, metrics (distances) associated with those routes."
@@ -430,6 +480,11 @@
     "Meaning": "An extended community attribute used in BGP to control the import and export of routes between VRF instances."
   },
   {
+    "Network Abbreviation": "Sandboxing",
+    "Stands For": "sandboxing",
+    "Meaning": "A network sandbox is an isolated testing environment that enables security teams to observe, analyze, detect, and block suspicious artifacts traversing the network. A network sandbox provides an additional layer of defense against previously unknown attack vectors."
+  },
+  {
     "Network Abbreviation": "SASE",
     "Stands For": "Secure Access Service Edge",
     "Meaning": "SASE is a cloud-native architecture that combines wide area networking (WAN) and security functions into a single service, enhancing security and simplifying management for modern businesses."
@@ -448,6 +503,11 @@
     "Network Abbreviation": "SDH",
     "Stands For": "synchronous digital hierarchy",
     "Meaning": "The European standard for synchronous data transmission over fiber optic networks, equivalent to SONET."
+  },
+  {
+    "Network Abbreviation": "SHA-256",
+    "Stands For": "Secure Hash Algorithm 256-bit",
+    "Meaning": "SHA-256 is a cryptographic hash function that converts input data into a fixed-length 256-bit string. It is widely used in blockchain, digital signatures, and password hashing to protect data from tampering and unauthorized access."
   },
   {
     "Network Abbreviation": "SIEM",
@@ -603,6 +663,11 @@
     "Network Abbreviation": "VLSM",
     "Stands For": "Variable Length Subnet Mask",
     "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
+  },
+  {
+    "Network Abbreviation": "VM Escape",
+    "Stands For": "Virtual Machine Escape",
+    "Meaning": "VM Escape is a cybersecurity threat where an attacker exploits vulnerabilities in virtualization software to break out of a virtual machine (VM) and gain access to the underlying host system."
   },
   {
     "Network Abbreviation": "VoIP",
