@@ -55,6 +55,25 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
+        /* Global links */
+        a:link {
+            color: #3498db;
+            text-decoration: none;
+        } 
+        
+        a:visited { 
+            color: #3498db;
+        } 
+        
+        a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        } 
+        
+        a:active { 
+            color: #34495e;
+        }
+        
         .subtitle {
             font-size: 1.1rem;
             opacity: 0.9;
@@ -82,7 +101,7 @@
             font-size: 1.5rem;
         }
 
-        input[type="text"] {
+        input[type="text"]:not(.share-url-input) {
             width: 100%;
             padding: 1.25rem 1.5rem 1.25rem 4rem;
             font-size: 1.2rem;
@@ -112,6 +131,80 @@
             gap: 1.5rem;
             animation: fadeIn 0.5s ease;
         }
+
+        /* Share box*/
+        .share-box {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .share-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .share-url-container {
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .share-url-input {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            background: var(--background);
+            font-family: monospace;
+            max-width: 400px;
+            width: 50%;
+        }
+
+        .copy-url-btn {
+            padding: 0.5rem 1rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .copy-url-btn:hover {
+            background: #2980b9;
+        }
+
+        .share-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .share-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .share-links a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .share-separator {
+            color: var(--text-secondary);
+        }
+
 
         @keyframes fadeIn {
             from {
@@ -261,7 +354,8 @@
             transform: scale(1.02);
         }
 
-        .linkedin-link {
+        /* LinkedIn button */
+        a.linkedin-link {
             color: white;
             text-decoration: none;
             padding: 0.75rem 1.5rem;
@@ -274,7 +368,7 @@
             font-weight: 500;
         }
 
-        .linkedin-link:hover {
+        a.linkedin-link:hover {
             background: #005885;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
@@ -405,6 +499,26 @@
                 }
             };
 
+            // Share URL copy handler
+            const handleShareCopy = async () => {
+                const currentUrl = window.location.href;
+                
+                try {
+                    await navigator.clipboard.writeText(currentUrl);
+                    const btn = document.querySelector('.copy-url-btn');
+                    const originalText = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    btn.style.background = 'rgba(46, 204, 113, 0.8)';
+                    
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.style.background = '';
+                    }, 2000);
+                } catch (err) {
+                    alert('URL copied to clipboard!');
+                }
+            };
+
             if (loading) {
                 return (
                     <div className="container">
@@ -453,7 +567,36 @@
                             />
                         </div>
                         <div className="results-info">
-                            Showing {filteredResults.length} by {abbreviations.length} abbreviations
+                            Showing {filteredResults.length} by {abbreviations.length} abbreviations 
+                            <p><a href="#donation">Donate</a> ❤️</p>
+                        </div>
+
+                        <div className="share-box">
+                            <div className="share-title">Share with classmates & colleagues:</div>
+                            <div className="share-url-container">
+                                <input 
+                                    type="text" 
+                                    className="share-url-input" 
+                                    value={window.location.href}
+                                    readOnly
+                                />
+                                <button 
+                                    className="copy-url-btn"
+                                    onClick={handleShareCopy}
+                                >
+                                    Copy URL
+                                </button>
+                            </div>
+                            <div className="share-links">
+                                <span>Click to share:</span>
+                                <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=Check%20out%20this%20Network%20%26%20Cybersecurity%20Abbreviations%20guide!`} target="_blank" rel="noopener noreferrer">Twitter</a>
+                                <span className="share-separator">|</span>
+                                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer">Facebook</a>
+                                <span className="share-separator">|</span>
+                                <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <span className="share-separator">|</span>
+                                <a href={`https://www.reddit.com/submit?url=${encodeURIComponent(window.location.href)}&title=Network%20%26%20Cybersecurity%20Abbreviations`} target="_blank" rel="noopener noreferrer">Reddit</a>
+                            </div>
                         </div>
                     </div>
 
@@ -491,9 +634,9 @@
                                 Created by <strong>Vien Hoang</strong>
                             </div>
                             
-                            <div className="donation-section">
+                            <div id="donation" className="donation-section">
                                 <div style={{fontSize: '0.9rem', opacity: 0.9}}>
-                                    💰 Bitcoin Donations
+                                    ₿ Bitcoin Donations
                                 </div>
                                 <div 
                                     ref={btcAddressRef}
