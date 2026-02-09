@@ -130,6 +130,11 @@
     "Meaning": "DREAD is a risk assessment and threat modeling system for computer security threats."
   },
   {
+    "Network Abbreviation": "DVWA",
+    "Stands For": "Damn Vulnerable Web Application",
+    "Meaning": "DVWA is an intentionally vulnerable web application built with PHP and MySQL, designed for security professionals and students to practice and test penetration testing skills in a safe, legal environment."
+  },
+  {
     "Network Abbreviation": "EC2",
     "Stands For": "Amazon Elastic Compute Cloud",
     "Meaning": "Amazon Elastic Compute Cloud (EC2) is a part of Amazon 's cloud-computing platform, Amazon Web Services (AWS), that allows users to rent virtual computers on which to run their own computer applications."
@@ -205,6 +210,16 @@
     "Meaning": "An application layer protocol used for transmitting hypermedia documents, such as web pages, over the internet."
   },
   {
+    "Network Abbreviation": "hypervisor",
+    "Stands For": "hypervisor",
+    "Meaning": "A hypervisor, also known as a virtual machine monitor (VMM), is a type of software, firmware, or hardware that enables the creation and management of virtual machines (VMs). It allows multiple operating systems to run concurrently on a single physical machine by abstracting and allocating the underlying hardware resources such as CPU, memory, and storage to each VM."
+  },
+  {
+    "Network Abbreviation": "IaaS",
+    "Stands For": "Infrastructure as a Service",
+    "Meaning": "IaaS is a cloud computing model that delivers virtualized computing resources including servers, storage, and networking over the internet on a pay-as-you-go basis. It enables organizations to rent IT infrastructure rather than purchase and maintain physical hardware, reducing capital expenses and operational overhead."
+  },
+  {
     "Network Abbreviation": "IAM ",
     "Stands For": "AWS Identity and Access Management",
     "Meaning": "AWS Identity and Access Management (IAM) is a security service that enables you to securely manage access to AWS resources. It provides the tools to control who is authenticated (signed in) and authorized (has permissions) to use specific AWS services and resources."
@@ -273,6 +288,11 @@
     "Network Abbreviation": "IPsec",
     "Stands For": "Internet Protocol Security",
     "Meaning": "IPsec is a protocol used to secure IP communications by encrypting and authenticating IP packets."
+  },
+  {
+    "Network Abbreviation": "KVM",
+    "Stands For": "Kernel-based Virtual Machine",
+    "Meaning": "KVM is an open-source virtualization technology built into Linux that enables the operating system to function as a hypervisor, allowing it to run multiple virtual machines on a single physical host."
   },
   {
     "Network Abbreviation": "LACP",
@@ -365,9 +385,19 @@
     "Meaning": "NIST plays a critical role in shaping secure networking practices through its guidelines and frameworks. NIST's contributions to networking primarily focus on addressing the evolving challenges of enterprise networks, ensuring robust security, and enabling efficient management of IT resources."
   },
   {
+    "Network Abbreviation": "NIST 800-115 ",
+    "Stands For": "NIST Special Publication 800-115",
+    "Meaning": "The NIST 800-115 standard provides organizations with a structured framework for planning, executing, and analyzing technical information security tests and assessments. It serves as a practical guide to help identify vulnerabilities, verify compliance with security policies and regulations, and develop effective mitigation strategies."
+  },
+  {
     "Network Abbreviation": "NLRI",
     "Stands For": "Network Layer Reachability Information",
     "Meaning": "Information carried in BGP updates that describes IP prefixes and their associated attributes for routing decisions."
+  },
+  {
+    "Network Abbreviation": "Nmap",
+    "Stands For": "Network Mapper",
+    "Meaning": "Nmap is an open-source tool widely used for network discovery, security auditing, and troubleshooting. It helps identify devices, open ports, services, and operating systems on a network. "
   },
   {
     "Network Abbreviation": "NOC",
@@ -378,6 +408,11 @@
     "Network Abbreviation": "NSG",
     "Stands For": "Network Security Group",
     "Meaning": "A network security group (NSG) is a set of rules that controls incoming and outgoing traffic to and from a virtual network interface, subnet, or other network resource within a cloud environment."
+  },
+  {
+    "Network Abbreviation": "On-Prem",
+    "Stands For": "on-premises",
+    "Meaning": "On-prem referring to IT infrastructure, software, or services that are hosted and managed locally at an organization's own physical location rather than in the cloud or at a remote data center."
   },
   {
     "Network Abbreviation": "ONT",
@@ -398,6 +433,16 @@
     "Network Abbreviation": "OTN",
     "Stands For": "optical transport networking",
     "Meaning": "A digital wrapper technology for transporting various client signals over optical networks with enhanced performance monitoring."
+  },
+  {
+    "Network Abbreviation": "P2S VPN",
+    "Stands For": "Point-to-Site VPN",
+    "Meaning": "A P2S VPN enables individual client devices to securely connect to a private network, like Azure Virtual Network, without requiring dedicated VPN hardware at the client location. Unlike Site-to-Site VPNs that connect entire networks, Point-to-Site is designed for remote users and decentralized access."
+  },
+  {
+    "Network Abbreviation": "PaaS",
+    "Stands For": "Platform as a Service",
+    "Meaning": "PaaS is a cloud computing model that provides a ready-to-use platform for developing, running, and managing applications without the need to build or maintain the underlying infrastructure. It enables developers to focus on coding and deploying software while the service provider handles servers, storage, networking, and middleware."
   },
   {
     "Network Abbreviation": "PAgP",
@@ -440,6 +485,11 @@
     "Meaning": "A permanently established virtual circuit in Frame Relay or ATM networks that provides a dedicated path between two endpoints."
   },
   {
+    "Network Abbreviation": "QEMU",
+    "Stands For": "Quick Emulator",
+    "Meaning": "QEMU is a free open-source hardware emulator and virtualization tool that enables you to run and manage virtual machines by emulating various CPU architectures and devices."
+  },
+  {
     "Network Abbreviation": "QoS",
     "Stands For": "quality of service",
     "Meaning": "Network management techniques that prioritize certain types of traffic to ensure performance levels for critical applications."
@@ -478,6 +528,21 @@
     "Network Abbreviation": "RT",
     "Stands For": "route target",
     "Meaning": "An extended community attribute used in BGP to control the import and export of routes between VRF instances."
+  },
+  {
+    "Network Abbreviation": "S2S VPN",
+    "Stands For": "Site-to-Site VPN",
+    "Meaning": "A S2S VPN establishes a secure, encrypted tunnel over the public internet to connect entire networks—such as branch offices or data centers—as if they were on the same private network. This connection typically relies on protocols like IPsec to authenticate endpoints, encrypt data, and ensure its integrity."
+  },
+  {
+    "Network Abbreviation": "SaaS",
+    "Stands For": "Software as a Service",
+    "Meaning": "A SaaS company delivers software applications over the internet, allowing users to access them via web browsers or mobile apps without installation or local maintenance. The SaaS provider hosts, manages, and updates the software in the cloud, freeing customers from infrastructure concerns and enabling subscription-based, on-demand usage."
+  },
+  {
+    "Network Abbreviation": "salt",
+    "Stands For": "salt (cryptography, cybersecurity)",
+    "Meaning": "In cybersecurity, a salt is a random data string added to a password before hashing to defend against precomputed attacks like rainbow tables, ensuring that even identical passwords produce unique hash values."
   },
   {
     "Network Abbreviation": "Sandboxing",
@@ -527,7 +592,7 @@
   {
     "Network Abbreviation": "SOAR",
     "Stands For": "Security Orchestration Automated Response",
-    "Meaning": "Security Orchestration, Automation, and Response (SOAR) is a comprehensive solution designed to enhance the efficiency and effectiveness of security operations centers (SOCs)."
+    "Meaning": "SOAR is a platform that integrates security tools and automates incident response workflows to improve the efficiency and speed of cybersecurity operations., and Response (SOAR) is a comprehensive solution designed to enhance the efficiency and effectiveness of security operations centers (SOCs)."
   },
   {
     "Network Abbreviation": "SOC",
@@ -543,11 +608,6 @@
     "Network Abbreviation": "SONET",
     "Stands For": "synchronous optical networking",
     "Meaning": "A standardized protocol for transferring multiple digital bit streams synchronously over optical fiber using lasers or LEDs."
-  },
-  {
-    "Network Abbreviation": "SPAN",
-    "Stands For": "switched port analyzer",
-    "Meaning": "You can analyze network traffic passing through a port by using SPAN (Switched Port Analyzer), sometimes called port mirroring. This allows you to copy traffic as it moves to one port and make a copy of it on another. You can then capture this traffic using a tool like WireShark."
   },
   {
     "Network Abbreviation": "SPAN",
@@ -573,6 +633,11 @@
     "Network Abbreviation": "STRIDE",
     "Stands For": "Spoofing. Tampering. Repudiation. Information Disclosure. Denial of Service. Elevation of Privilege",
     "Meaning": "The STRIDE model is a threat modeling framework developed by Microsoft that helps identify and classify potential security threats to systems. "
+  },
+  {
+    "Network Abbreviation": "STT",
+    "Stands For": "Stateless Transport Tunneling",
+    "Meaning": "STT is a high-performance network virtualization protocol that encapsulates traffic efficiently in software-based environments like hypervisors. It overcomes traditional tunneling bottlenecks by utilizing TCP Segmentation Offload (TSO) capabilities in modern network interface cards to improve throughput."
   },
   {
     "Network Abbreviation": "SVI",
@@ -618,6 +683,16 @@
     "Network Abbreviation": "TLV",
     "Stands For": "Type‑Length‑Value",
     "Meaning": "Type-Length-Value (TLV) - also called Tag-Length-Value - is a common data encoding scheme used in communication protocols, file formats, and data serialization."
+  },
+  {
+    "Network Abbreviation": "Type 1 hypervisor",
+    "Stands For": "Type 1 hypervisor",
+    "Meaning": "A Type 1 hypervisor, also known as a bare-metal hypervisor, is the type of hypervisor that runs directly on the host machine’s physical hardware without requiring a host operating system in between. This direct interaction with the CPU, memory, storage, and network interfaces allows it to deliver high performance, low latency, and strong isolation for virtual machines (VMs) ."
+  },
+  {
+    "Network Abbreviation": "Type 2 hypervisor",
+    "Stands For": "Type 2 hypervisor",
+    "Meaning": "A Type 2 Hypervisor, also known as a hosted hypervisor, is a virtualization software that runs on top of a host operating system (OS). Unlike Type 1 hypervisors, which interact directly with hardware, Type 2 hypervisors rely on the host OS to manage hardware resources. This makes them more accessible and easier to use for non-enterprise environments."
   },
   {
     "Network Abbreviation": "UCS",
@@ -670,6 +745,11 @@
     "Meaning": "VM Escape is a cybersecurity threat where an attacker exploits vulnerabilities in virtualization software to break out of a virtual machine (VM) and gain access to the underlying host system."
   },
   {
+    "Network Abbreviation": "VMM",
+    "Stands For": "Virtual Machine Monitor",
+    "Meaning": "VMM provides network virtualization, including support for creating and managing virtual networks and network gateways. Network virtualization allows multiple tenants to have isolated networks and their own IP address ranges for increased privacy and security."
+  },
+  {
     "Network Abbreviation": "VoIP",
     "Stands For": "Voice over IP",
     "Meaning": "Technology that enables voice communications to be transmitted over IP networks instead of traditional telephone lines."
@@ -693,6 +773,16 @@
     "Network Abbreviation": "VSI",
     "Stands For": "Virtual Server Instance",
     "Meaning": "A virtualized server instance running on shared physical hardware in cloud or virtualized environments."
+  },
+  {
+    "Network Abbreviation": "VTEP",
+    "Stands For": "VXLAN tunnel endpoint",
+    "Meaning": "VTEPs provide connectivity between overlay and underlay networks and are responsible for frame encapsulation into VXLAN packets to transport them across IP networks (underlay) and perform de-encapsulation once packet leaves VXLAN channel."
+  },
+  {
+    "Network Abbreviation": "VXLAN",
+    "Stands For": "Virtual eXtensible LAN",
+    "Meaning": "VXLAN is a network virtualization technology that uses a VLAN -like encapsulation technique to encapsulate OSI layer 2 Ethernet frames within layer 4 UDP datagrams, using 4789 as the default IANA -assigned destination UDP port number, although many implementations that predate the IANA assignment use port 8472. "
   },
   {
     "Network Abbreviation": "ZTNA",
