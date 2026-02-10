@@ -40,6 +40,21 @@
     "Meaning": "Audit trails provide a comprehensive record of user activities within a network or system, showing who did what and when. These logs play an important role in modern security, compliance, and fraud prevention, providing better system transparency and accountability."
   },
   {
+    "Network Abbreviation": "AWS",
+    "Stands For": "Amazon Web Services",
+    "Meaning": "AWS is a comprehensive cloud platform offering a wide range of networking and security services, such as VPC, Security Groups, and AWS Shield, for building and protecting scalable infrastructure."
+  },
+  {
+    "Network Abbreviation": "Azure",
+    "Stands For": "Microsoft's cloud computing platform",
+    "Meaning": "Azure is Microsoft's cloud computing platform, offering networking services like Virtual Network, Azure Firewall, and ExpressRoute for building and connecting secure, scalable infrastructures. "
+  },
+  {
+    "Network Abbreviation": "baiting",
+    "Stands For": "baiting",
+    "Meaning": "Baiting involves offering something enticing like free software or media to lure victims into downloading malware or disclosing credentials. Often delivered via physical media (e.g., infected USB drives) or online ads, baiting exploits curiosity and greed to compromise systems."
+  },
+  {
     "Network Abbreviation": "BDR",
     "Stands For": "Backup designated router",
     "Meaning": "A backup router in OSPF that takes over the designated router role if the DR fails, reducing adjacency overhead in broadcast networks."
@@ -57,7 +72,7 @@
   {
     "Network Abbreviation": "CatOS",
     "Stands For": "Catalyst Operating System",
-    "Meaning": "Older OS för Ciscos Catalyst switches"
+    "Meaning": "Older OS för Ciscos Catalyst switches."
   },
   {
     "Network Abbreviation": "CHAP",
@@ -80,6 +95,11 @@
     "Meaning": "CVE stands for Common Vulnerabilities and Exposures. It is a system that provides a reference method for publicly known information-security vulnerabilities and exposures."
   },
   {
+    "Network Abbreviation": "data exfilitration",
+    "Stands For": "data exfilitration",
+    "Meaning": "Data exfiltration is the unauthorized transfer or theft of sensitive information from a victim's network to an external location controlled by the attacker. It often involves stealthy techniques like covert channels, encryption, or blending with legitimate traffic to avoid detection by security monitoring systems."
+  },
+  {
     "Network Abbreviation": "DDoS",
     "Stands For": "Distributed Denial of Service",
     "Meaning": "DDoS is a type of cyberattack aimed at disrupting the normal functioning of a server, service, or network by overwhelming it with a flood of internet traffic. This attack is executed using multiple compromised devices, often referred to as a botnet, which work together to send excessive requests to the target, rendering it inaccessible to legitimate users."
@@ -88,6 +108,11 @@
     "Network Abbreviation": "DHCP",
     "Stands For": "Dynamic Host Configuration Protocol",
     "Meaning": "A network protocol that automatically assigns IP addresses and network configuration parameters to devices on a network."
+  },
+  {
+    "Network Abbreviation": "distributed routing",
+    "Stands For": "distributed routing",
+    "Meaning": "Distributed routing involves spreading routing decisions across multiple network devices, such as routers or switches rather than relying on a centralized controller."
   },
   {
     "Network Abbreviation": "DLP",
@@ -120,6 +145,11 @@
     "Meaning": "A suite of extensions to DNS that provides authentication of DNS data to prevent spoofing and cache poisoning attacks."
   },
   {
+    "Network Abbreviation": "DPG",
+    "Stands For": "Distributed Port Group",
+    "Meaning": "A DPG is a configuration template in virtual networking that defines port settings such as VLAN, security, and traffic shaping for a group of virtual switch ports across multiple hosts."
+  },
+  {
     "Network Abbreviation": "DR",
     "Stands For": "Designated router",
     "Meaning": "A router elected in OSPF broadcast networks to reduce the number of adjacencies and manage link-state information exchange."
@@ -128,6 +158,11 @@
     "Network Abbreviation": "DREAD",
     "Stands For": "Damage. Reproducibility. Exploitability. Affected user., Discoverability",
     "Meaning": "DREAD is a risk assessment and threat modeling system for computer security threats."
+  },
+  {
+    "Network Abbreviation": "DVS",
+    "Stands For": "Distributed Virtual Switch",
+    "Meaning": "A DVS is a network switch that spans multiple hypervisor hosts, providing centralized management and consistent network policies across a virtualized environment. "
   },
   {
     "Network Abbreviation": "DVWA",
@@ -140,6 +175,11 @@
     "Meaning": "Amazon Elastic Compute Cloud (EC2) is a part of Amazon 's cloud-computing platform, Amazon Web Services (AWS), that allows users to rent virtual computers on which to run their own computer applications."
   },
   {
+    "Network Abbreviation": "ECMP",
+    "Stands For": "Equal-Cost Multi-Path",
+    "Meaning": "ECMP is a routing mechanism that allows traffic to be distributed across multiple paths of equal cost to improve bandwidth utilization and redundancy. "
+  },
+  {
     "Network Abbreviation": "EGP",
     "Stands For": "External Gateway Protocol",
     "Meaning": "A category of routing protocols used to exchange routing information between different autonomous systems on the internet."
@@ -150,9 +190,24 @@
     "Meaning": "EIGRP is a routing protocol, popular in Cisco environment."
   },
   {
+    "Network Abbreviation": "EVPN",
+    "Stands For": "Ethernet VPN",
+    "Meaning": "EVPN is a standards-based control plane technology used to distribute MAC and IP address information across a network, enabling scalable Layer 2 and Layer 3 overlays, often paired with VXLAN. "
+  },
+  {
     "Network Abbreviation": "EXP",
     "Stands For": "experimental bits ",
     "Meaning": "The QoS EXP Matching feature allows you to classify and mark network traffic by modifying the Multiprotocol Label Switching (MPLS) experimental bits (EXP) field in IP packets."
+  },
+  {
+    "Network Abbreviation": "ExpressRoute",
+    "Stands For": "ExpressRoute",
+    "Meaning": "ExpressRoute is a dedicated, private network connection service offered by Microsoft Azure that bypasses the public internet to provide secure, reliable connectivity between on-premises infrastructure and Azure cloud services."
+  },
+  {
+    "Network Abbreviation": "fabric",
+    "Stands For": "fabric | network fabric",
+    "Meaning": "A network fabric is the interconnected mesh of devices switches, routers, and access points that enables data transport across a network. While it can refer to physical wiring, it most commonly describes a virtualized, automated overlay that abstracts and operates on top of the underlying physical infrastructure."
   },
   {
     "Network Abbreviation": "FCoE ",
@@ -175,6 +230,11 @@
     "Meaning": "Network security technology known as “firewall as a service” (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
   },
   {
+    "Network Abbreviation": "GCP",
+    "Stands For": "Google Cloud Platform",
+    "Meaning": "GCP is Google's suite of cloud services that includes networking solutions like Virtual Private Cloud (VPC), Cloud Load Balancing, and Cloud Armor for DDoS protection. "
+  },
+  {
     "Network Abbreviation": "GEC",
     "Stands For": "Gigabit EtherChannel",
     "Meaning": "A technology that aggregates multiple Gigabit Ethernet links into a single logical connection for increased throughput and redundancy."
@@ -182,7 +242,7 @@
   {
     "Network Abbreviation": "GENEVE",
     "Stands For": "Generic Network Virtualization Encapsulation",
-    "Meaning": "Generic Network Virtualization Encapsulation (Geneve) is a network encapsulation protocol created by the IETF in order to unify the efforts made by other initiatives like VXLAN and NVGRE, with the intent to eliminate the wild growth of encapsulation protocols."
+    "Meaning": "Geneve is an IETF-developed network encapsulation protocol designed to unify and replace earlier tunneling standards like VXLAN and NVGRE, aiming to consolidate and standardize network virtualization encapsulation across the industry."
   },
   {
     "Network Abbreviation": "GGP",
@@ -193,6 +253,11 @@
     "Network Abbreviation": "GRE",
     "Stands For": "Generic Routing Encapsulation",
     "Meaning": "A tunneling protocol that encapsulates a wide variety of network layer protocols inside virtual point-to-point links over an IP network."
+  },
+  {
+    "Network Abbreviation": "hairpinning",
+    "Stands For": "hairpinning",
+    "Meaning": "In networking, hairpinning occurs when a packet leaves an interface toward an external destination, only to be redirected back through the same interface similar to a U-turn or hairpin bend instead of continuing onward to its intended external path."
   },
   {
     "Network Abbreviation": "HDLC",
@@ -260,6 +325,11 @@
     "Meaning": "Used by email clients to retreive email and attachments from remote server."
   },
   {
+    "Network Abbreviation": "initial access",
+    "Stands For": "initial access",
+    "Meaning": "Initial access is the first stage of a cyberattack where an attacker gains a foothold inside a target network, typically through methods like phishing, exploiting public facing applications, or using stolen credentials. This initial breach enables subsequent malicious activities, such as persistence, lateral movement, and data theft."
+  },
+  {
     "Network Abbreviation": "IOC",
     "Stands For": "Indicators of compromise",
     "Meaning": "Artifacts or evidence found on networks or systems that indicate a potential security breach or malicious activity."
@@ -305,6 +375,11 @@
     "Meaning": "The process of combining multiple physical network links into a single logical link to increase bandwidth and provide redundancy."
   },
   {
+    "Network Abbreviation": "lateral movement",
+    "Stands For": "lateral movement",
+    "Meaning": "Lateral movement refers to the techniques attackers use to move through a compromised network after gaining initial access, often by exploiting credentials, weak configurations, or vulnerabilities to access additional systems and escalate privileges. This phase aims to locate and secure valuable assets, such as sensitive data or domain controllers, while evading detection."
+  },
+  {
     "Network Abbreviation": "LDP",
     "Stands For": "Label distribution protocol",
     "Meaning": "A protocol used to establish and maintain label-switched paths in MPLS networks by distributing labels between routers."
@@ -313,6 +388,11 @@
     "Network Abbreviation": "LER",
     "Stands For": "label edge router",
     "Meaning": "A router at the edge of an MPLS network that adds or removes MPLS labels to packets entering or leaving the network."
+  },
+  {
+    "Network Abbreviation": "live migration",
+    "Stands For": "moving a virtual machine",
+    "Meaning": "Live migration is the process of transferring a running virtual machine from one physical host to another without disrupting its active operating system or applications."
   },
   {
     "Network Abbreviation": "LSA",
@@ -380,6 +460,11 @@
     "Meaning": "A next-generation firewall (NGFW) is a network security device that identifies and controls applications, users, and content to enforce precise security policies. It inspects traffic beyond ports and protocols to detect threats and prevent misuse of legitimate applications."
   },
   {
+    "Network Abbreviation": "NIC",
+    "Stands For": "Network Interface Card",
+    "Meaning": "NICs, also known as network adapters, are hardware components that allow devices to connect to a network. In cybersecurity, secure NICs play a vital role in enforcing communication policies, isolating traffic, and preventing unauthorized access."
+  },
+  {
     "Network Abbreviation": "NIST",
     "Stands For": "National Institute of Standards and Technology",
     "Meaning": "NIST plays a critical role in shaping secure networking practices through its guidelines and frameworks. NIST's contributions to networking primarily focus on addressing the evolving challenges of enterprise networks, ensuring robust security, and enabling efficient management of IT resources."
@@ -410,6 +495,11 @@
     "Meaning": "A network security group (NSG) is a set of rules that controls incoming and outgoing traffic to and from a virtual network interface, subnet, or other network resource within a cloud environment."
   },
   {
+    "Network Abbreviation": "NVGRE",
+    "Stands For": "Network Virtualization using Generic Routing Encapsulation",
+    "Meaning": "NVGRE is a tunneling protocol that encapsulates Ethernet frames inside IP packets using GRE, enabling virtual Layer 2 network segments to be created over Layer 3 infrastructures."
+  },
+  {
     "Network Abbreviation": "On-Prem",
     "Stands For": "on-premises",
     "Meaning": "On-prem referring to IT infrastructure, software, or services that are hosted and managed locally at an organization's own physical location rather than in the cloud or at a remote data center."
@@ -425,6 +515,11 @@
     "Meaning": "OSI model is a conceptual framework that explains how computers communicate over a network. It was defined by the International Organization for Standardization (ISO) as a helpful framework when creating and studying network communication."
   },
   {
+    "Network Abbreviation": "OSINT",
+    "Stands For": "Open Source Intelligence",
+    "Meaning": "OSINT refers to the collection and analysis of publicly available information from sources such as websites, social media, public records, and technical forums to support security assessments, threat intelligence, or reconnaissance activities."
+  },
+  {
     "Network Abbreviation": "OSPF",
     "Stands For": "Open Shortest Path First",
     "Meaning": "OSPF is a routing protocol, determine link cost. 100,000,000 divide by the bandwidth of the link in bits per second (bps)"
@@ -433,6 +528,11 @@
     "Network Abbreviation": "OTN",
     "Stands For": "optical transport networking",
     "Meaning": "A digital wrapper technology for transporting various client signals over optical networks with enhanced performance monitoring."
+  },
+  {
+    "Network Abbreviation": "overlay network",
+    "Stands For": "overlay | overlay network",
+    "Meaning": "An overlay network is a virtual logical network constructed on top of an existing physical underlay network. It abstracts the underlying infrastructure to enable more flexible, scalable, and application-aware communication between endpoints, independent of the physical topology"
   },
   {
     "Network Abbreviation": "P2S VPN",
@@ -465,6 +565,11 @@
     "Meaning": "The unit of data at a specific layer of the OSI model, such as frames at Layer 2 or packets at Layer 3."
   },
   {
+    "Network Abbreviation": "phising",
+    "Stands For": "phising",
+    "Meaning": "Phishing is a broad cyber attack where attackers send fraudulent emails or messages impersonating legitimate entities to trick victims into revealing sensitive information, such as passwords or financial details. It relies on mass distribution and social engineering to exploit human trust and urgency."
+  },
+  {
     "Network Abbreviation": "POP",
     "Stands For": "Post Office Protocol",
     "Meaning": "Used by email clients to retreive email and attachments from remote server."
@@ -473,6 +578,11 @@
     "Network Abbreviation": "PPP",
     "Stands For": "Point‑to‑Point Protocol",
     "Meaning": "A data link layer protocol used to establish direct connections between two nodes over serial links, modems, or other media."
+  },
+  {
+    "Network Abbreviation": "pretexting",
+    "Stands For": "pretexting",
+    "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victim’s trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
   },
   {
     "Network Abbreviation": "PSTN",
@@ -498,6 +608,16 @@
     "Network Abbreviation": "RADIUS",
     "Stands For": "Remote access dial-in user service",
     "Meaning": "Remote Authentication Dial In User Service (RADIUS) is an Internet standard protocol that provides centralized authentication, accounting and IP management services for remote access users in a distributed dial-up network."
+  },
+  {
+    "Network Abbreviation": "RCE",
+    "Stands For": "Remote Code Execution  ",
+    "Meaning": "RCE is a severe security vulnerability or attack vector that allows an attacker to run arbitrary code or commands on a target system from a remote location, often without authentication. Successful RCE exploits can lead to full system compromise, enabling activities such as malware deployment, data theft, or the establishment of persistent backdoors within a network."
+  },
+  {
+    "Network Abbreviation": "reconnaissance",
+    "Stands For": "reconnaissance",
+    "Meaning": "Reconnaissance is the initial phase of a cyberattack where threat actors gather information about a target's systems, network architecture, and potential vulnerabilities using both passive (e.g., open-source intelligence) and active (e.g., port scanning) techniques. This intelligence is used to plan and execute subsequent attack stages more effectively."
   },
   {
     "Network Abbreviation": "RFC",
@@ -615,6 +735,11 @@
     "Meaning": "SPAN is a network monitoring function that copies traffic from one or more source ports to a destination port for analysis. It is not a protocol but a vendor-specific feature available on switches for packet capture and troubleshooting."
   },
   {
+    "Network Abbreviation": "spear phishing",
+    "Stands For": "spear phishing",
+    "Meaning": "Spear phishing is a targeted form of phishing where attackers customize their fraudulent communications for specific individuals or organizations using gathered personal or professional information. This tailored approach increases credibility and success rates, often targeting executives or employees with access to sensitive systems."
+  },
+  {
     "Network Abbreviation": "SSH",
     "Stands For": "Secure Shell",
     "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
@@ -653,6 +778,11 @@
     "Network Abbreviation": "TACACS+",
     "Stands For": "Terminal access controller access controll system",
     "Meaning": "TACACS+ stands for Terminal Access Controller Access Control System. It is a Cisco proprietary AAA protocol. It separates each of the AAA functions. It uses TCP port 49 for communication. It encrypts all communications. TACACS+ works in a client/server architecture."
+  },
+  {
+    "Network Abbreviation": "tailgating",
+    "Stands For": "piggybacking | tailgating",
+    "Meaning": "Tailgating (or piggybacking) is a physical security breach where an unauthorized person follows an authorized individual into a restricted area without proper authentication. This bypasses electronic access controls and relies on exploiting courtesy, inattention, or lack of security awareness."
   },
   {
     "Network Abbreviation": "TAP",
@@ -710,6 +840,11 @@
     "Meaning": "User and entity behavior analytics (UEBA) is a security approach that analyzes user and entity behavioral patterns to detect potential threats. UEBA tracks subtle changes in current behavior from established baselines to identify anomalies and uncover suspicious activity."
   },
   {
+    "Network Abbreviation": "underlay network",
+    "Stands For": "underlay | underlay network",
+    "Meaning": "An underlay network consists of the physical hardware and infrastructure routers, switches, and cabling that form the backbone of a network, providing the foundational connectivity responsible for forwarding frames and packets between devices."
+  },
+  {
     "Network Abbreviation": "URL",
     "Stands For": "Uniform Resource Locator",
     "Meaning": "This defines the network location of a specific resource on the network. HTTP or HTTPS URLs are typically used with web browsers."
@@ -735,6 +870,11 @@
     "Meaning": "A feature that allows a single physical Cisco Nexus switch to be partitioned into multiple virtual switches with independent configurations."
   },
   {
+    "Network Abbreviation": "vishing",
+    "Stands For": "voice phishing",
+    "Meaning": "Vishing (voice phishing) is a social engineering attack conducted over phone calls, where attackers impersonate trusted entities like tech support or banks, to manipulate victims into disclosing confidential information or performing actions that compromise security."
+  },
+  {
     "Network Abbreviation": "VLSM",
     "Stands For": "Variable Length Subnet Mask",
     "Meaning": "A technique that allows different subnet masks to be used within the same network, optimizing IP address allocation."
@@ -757,7 +897,7 @@
   {
     "Network Abbreviation": "VPC",
     "Stands For": "Virtual Private Cloud",
-    "Meaning": "Amazon Virtual Private Cloud (Amazon VPC) is a service that allows you to launch AWS resources in a logically isolated virtual network that you define. "
+    "Meaning": "A VPC is an isolated, logically defined network within a public cloud that allows users to deploy resources in a private, segmented environment."
   },
   {
     "Network Abbreviation": "VPN",
@@ -773,6 +913,11 @@
     "Network Abbreviation": "VSI",
     "Stands For": "Virtual Server Instance",
     "Meaning": "A virtualized server instance running on shared physical hardware in cloud or virtualized environments."
+  },
+  {
+    "Network Abbreviation": "vSwitch",
+    "Stands For": "virtual switch",
+    "Meaning": "A virtual switch is a software-based network switch that connects virtual machines (VMs) to each other and to the physical network, acting as a bridge within virtualized environments such as hypervisors and cloud platforms."
   },
   {
     "Network Abbreviation": "VTEP",
