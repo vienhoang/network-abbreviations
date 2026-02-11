@@ -412,7 +412,7 @@
   {
     "Network Abbreviation": "MAC",
     "Stands For": "Media Access Control",
-    "Meaning": "A unique identifier that is assigned to a network interface"
+    "Meaning": "A unique identifier that is assigned to a network interface."
   },
   {
     "Network Abbreviation": "MDR",
@@ -672,12 +672,7 @@
   {
     "Network Abbreviation": "SASE",
     "Stands For": "Secure Access Service Edge",
-    "Meaning": "SASE is a cloud-native architecture that combines wide area networking (WAN) and security functions into a single service, enhancing security and simplifying management for modern businesses."
-  },
-  {
-    "Network Abbreviation": "SASE",
-    "Stands For": "Secure Access Service Edge",
-    "Meaning": "SASE, is an enterprise networking and security category introduced by Gartner. SASE converges SD-WAN, a Cloud Network, and Security Service Edge (SSE) functions, including FWaaS, CASB, DLP, SWG, and ZTNA, into a unified, cloud-native service."
+    "Meaning": "SASE is an enterprise networking and security category introduced by Gartner. SASE converges SD-WAN, a Cloud Network, and Security Service Edge (SSE) functions, including FWaaS, CASB, DLP, SWG, and ZTNA, into a unified, cloud-native service."
   },
   {
     "Network Abbreviation": "SD-WAN",
