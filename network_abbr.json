@@ -65,6 +65,11 @@
     "Meaning": "BGP is an external gateway protocol."
   },
   {
+    "Network Abbreviation": "black box",
+    "Stands For": "black box",
+    "Meaning": "Black box refers to a penetration testing methodology where the tester has no prior knowledge or access to the target system's internal structure, architecture, or credentials. This approach simulates an external attacker's perspective, requiring the tester to discover and exploit vulnerabilities solely through publicly available information and standard reconnaissance techniques, providing a realistic assessment of what an external threat actor could achieve."
+  },
+  {
     "Network Abbreviation": "CASB",
     "Stands For": "Cloud Access Security Broker",
     "Meaning": "CASB is a security intermediary between cloud users and cloud-based applications. CASBs manage and enforce all data security policies and practices, including authentication, authorization, alerts, and encryption."
@@ -93,6 +98,11 @@
     "Network Abbreviation": "CVE",
     "Stands For": "Common Vulnerabilities and Exposures",
     "Meaning": "CVE stands for Common Vulnerabilities and Exposures. It is a system that provides a reference method for publicly known information-security vulnerabilities and exposures."
+  },
+  {
+    "Network Abbreviation": "DAI",
+    "Stands For": "Dynamic ARP Inspection",
+    "Meaning": "DAI is a security feature on switches that validates Address Resolution Protocol (ARP) packets in a network by intercepting them and verifying valid MAC-to-IP address bindings against a trusted DHCP snooping database. It protects against ARP spoofing and man-in-the-middle attacks by dropping invalid ARP packets that attempt to poison switch ARP tables or redirect traffic."
   },
   {
     "Network Abbreviation": "data exfilitration",
@@ -138,6 +148,11 @@
     "Network Abbreviation": "DNS Spoofing",
     "Stands For": "DNS spoofing",
     "Meaning": "DNS Spoofing, also known as DNS Cache Poisoning, is a cyberattack where altered DNS records are used to redirect users to fraudulent websites that mimic legitimate ones. This attack exploits vulnerabilities in the DNS, which maps domain names."
+  },
+  {
+    "Network Abbreviation": "DNS spoofing",
+    "Stands For": "DNS spoofing | DNS cache poisoning",
+    "Meaning": "DNS spoofing is a cyberattack where malicious DNS data is introduced into a DNS resolver's cache, causing it to return incorrect IP addresses and redirect users to fraudulent websites. Attackers exploit vulnerabilities in the DNS system to redirect traffic to malicious servers for phishing, malware distribution, or credential theft without users detecting the redirection."
   },
   {
     "Network Abbreviation": "DNSSEC",
@@ -248,6 +263,11 @@
     "Network Abbreviation": "GGP",
     "Stands For": "Gateway to Gateway Protocol ",
     "Meaning": "An obsolete routing protocol that was used in the early ARPANET to exchange routing information between core routers."
+  },
+  {
+    "Network Abbreviation": "gray box",
+    "Stands For": "gray box",
+    "Meaning": "Gray box is a penetration testing methodology that combines elements of both black box and white box approaches, providing the tester with limited knowledge of the target system, such as basic credentials or architectural diagrams. This hybrid approach simulates an attacker with insider access privileges, allowing testers to efficiently focus on high-risk areas while maintaining a realistic external threat perspective. Gray box testing offers an optimal balance between depth and efficiency for comprehensive security assessments."
   },
   {
     "Network Abbreviation": "GRE",
@@ -565,6 +585,11 @@
     "Meaning": "The unit of data at a specific layer of the OSI model, such as frames at Layer 2 or packets at Layer 3."
   },
   {
+    "Network Abbreviation": "penetration testing",
+    "Stands For": "pen testing | penetration testing",
+    "Meaning": "Penetration testing is a controlled, authorized simulated cyberattack against computer systems, networks, or applications to identify security vulnerabilities that could be exploited by real attackers. Its primary purpose is to evaluate an organization's security posture, test defense mechanisms, and provide actionable recommendations for remediation."
+  },
+  {
     "Network Abbreviation": "phising",
     "Stands For": "phising",
     "Meaning": "Phishing is a broad cyber attack where attackers send fraudulent emails or messages impersonating legitimate entities to trick victims into revealing sensitive information, such as passwords or financial details. It relies on mass distribution and social engineering to exploit human trust and urgency."
@@ -703,6 +728,11 @@
     "Network Abbreviation": "SMTP",
     "Stands For": "Simple Mail Transfer Protocol",
     "Meaning": "SMTP is a fundamental technology that powers the process of sending emails over the internet. It is an application layer protocol that facilitates the transmission of electronic mail from one user to another."
+  },
+  {
+    "Network Abbreviation": "SNMP",
+    "Stands For": "Simple Network Management Protocol",
+    "Meaning": "SNMP is an Internet Standard protocol used to collect, organize, and exchange management information between network devices such as routers, switches, servers, and printers for monitoring and configuration purposes."
   },
   {
     "Network Abbreviation": "SOAR",
@@ -923,6 +953,11 @@
     "Network Abbreviation": "VXLAN",
     "Stands For": "Virtual eXtensible LAN",
     "Meaning": "VXLAN is a network virtualization technology that uses a VLAN -like encapsulation technique to encapsulate OSI layer 2 Ethernet frames within layer 4 UDP datagrams, using 4789 as the default IANA -assigned destination UDP port number, although many implementations that predate the IANA assignment use port 8472. "
+  },
+  {
+    "Network Abbreviation": "white box",
+    "Stands For": "white box | clear box | open box",
+    "Meaning": "White box is a penetration testing methodology where the tester is granted full knowledge and access to the target system's internal architecture, source code, credentials, and network diagrams before testing begins. This approach enables thorough code review, configuration analysis, and comprehensive vulnerability assessment, simulating an insider threat or developer-level access to identify deep-seated security flaws that external testers might miss."
   },
   {
     "Network Abbreviation": "ZTNA",
