@@ -10,9 +10,39 @@
     "Meaning": "AD is a value used by routers to determine which routing information is most trustworthy when multiple protocols offer different paths to the same destination."
   },
   {
+    "Network Abbreviation": "adware",
+    "Stands For": "adware",
+    "Meaning": "Adware is software that automatically displays or downloads unwanted advertisements, often in the form of pop-ups, banners, or redirects, typically bundled with free programs or injected through compromised websites. While less overtly malicious than spyware, adware degrades network performance through excessive ad traffic, compromises user privacy by tracking browsing behavior, and frequently serves as a delivery mechanism for more dangerous malware, requiring network monitoring to detect unusual advertising domains and traffic patterns."
+  },
+  {
+    "Network Abbreviation": "AH",
+    "Stands For": "Authentication Header",
+    "Meaning": "AH is a component of the IPsec protocol suite that provides connectionless integrity, data origin authentication, and optional anti-replay protection for IP packets by adding a cryptographic authentication header without encrypting the packet contents."
+  },
+  {
     "Network Abbreviation": "AMI",
     "Stands For": "Amazon Machine Image",
     "Meaning": "An Amazon Machine Image (AMI) is a special type of virtual appliance used to create a virtual machine within Amazon EC2."
+  },
+  {
+    "Network Abbreviation": "AMP",
+    "Stands For": "Advanced Malware Protection",
+    "Meaning": "AMP is a security solution developed by Cisco that provides continuous monitoring, detection, and remediation of advanced malware across endpoints, networks, and email systems . It operates through three core processes: File Reputation (checking files against cloud threat intelligence), File Analysis (detonating unknown files in a sandbox environment), and Retrospective security (continuously monitoring file behavior and alerting if previously cleared files become malicious) ."
+  },
+  {
+    "Network Abbreviation": "application gateway",
+    "Stands For": "application gateway",
+    "Meaning": "Application gateway is a security mechanism that acts as an intermediary between internal users and external applications, filtering traffic based on specific application-layer protocols and content rather than just IP addresses or ports. By terminating connections at the gateway and establishing separate connections to destination servers, it provides deep packet inspection, protocol validation, and granular access control for services like HTTP, FTP, or email, effectively hiding internal network structures from external threats."
+  },
+  {
+    "Network Abbreviation": "application layer firewall",
+    "Stands For": "application layer firewall",
+    "Meaning": "Application layer firewall (also known as a proxy firewall or Layer 7 firewall) operates at the highest layer of the OSI model, inspecting and filtering traffic based on application-specific data, user identities, and content patterns rather than just packet headers. Unlike traditional stateful firewalls that only examine IP addresses and ports, application layer firewalls can detect and block sophisticated threats like SQL injection, cross-site scripting, and malware hidden within legitimate application protocols, providing critical protection for web applications and services exposed to untrusted networks."
+  },
+  {
+    "Network Abbreviation": "APT",
+    "Stands For": "Advanced Persistent Threat",
+    "Meaning": "APT refers to sophisticated, well-resourced cyber adversaries, often nation-state actors or organized criminal groups, that conduct prolonged, targeted attacks against specific organizations, industries, or governments to steal sensitive information, disrupt operations, or establish strategic footholds."
   },
   {
     "Network Abbreviation": "ARP",
@@ -50,6 +80,16 @@
     "Meaning": "Azure is Microsoft's cloud computing platform, offering networking services like Virtual Network, Azure Firewall, and ExpressRoute for building and connecting secure, scalable infrastructures. "
   },
   {
+    "Network Abbreviation": "backdoor",
+    "Stands For": "backdoor",
+    "Meaning": "Backdoor is a hidden method of bypassing normal authentication mechanisms to gain unauthorized access to a computer system, network device, or application, often installed by attackers after initial compromise or intentionally coded by developers for maintenance."
+  },
+  {
+    "Network Abbreviation": "BadIIS",
+    "Stands For": "Bad Internet Information Services",
+    "Meaning": "BadIIS is a family of malicious software modules that specifically targets Microsoft Internet Information Services (IIS) web servers, hijacking them to manipulate search engine rankings and redirect users . These malware variants compromise IIS servers by deploying malicious IIS modules, which inspect incoming web requests, specifically looking for search engine crawlers like Googlebot, and serve them poisoned content to artificially boost the ranking of fraudulent websites in search results, while ordinary visitors are either redirected to gambling or scam sites or shown a harmless page to conceal the compromise."
+  },
+  {
     "Network Abbreviation": "baiting",
     "Stands For": "baiting",
     "Meaning": "Baiting involves offering something enticing like free software or media to lure victims into downloading malware or disclosing credentials. Often delivered via physical media (e.g., infected USB drives) or online ads, baiting exploits curiosity and greed to compromise systems."
@@ -70,6 +110,21 @@
     "Meaning": "Black box refers to a penetration testing methodology where the tester has no prior knowledge or access to the target system's internal structure, architecture, or credentials. This approach simulates an external attacker's perspective, requiring the tester to discover and exploit vulnerabilities solely through publicly available information and standard reconnaissance techniques, providing a realistic assessment of what an external threat actor could achieve."
   },
   {
+    "Network Abbreviation": "botnet",
+    "Stands For": "botnet",
+    "Meaning": "Botnet is a network of compromised computers, servers, IoT devices, or other internet-connected systems that are infected with malware and remotely controlled by an attacker (bot herder) without the owners' knowledge. These infected machines, often numbering in the thousands or millions, are collectively used to launch large-scale cyberattacks including DDoS campaigns, spam distribution, credential stuffing, and cryptocurrency mining, leveraging aggregated bandwidth and processing power while making attacks difficult to trace back to the actual perpetrator."
+  },
+  {
+    "Network Abbreviation": "brute-force attacks",
+    "Stands For": "brute-force attacks",
+    "Meaning": "Brute-force attacks are password-cracking methods where attackers systematically attempt every possible combination of characters, symbols, and numbers until the correct password is discovered."
+  },
+  {
+    "Network Abbreviation": "BYOD",
+    "Stands For": "Bring Your Own Device",
+    "Meaning": "BYOD is an organizational policy that allows employees to use their personal devices, such as smartphones, laptops, and tablets, for work-related activities, including access to corporate networks, applications, and data. "
+  },
+  {
     "Network Abbreviation": "CASB",
     "Stands For": "Cloud Access Security Broker",
     "Meaning": "CASB is a security intermediary between cloud users and cloud-based applications. CASBs manage and enforce all data security policies and practices, including authentication, authorization, alerts, and encryption."
@@ -80,9 +135,19 @@
     "Meaning": "Older OS för Ciscos Catalyst switches."
   },
   {
+    "Network Abbreviation": "CDN",
+    "Stands For": "Content Delivery Network",
+    "Meaning": "CDN is a geographically distributed network of proxy servers and data centers designed to deliver web content and applications to users with high availability and performance by caching content closer to end users."
+  },
+  {
     "Network Abbreviation": "CHAP",
     "Stands For": "challenge handshake authentication protocol",
     "Meaning": "An authentication protocol that uses a three-way handshake and hashed passwords to verify identity more securely than PAP."
+  },
+  {
+    "Network Abbreviation": "CIA Triad",
+    "Stands For": "Confidentiality Integrity Availability",
+    "Meaning": "CIA Triad is a foundational security model consisting of three core principles: Confidentiality (ensuring data is accessible only to authorized users), Integrity (safeguarding data accuracy and preventing unauthorized modification), and Availability (guaranteeing reliable access to information when needed). This triad serves as the cornerstone for developing security policies, risk assessments, and controls across network architectures, balancing protection requirements with operational needs."
   },
   {
     "Network Abbreviation": "CIDR",
@@ -95,9 +160,29 @@
     "Meaning": "A field in Layer 2 frames used to prioritize different types of network traffic for quality of service."
   },
   {
+    "Network Abbreviation": "cryptojacking ",
+    "Stands For": "cryptojacking ",
+    "Meaning": "Cryptojacking is a type of cyberattack where adversaries secretly use a victim's computing resources, including CPU, GPU, and electricity, to mine cryptocurrencies without consent or compensation."
+  },
+  {
+    "Network Abbreviation": "CSIRT",
+    "Stands For": "Computer Security Incident Response Team",
+    "Meaning": "CSIRT is a dedicated group of security professionals responsible for receiving, analyzing, and responding to cybersecurity incidents within an organization or defined constituency. This team develops incident response procedures, coordinates containment and eradication efforts, performs digital forensics, and communicates with stakeholders during security breaches, serving as the central point of coordination for managing security incidents and minimizing organizational impact."
+  },
+  {
     "Network Abbreviation": "CVE",
     "Stands For": "Common Vulnerabilities and Exposures",
     "Meaning": "CVE stands for Common Vulnerabilities and Exposures. It is a system that provides a reference method for publicly known information-security vulnerabilities and exposures."
+  },
+  {
+    "Network Abbreviation": "CVSS",
+    "Stands For": "Common Vulnerability Scoring System",
+    "Meaning": "CVSS is a standardized framework for assessing and communicating the severity of security vulnerabilities by assigning numerical scores based on metrics like attack vector, complexity, privileges required, and impact. This industry-standard scoring system helps organizations prioritize remediation efforts by providing consistent severity ratings (ranging from 0 to 10) across different vulnerabilities, enabling risk-based patch management and resource allocation in network defense strategies."
+  },
+  {
+    "Network Abbreviation": "cyberwarfare ",
+    "Stands For": "cyberwarfare ",
+    "Meaning": "Cyberwarfare encompasses politically motivated attacks conducted by nation-states or state-sponsored actors against another country's computer systems, networks, and critical infrastructure to disrupt, damage, or gain strategic advantage. These operations target military systems, power grids, financial networks, communication infrastructure, and governmental institutions using sophisticated techniques including espionage, sabotage, disinformation campaigns, and destructive malware, blurring traditional boundaries between wartime and peacetime activities in the digital domain."
   },
   {
     "Network Abbreviation": "DAI",
@@ -118,6 +203,11 @@
     "Network Abbreviation": "DHCP",
     "Stands For": "Dynamic Host Configuration Protocol",
     "Meaning": "A network protocol that automatically assigns IP addresses and network configuration parameters to devices on a network."
+  },
+  {
+    "Network Abbreviation": "dictionary attacks",
+    "Stands For": "dictionary attacks",
+    "Meaning": "Dictionary attacks are password-cracking methods where attackers systematically test thousands or millions of potential passwords from a predefined list (dictionary) of common words, phrases, leaked credentials, or password variations. Unlike brute-force attacks that try every possible character combination, dictionary attacks leverage human tendencies to create memorable passwords, including common words, names, dates, or keyboard patterns, making them highly efficient against weak password policies while consuming significantly less time and computational resources than exhaustive brute-force methods."
   },
   {
     "Network Abbreviation": "distributed routing",
@@ -145,14 +235,19 @@
     "Meaning": "A crucial system on the internet that acts as a \"phone book\" for domain names."
   },
   {
-    "Network Abbreviation": "DNS Spoofing",
-    "Stands For": "DNS spoofing",
-    "Meaning": "DNS Spoofing, also known as DNS Cache Poisoning, is a cyberattack where altered DNS records are used to redirect users to fraudulent websites that mimic legitimate ones. This attack exploits vulnerabilities in the DNS, which maps domain names."
+    "Network Abbreviation": "DNS amplification",
+    "Stands For": "DNS amplification",
+    "Meaning": "DNS amplification is a type of distributed denial-of-service (DDoS) attack that exploits publicly accessible DNS servers to overwhelm a target with amplified traffic volumes. Attackers send small queries with spoofed source IP addresses (the victim's address) to vulnerable DNS resolvers, which respond with much larger responses directed at the victim, multiplying traffic by factors of 50-100x and saturating network bandwidth while obscuring the true attack origin."
   },
   {
     "Network Abbreviation": "DNS spoofing",
     "Stands For": "DNS spoofing | DNS cache poisoning",
     "Meaning": "DNS spoofing is a cyberattack where malicious DNS data is introduced into a DNS resolver's cache, causing it to return incorrect IP addresses and redirect users to fraudulent websites. Attackers exploit vulnerabilities in the DNS system to redirect traffic to malicious servers for phishing, malware distribution, or credential theft without users detecting the redirection."
+  },
+  {
+    "Network Abbreviation": "DNS-OARC",
+    "Stands For": "DNS Operations, Analysis, and Research Center",
+    "Meaning": "DNS-OARC is a neutral, non-profit membership organization established in 2003 that brings together DNS operators, researchers, and software developers in a trusted environment to improve the security, stability, and resilience of the Domain Name System. It serves as a critical platform for sharing operational data during attacks, developing analysis tools, coordinating incident response, and conducting research that helps protect the global DNS infrastructure from emerging threats and vulnerabilities."
   },
   {
     "Network Abbreviation": "DNSSEC",
@@ -165,14 +260,24 @@
     "Meaning": "A DPG is a configuration template in virtual networking that defines port settings such as VLAN, security, and traffic shaping for a group of virtual switch ports across multiple hosts."
   },
   {
+    "Network Abbreviation": "DPI",
+    "Stands For": "Deep Packet Inspection",
+    "Meaning": "DPI is an advanced network traffic filtering and analysis technology that examines not just packet headers but also the actual data payload (application layer content) of packets passing through an inspection point."
+  },
+  {
     "Network Abbreviation": "DR",
     "Stands For": "Designated router",
     "Meaning": "A router elected in OSPF broadcast networks to reduce the number of adjacencies and manage link-state information exchange."
   },
   {
     "Network Abbreviation": "DREAD",
-    "Stands For": "Damage. Reproducibility. Exploitability. Affected user., Discoverability",
+    "Stands For": "Damage. Reproducibility. Exploitability. Affected user. Discoverability",
     "Meaning": "DREAD is a risk assessment and threat modeling system for computer security threats."
+  },
+  {
+    "Network Abbreviation": "DSIE",
+    "Stands For": "Defense Security Information Exchange",
+    "Meaning": "DSIE is an exclusive, highly trusted community within the U.S. defense industrial base focused on sharing actionable threat intelligence and mitigation strategies to defend against sophisticated cyberattacks targeting critical infrastructure. Operating as a premier \"center of excellence\" for cybersecurity threats, its members (primarily defense contractors) collaborate with full attribution and confidentiality to protect sensitive defense networks and supply chains from nation-state adversaries and advanced persistent threats."
   },
   {
     "Network Abbreviation": "DVS",
@@ -195,6 +300,11 @@
     "Meaning": "ECMP is a routing mechanism that allows traffic to be distributed across multiple paths of equal cost to improve bandwidth utilization and redundancy. "
   },
   {
+    "Network Abbreviation": "EFS",
+    "Stands For": "Encrypting File System",
+    "Meaning": "EFS is a feature in Microsoft Windows that provides file-level encryption on NTFS volumes, allowing users to encrypt individual files and folders so that only authorized users with the correct private key can access them."
+  },
+  {
     "Network Abbreviation": "EGP",
     "Stands For": "External Gateway Protocol",
     "Meaning": "A category of routing protocols used to exchange routing information between different autonomous systems on the internet."
@@ -203,6 +313,21 @@
     "Network Abbreviation": "EIGRP ",
     "Stands For": "Enhanced Interior Gateway Routing Protocol",
     "Meaning": "EIGRP is a routing protocol, popular in Cisco environment."
+  },
+  {
+    "Network Abbreviation": "ELK",
+    "Stands For": "Elasticsearch, Logstash, Kiban",
+    "Meaning": "ELK Stack is a popular open-source log management and analytics platform used extensively in network security operations for centralized log aggregation, analysis, and visualization. Elasticsearch stores and indexes log data for fast searching, Logstash processes and transforms incoming logs from diverse network sources, and Kibana provides interactive dashboards for security monitoring, threat hunting, and incident investigation across enterprise infrastructure."
+  },
+  {
+    "Network Abbreviation": "EPS",
+    "Stands For": "Events Per Second",
+    "Meaning": "EPS is a critical performance metric that measures the rate at which a security system, such as a SIEM, intrusion detection system, or log management platform can ingest, process, and analyze incoming event data from network devices, servers, and applications. This metric determines whether a security solution can handle peak traffic loads during incidents without dropping events, directly impacting detection capabilities and compliance reporting requirements in enterprise environments."
+  },
+  {
+    "Network Abbreviation": "ESP",
+    "Stands For": "Encapsulating Security Payload",
+    "Meaning": "ESP is a core component of the IPsec protocol suite that provides confidentiality through encryption, along with data origin authentication, connectionless integrity, and anti-replay protection for IP packets."
   },
   {
     "Network Abbreviation": "EVPN",
@@ -233,6 +358,11 @@
     "Network Abbreviation": "FEC",
     "Stands For": "Fast EtherChannel",
     "Meaning": "A technology that bundles multiple Fast Ethernet links together to increase bandwidth and provide redundancy."
+  },
+  {
+    "Network Abbreviation": "FIRST",
+    "Stands For": "Forum of Incident Response and Security Teams",
+    "Meaning": "FIRST is a global, trusted organization that brings together over 820 incident response and security teams from more than 110 countries to improve global cyber resilience through collaboration. It serves as a central hub for developing and sharing best practices, technical frameworks (like the Exploit Prediction Scoring System, EPSS), and actionable threat intelligence among its members, which include national CERTs and major corporations. By fostering this cooperation, FIRST helps security teams worldwide respond to incidents more effectively and proactively."
   },
   {
     "Network Abbreviation": "FTP",
@@ -285,6 +415,16 @@
     "Meaning": "A bit-oriented protocol used for point-to-point and multipoint data link layer communications in WANs."
   },
   {
+    "Network Abbreviation": "HIDS",
+    "Stands For": "Host-based Intrusion Detection System",
+    "Meaning": "HIDS is a security monitoring solution deployed on individual hosts or endpoints that analyzes system activities, file integrity, logs, and configuration changes to detect suspicious behavior or potential security breaches. By monitoring host-level events, such as file modifications, process execution, privilege escalation attempts, and system call patterns, HIDS provides granular visibility into attacks that may bypass network defenses, including insider threats, malware infections, and unauthorized access attempts on critical servers."
+  },
+  {
+    "Network Abbreviation": "honeypot",
+    "Stands For": "honeypot",
+    "Meaning": "Honeypot is a cybersecurity deception technique that involves deploying decoy systems, services, or data within a network to lure and detect attackers, thereby diverting them from valuable assets and allowing security teams to study their methods . By mimicking legitimate targets like vulnerable servers or services, honeypots collect valuable intelligence on attacker behavior, tools, and tactics without risking production systems. Modern honeypot research explores bio-inspired deception strategies, such as camouflage, bluffing, and playing dead, to make these decoys more convincing and increase attacker engagement time, providing deeper insights into evolving cyber threats ."
+  },
+  {
     "Network Abbreviation": "HTML",
     "Stands For": "The HyperText Markup Language",
     "Meaning": "The standard markup language used to create and structure content on the World Wide Web."
@@ -306,8 +446,8 @@
   },
   {
     "Network Abbreviation": "IAM ",
-    "Stands For": "AWS Identity and Access Management",
-    "Meaning": "AWS Identity and Access Management (IAM) is a security service that enables you to securely manage access to AWS resources. It provides the tools to control who is authenticated (signed in) and authorized (has permissions) to use specific AWS services and resources."
+    "Stands For": "Identity and Access Management",
+    "Meaning": "IAM is a framework of policies, technologies, and processes that ensures the right individuals access the right resources at the right times for the right reasons across an organization's IT infrastructure."
   },
   {
     "Network Abbreviation": "IANA",
@@ -318,6 +458,11 @@
     "Network Abbreviation": "ICMP ",
     "Stands For": "Internet Control Message Protocol ",
     "Meaning": "ICMP is a supported protocol in the IP suite used for error reporting, operational information, and network diagnostics."
+  },
+  {
+    "Network Abbreviation": "IdP",
+    "Stands For": "Identity Provider",
+    "Meaning": "IdP is a system entity that creates, maintains, and manages digital identity information for users, devices, or services, and provides authentication assertions to relying applications (service providers). In federated identity architectures, IdPs authenticate users and issue security tokens containing identity claims, enabling seamless access across organizational boundaries while maintaining centralized control over authentication policies, credential management, and security enforcement."
   },
   {
     "Network Abbreviation": "IDS",
@@ -351,13 +496,18 @@
   },
   {
     "Network Abbreviation": "IOC",
-    "Stands For": "Indicators of compromise",
+    "Stands For": "indicator of compromise",
     "Meaning": "Artifacts or evidence found on networks or systems that indicate a potential security breach or malicious activity."
   },
   {
     "Network Abbreviation": "IOS",
     "Stands For": "Internetwork Operating System",
     "Meaning": "Newer OS that took after CatOS"
+  },
+  {
+    "Network Abbreviation": "IoT",
+    "Stands For": "Internet of Things",
+    "Meaning": "IoT refers to the vast network of interconnected physical devices, ranging from industrial sensors and smart appliances to medical devices and security cameras, that collect and exchange data over the internet."
   },
   {
     "Network Abbreviation": "IP",
@@ -378,6 +528,31 @@
     "Network Abbreviation": "IPsec",
     "Stands For": "Internet Protocol Security",
     "Meaning": "IPsec is a protocol used to secure IP communications by encrypting and authenticating IP packets."
+  },
+  {
+    "Network Abbreviation": "ISE",
+    "Stands For": "Identity Services Engine",
+    "Meaning": "ISE is Cisco's flagship network access control (NAC) and policy management platform that enables organizations to enforce granular security policies based on user identity, device type, location, and security posture. As a cornerstone of zero-trust architectures, ISE profiles connected endpoints, enforces access controls through VLAN assignment or scalable group tags (SGTs), and can automatically quarantine compromised devices to prevent lateral movement across the network while providing comprehensive visibility into all connected users and devices."
+  },
+  {
+    "Network Abbreviation": "ISSA",
+    "Stands For": "Information Systems Security Association",
+    "Meaning": "ISSA is a non-profit, international organization for cybersecurity professionals dedicated to promoting a secure digital world through education, collaboration, and knowledge sharing. It provides forums, publications, and peer interaction opportunities that enhance member skills and professional growth, serving as a respected voice that influences public opinion, government legislation, and technology standards. ISSA connects practitioners globally through local chapters, conferences, and its monthly ISSA Journal, helping members manage technology risk and protect critical information infrastructure."
+  },
+  {
+    "Network Abbreviation": "JEA",
+    "Stands For": "Just Enough Administration",
+    "Meaning": "JEA is a security technology in Windows PowerShell that restricts what administrative tasks users can perform by defining specific roles with precisely scoped capabilities rather than granting full administrative rights. By limiting commands, parameters, and values available to specified users, JEA enforces the principle of least privilege for PowerShell remoting, enabling delegated management without exposing systems to the risks associated with full local administrator or domain admin access."
+  },
+  {
+    "Network Abbreviation": "JIT",
+    "Stands For": "Just-In-Time",
+    "Meaning": "JIT access is a security practice that grants users elevated permissions or access to resources only for the specific duration required to perform a task, automatically revoking privileges afterward. This approach minimizes standing privileges, reduces the attack surface exposed by persistent administrative access, and provides detailed audit trails by implementing temporary, request-based access workflows for critical systems and sensitive data."
+  },
+  {
+    "Network Abbreviation": "KRACK",
+    "Stands For": "Key Reinstallation Attack",
+    "Meaning": "KRACK is a severe vulnerability discovered in 2017 that exploits weaknesses in the WPA2 protocol's four-way handshake, allowing attackers within range to decrypt, replay, or inject malicious packets by manipulating cryptographic nonces and forcing key reinstallation. This attack affects all properly implemented WPA2 configurations by targeting the handshake process itself rather than the encryption algorithm, enabling adversaries to read supposedly encrypted traffic, capture sensitive data, and in some configurations, inject ransomware or malware into unencrypted HTTP connections traversing protected Wi-Fi networks."
   },
   {
     "Network Abbreviation": "KVM",
@@ -435,6 +610,11 @@
     "Meaning": "A unique identifier that is assigned to a network interface."
   },
   {
+    "Network Abbreviation": "MD5",
+    "Stands For": "Message Digest Algorithm 5",
+    "Meaning": "MD5 is a widely used cryptographic hash function that produces a 128-bit hash value, commonly employed to verify data integrity through checksums and file authentication. However, MD5 is now considered cryptographically broken and insecure for security applications due to demonstrated collision attacks where different inputs produce identical hash values, making it unsuitable for digital signatures, certificates, or password storage in modern network security implementations."
+  },
+  {
     "Network Abbreviation": "MDR",
     "Stands For": "Managed Detection and Response",
     "Meaning": "MDR stands for Managed Detection and Response, which is a cybersecurity service designed to help organizations proactively protect against cyber threats."
@@ -445,9 +625,24 @@
     "Meaning": "A BGP attribute used to influence inbound traffic by suggesting preferred entry points into an autonomous system."
   },
   {
+    "Network Abbreviation": "MFA",
+    "Stands For": "Multi-Factor Authentication",
+    "Meaning": "MFA is a security mechanism that requires users to provide two or more verification factors—such as something they know (password), something they have (security token), or something they are (biometric)-to gain access to network resources or applications. This layered approach significantly enhances security by ensuring that compromised passwords alone are insufficient for unauthorized access, protecting against credential theft, phishing, and brute-force attacks."
+  },
+  {
+    "Network Abbreviation": "mitigation ",
+    "Stands For": "mitigation ",
+    "Meaning": "In cybersecurity, mitigation refers to the strategic actions taken to reduce the severity, impact, or likelihood of a threat or vulnerability without completely eliminating the underlying issue. Unlike remediation, which aims to fix the root cause (e.g., applying a patch), mitigation focuses on making exploitation more difficult or less damaging, for example, by segmenting a network, blocking a specific port, or implementing access controls. This approach is often used as an immediate response to buy time while a permanent solution is developed."
+  },
+  {
     "Network Abbreviation": "MITM",
     "Stands For": "man in the middle",
     "Meaning": "An attack where an adversary intercepts and potentially alters communications between two parties without their knowledge."
+  },
+  {
+    "Network Abbreviation": "MITMO",
+    "Stands For": "Man-in-the-Mobile",
+    "Meaning": "MitMo is a specialized attack technique where cybercriminals compromise mobile devices to intercept and steal SMS-based one-time passwords and transaction verification codes used by banks and other services for out-of-band authentication . This attack typically begins with a desktop malware infection (such as SpyEye or Tatanga) that tricks victims into installing a fake security application on their Android devices, enabling fraudsters to bypass SMS-based two-factor authentication and initiate fraudulent financial transactions without the victim's knowledge ."
   },
   {
     "Network Abbreviation": "MPLS",
@@ -465,6 +660,11 @@
     "Meaning": "The largest size packet or frame that can be sent in a single network transaction without fragmentation."
   },
   {
+    "Network Abbreviation": "NAC",
+    "Stands For": "Network Access Control",
+    "Meaning": "NAC is a security solution that enforces policy based access restrictions on devices attempting to connect to network resources by assessing their compliance with organizational security standards before granting access. It evaluates device posture such as antivirus updates, patch levels, and configuration settings and can quarantine, restrict, or remediate non-compliant endpoints, preventing unauthorized or vulnerable devices from compromising network security."
+  },
+  {
     "Network Abbreviation": "NAS",
     "Stands For": "network attached storage",
     "Meaning": "A dedicated file storage device that provides data access to multiple clients over a network."
@@ -475,6 +675,16 @@
     "Meaning": "NAT a technique that modifies IP address information in packet headers, enabling multiple devices on a private network to share a single public IP address for internet communication."
   },
   {
+    "Network Abbreviation": "NetFlow",
+    "Stands For": "Cisco network protocol",
+    "Meaning": "NetFlow is a network protocol developed by Cisco for collecting IP traffic information and monitoring network flow data, providing detailed visibility into who is talking to whom, for how long, and using which applications and ports. It enables network administrators to analyze traffic patterns, detect anomalies such as DDoS attacks or worms, optimize network performance, and support capacity planning by exporting flow records from routers and switches to a central collector. NetFlow data is invaluable for security analysis, facilitating forensic investigations, identifying policy violations, and providing near real-time insights into network behavior."
+  },
+  {
+    "Network Abbreviation": "network sniffing",
+    "Stands For": "network sniffing | packet sniffing",
+    "Meaning": "Network sniffing is the practice of capturing and analyzing data packets as they traverse a network, typically using tools like Wireshark or tcpdump to inspect traffic for sensitive information."
+  },
+  {
     "Network Abbreviation": "NGFW",
     "Stands For": "Next-generation firewall",
     "Meaning": "A next-generation firewall (NGFW) is a network security device that identifies and controls applications, users, and content to enforce precise security policies. It inspects traffic beyond ports and protocols to detect threats and prevent misuse of legitimate applications."
@@ -483,6 +693,11 @@
     "Network Abbreviation": "NIC",
     "Stands For": "Network Interface Card",
     "Meaning": "NICs, also known as network adapters, are hardware components that allow devices to connect to a network. In cybersecurity, secure NICs play a vital role in enforcing communication policies, isolating traffic, and preventing unauthorized access."
+  },
+  {
+    "Network Abbreviation": "NIDS",
+    "Stands For": "Network-based Intrusion Detection System",
+    "Meaning": "NIDS is a security solution deployed at strategic network points, such as core switches or internet gateways, that monitors and analyzes traffic for suspicious patterns, signatures, or anomalies indicating potential cyberattacks. By inspecting packet headers and payloads in real time without impacting network performance, NIDS provides early warning of threats like port scans, DoS attacks, and exploit attempts, alerting security teams for investigation and response."
   },
   {
     "Network Abbreviation": "NIST",
@@ -515,9 +730,24 @@
     "Meaning": "A network security group (NSG) is a set of rules that controls incoming and outgoing traffic to and from a virtual network interface, subnet, or other network resource within a cloud environment."
   },
   {
+    "Network Abbreviation": "NSIE",
+    "Stands For": "Network Security Information Exchange",
+    "Meaning": "NSIE refers to an informal, trusted public-private collaboration established in the early 1990s to facilitate the exchange of sensitive information on network threats, vulnerabilities, and risks. The goal of an NSIE is to foster a collegial environment where industry experts and government representatives can share proprietary or sensitive data to improve the overall security of critical network infrastructure. This foundational concept of structured information sharing later influenced the creation of more formal sector-specific groups, such as Information Sharing and Analysis Centers (ISACs)."
+  },
+  {
+    "Network Abbreviation": "NTP amplification",
+    "Stands For": "NTP amplification",
+    "Meaning": "NTP amplification is a reflection-based distributed denial-of-service (DDoS) attack that exploits Network Time Protocol servers to overwhelm a target with amplified traffic. Attackers send small requests with spoofed source IP addresses (the victim's address) to vulnerable NTP servers using commands like \"monlist\" that generate large responses, achieving amplification factors of up to 200x and saturating the victim's network infrastructure."
+  },
+  {
     "Network Abbreviation": "NVGRE",
     "Stands For": "Network Virtualization using Generic Routing Encapsulation",
     "Meaning": "NVGRE is a tunneling protocol that encapsulates Ethernet frames inside IP packets using GRE, enabling virtual Layer 2 network segments to be created over Layer 3 infrastructures."
+  },
+  {
+    "Network Abbreviation": "OAuth",
+    "Stands For": "Open Authorization",
+    "Meaning": "OAuth 2.0 is an industry-standard authorization protocol that enables applications to obtain limited access to user accounts on an HTTP service without exposing user credentials."
   },
   {
     "Network Abbreviation": "On-Prem",
@@ -543,6 +773,11 @@
     "Network Abbreviation": "OSPF",
     "Stands For": "Open Shortest Path First",
     "Meaning": "OSPF is a routing protocol, determine link cost. 100,000,000 divide by the bandwidth of the link in bits per second (bps)"
+  },
+  {
+    "Network Abbreviation": "OSSEC",
+    "Stands For": "Open Source HIDS SECurity",
+    "Meaning": "OSSEC is an open-source host-based intrusion detection system (HIDS) that performs log analysis, file integrity checking, policy monitoring, rootkit detection, and real-time alerting across multiple platforms. In network security architectures, OSSEC agents deployed on servers and endpoints provide centralized visibility by forwarding security events to a manager, enabling threat correlation, compliance monitoring (such as PCI DSS), and rapid incident response across distributed environments."
   },
   {
     "Network Abbreviation": "OTN",
@@ -575,9 +810,19 @@
     "Meaning": "A simple authentication protocol that transmits passwords in clear text, making it less secure than modern alternatives."
   },
   {
+    "Network Abbreviation": "password spraying",
+    "Stands For": "password spraying",
+    "Meaning": "Password spraying is a brute-force attack technique where adversaries attempt to gain unauthorized access by trying a small number of commonly used passwords (such as \"Password123\" or \"Winter2024\") against many different user accounts before moving to the next password. This approach bypasses traditional account lockout policies designed to prevent repeated failed attempts on single accounts, making it particularly effective against organizations without multi-factor authentication or robust failed-login monitoring across their authentication systems."
+  },
+  {
     "Network Abbreviation": "PAT",
     "Stands For": "Port Address Translation",
     "Meaning": "PAT is a network technology that allows multiple devices on a local area network (LAN) to share a single public IP address for accessing the Internet. This is achieved by assigning unique port numbers to each session initiated by the devices."
+  },
+  {
+    "Network Abbreviation": "PCI DSS",
+    "Stands For": "Payment Card Industry Data Security Standard",
+    "Meaning": "PCI DSS is a mandatory set of security requirements established by major credit card companies to protect cardholder data during processing, storage, and transmission across networks. Organizations handling payment cards must comply with its twelve core requirements, including firewall configuration, encryption, access controls, and regular monitoring to maintain secure network environments and avoid substantial fines or loss of payment processing privileges."
   },
   {
     "Network Abbreviation": "PDU",
@@ -600,14 +845,29 @@
     "Meaning": "Used by email clients to retreive email and attachments from remote server."
   },
   {
+    "Network Abbreviation": "PoP",
+    "Stands For": "Point of Presence",
+    "Meaning": "PoP is a physical location where a service provider, telecommunications company, or content delivery network (CDN) houses networking equipment to establish access to their network infrastructure. PoPs contain servers, routers, switches, and other equipment that connect users and edge networks to the provider's backbone, reducing latency by bringing services geographically closer to end users."
+  },
+  {
     "Network Abbreviation": "PPP",
     "Stands For": "Point‑to‑Point Protocol",
     "Meaning": "A data link layer protocol used to establish direct connections between two nodes over serial links, modems, or other media."
   },
   {
+    "Network Abbreviation": "PPTP",
+    "Stands For": "Point-to-Point Tunneling Protocol",
+    "Meaning": "PPTP is an older VPN protocol developed by Microsoft that encapsulates PPP packets for secure transmission over IP networks, using TCP port 1723 and GRE."
+  },
+  {
     "Network Abbreviation": "pretexting",
     "Stands For": "pretexting",
     "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victim’s trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
+  },
+  {
+    "Network Abbreviation": "proxy",
+    "Stands For": "proxy ",
+    "Meaning": "Proxy refers to an intermediary server that acts as a gateway between client devices and destination servers, forwarding requests and responses while masking the client's original IP address."
   },
   {
     "Network Abbreviation": "PSTN",
@@ -635,6 +895,26 @@
     "Meaning": "Remote Authentication Dial In User Service (RADIUS) is an Internet standard protocol that provides centralized authentication, accounting and IP management services for remote access users in a distributed dial-up network."
   },
   {
+    "Network Abbreviation": "rainbow attacks",
+    "Stands For": "rainbow attacks",
+    "Meaning": "Rainbow attacks are password-cracking techniques that use precomputed tables of hash values for every possible password combination within a character set, enabling rapid reversal of password hashes without performing real-time hash calculations."
+  },
+  {
+    "Network Abbreviation": "ransomware",
+    "Stands For": "ransomware",
+    "Meaning": "Ransomware is a type of malicious software that encrypts files, systems, or entire networks, rendering them inaccessible until a ransom payment is made to the attackers, typically demanded in cryptocurrency. "
+  },
+  {
+    "Network Abbreviation": "rate limiting",
+    "Stands For": "rate limiting",
+    "Meaning": "Rate limiting is a traffic control technique that restricts the number of requests, connections, or data packets a network device, service, or API can handle within a specified time period."
+  },
+  {
+    "Network Abbreviation": "RBAC",
+    "Stands For": "Role-Based Access Control",
+    "Meaning": "RBAC is a security methodology that restricts network and system access based on users' assigned roles within an organization rather than their individual identities. Permissions are grouped by job functions, allowing administrators to efficiently manage access rights by assigning users to predefined roles with specific privileges, which simplifies compliance auditing, reduces administrative overhead, and minimizes security risks from excessive permissions."
+  },
+  {
     "Network Abbreviation": "RCE",
     "Stands For": "Remote Code Execution  ",
     "Meaning": "RCE is a severe security vulnerability or attack vector that allows an attacker to run arbitrary code or commands on a target system from a remote location, often without authentication. Successful RCE exploits can lead to full system compromise, enabling activities such as malware deployment, data theft, or the establishment of persistent backdoors within a network."
@@ -643,6 +923,11 @@
     "Network Abbreviation": "reconnaissance",
     "Stands For": "reconnaissance",
     "Meaning": "Reconnaissance is the initial phase of a cyberattack where threat actors gather information about a target's systems, network architecture, and potential vulnerabilities using both passive (e.g., open-source intelligence) and active (e.g., port scanning) techniques. This intelligence is used to plan and execute subsequent attack stages more effectively."
+  },
+  {
+    "Network Abbreviation": "reverse proxy",
+    "Stands For": "reverse proxy",
+    "Meaning": "Reverse proxy is a server positioned in front of backend servers that intercepts and forwards client requests on behalf of those servers, appearing to clients as the origin of the responses."
   },
   {
     "Network Abbreviation": "RFC",
@@ -660,9 +945,29 @@
     "Meaning": "A distance-vector routing protocol that uses hop count as a metric and is limited to 15 hops maximum."
   },
   {
+    "Network Abbreviation": "rlogin",
+    "Stands For": "Remote Login",
+    "Meaning": "rlogin is an older Unix-based protocol and command that allowed users to log into remote systems over a network, providing terminal access similar to Telnet but with trusted host-based authentication capabilities. Like Telnet, rlogin transmits data in plaintext and lacks encryption, making it fundamentally insecure for modern networks, while its trust-based authentication model (relying on host IP addresses and /etc/hosts.equiv files) creates significant vulnerabilities that have led to its deprecation in favor of SSH for secure remote access."
+  },
+  {
+    "Network Abbreviation": "rootkit",
+    "Stands For": "rootkit",
+    "Meaning": "Rootkit is a stealthy collection of malicious software designed to gain privileged access to a computer system while actively hiding its presence from users, security software, and operating system processes. Operating at the kernel level or deeper (including hypervisor and firmware levels), rootkits provide attackers with persistent, undetectable control over compromised systems, enabling long-term network surveillance, data theft, and use of infected machines as launch points for further attacks while evading antivirus, integrity checks, and forensic analysis."
+  },
+  {
     "Network Abbreviation": "RPC",
     "Stands For": "Remote Procedure Cal",
     "Meaning": "A protocol that allows a program to execute procedures on a remote server as if they were local function calls."
+  },
+  {
+    "Network Abbreviation": "RPO",
+    "Stands For": "Recovery Point Objective",
+    "Meaning": "RPO defines the maximum acceptable amount of data loss measured in time, specifying how old the recovered data can be, before causing unacceptable business harm following a network outage or security breach. This metric determines required backup frequencies, replication intervals, and data protection strategies to ensure that when services are restored, data loss remains within tolerable thresholds based on organizational risk tolerance."
+  },
+  {
+    "Network Abbreviation": "RSA",
+    "Stands For": "Rivest-Shamir-Adleman",
+    "Meaning": "RSA refers to both a widely-used public-key cryptosystem for secure data transmission and the security company (RSA Security) known for developing authentication solutions. In networking and cybersecurity contexts, RSA encryption uses asymmetric cryptography with public and private keys to enable secure communications, digital signatures, and key exchange, while RSA tokens (hardware or software) generate time-based one-time passwords for strong MFA implementations."
   },
   {
     "Network Abbreviation": "RSVP",
@@ -673,6 +978,11 @@
     "Network Abbreviation": "RT",
     "Stands For": "route target",
     "Meaning": "An extended community attribute used in BGP to control the import and export of routes between VRF instances."
+  },
+  {
+    "Network Abbreviation": "RTO",
+    "Stands For": "Recovery Time Objective",
+    "Meaning": "RTO is the maximum acceptable time period within which network services, systems, or applications must be restored after a disruption or security incident to avoid unacceptable business impact. This critical disaster recovery metric drives infrastructure redundancy investments, backup strategies, and incident response planning by establishing specific restoration targets aligned with business continuity requirements."
   },
   {
     "Network Abbreviation": "S2S VPN",
@@ -700,6 +1010,16 @@
     "Meaning": "SASE is an enterprise networking and security category introduced by Gartner. SASE converges SD-WAN, a Cloud Network, and Security Service Edge (SSE) functions, including FWaaS, CASB, DLP, SWG, and ZTNA, into a unified, cloud-native service."
   },
   {
+    "Network Abbreviation": "scareware",
+    "Stands For": "scareware",
+    "Meaning": "Scareware is a social engineering attack that bombards users with alarming pop-up messages, warnings, or fake alerts claiming their system is infected with viruses or compromised, pressuring them to purchase fraudulent software or pay for unnecessary technical support. While scareware may not always install actual malware, it undermines network security by tricking users into disabling protections, revealing credentials, or installing fake security tools that create entry points for more serious threats across organizational networks."
+  },
+  {
+    "Network Abbreviation": "SCP",
+    "Stands For": "Secure Copy Protocol",
+    "Meaning": "SCP is a network protocol built on SSH that enables secure file transfer between hosts on a network, providing both authentication and encrypted data transmission. It combines the simplicity of the original RCP (Remote Copy Protocol) with SSH security, making it widely used for securely transferring files in automated scripts and administrative tasks, though it has been gradually supplemented by more feature-rich protocols like SFTP."
+  },
+  {
     "Network Abbreviation": "SD-WAN",
     "Stands For": "Software-Defined Wide Area Network",
     "Meaning": "SD-WAN is a wide area network that uses software-defined networking technology, such as communicating over the Internet using overlay tunnels which are encrypted when destined for internal organization locations."
@@ -710,14 +1030,39 @@
     "Meaning": "The European standard for synchronous data transmission over fiber optic networks, equivalent to SONET."
   },
   {
+    "Network Abbreviation": "SEO poisoning",
+    "Stands For": "Search Engine Optimization Poisoning",
+    "Meaning": "SEO Poisoning is a black hat technique where attackers manipulate search engine results to redirect users to malicious websites hosting malware, scams, or unwanted content like gambling and pornography. Attackers compromise legitimate web servers, often using malware like BadIIS, that serve poisoned content specifically to search engine crawlers while appearing normal to regular visitors, artificially boosting the compromised sites' rankings for targeted keywords and luring unsuspecting users through fraudulent search results."
+  },
+  {
+    "Network Abbreviation": "SFTP",
+    "Stands For": "SSH File Transfer Protocol",
+    "Meaning": "SFTP is a secure file transfer protocol that operates over SSH, providing encrypted file access, transfer, and management capabilities including remote file operations, directory listings, and resume functionality. Despite its name, SFTP is not related to traditional FTP but rather offers comprehensive file system functionality over a secure channel, making it the preferred choice for secure file transfers in enterprise environments where authentication, integrity, and confidentiality are required."
+  },
+  {
+    "Network Abbreviation": "SGT",
+    "Stands For": "Security Group Tag",
+    "Meaning": "SGT is a 16-bit identifier (ranging from 1 to 65,539) used in Cisco TrustSec architecture to classify users, devices, or workloads based on their identity, role, and location rather than their IP address. These tags are dynamically assigned by Cisco ISE upon authentication and propagate with packets across the network, enabling scalable group-based access control policies (SGACLs) that restrict lateral movement and enforce micro-segmentation without complex IP-based firewall rules. By embedding SGTs in metadata, through inline tagging in trusted links or via SGT Exchange Protocol (SXP) across untrusted networks, organizations maintain consistent security policies regardless of where users connect from."
+  },
+  {
     "Network Abbreviation": "SHA-256",
     "Stands For": "Secure Hash Algorithm 256-bit",
     "Meaning": "SHA-256 is a cryptographic hash function that converts input data into a fixed-length 256-bit string. It is widely used in blockchain, digital signatures, and password hashing to protect data from tampering and unauthorized access."
   },
   {
+    "Network Abbreviation": "shadow IT",
+    "Stands For": "shadow IT",
+    "Meaning": "Shadow IT refers to the use of information technology systems, devices, software, applications, or services within an organization without explicit organizational approval or oversight from the IT or security department. In cybersecurity contexts, shadow IT introduces significant risks including data breaches, compliance violations, and unmanaged attack surfaces because these unauthorized technologies bypass security controls, monitoring, and patch management. "
+  },
+  {
     "Network Abbreviation": "SIEM",
     "Stands For": "Security Information and Event Management",
     "Meaning": "SIEM, or Security Information and Event Management, is a cybersecurity solution that combines security information management (SIM) and security event management (SEM). It enables organizations to collect, analyze, and store security data across their IT environment, allowing for real-time monitoring and response to security threats."
+  },
+  {
+    "Network Abbreviation": "SIO",
+    "Stands For": "Security Intelligence Operations",
+    "Meaning": "SIO is Cisco's cloud-based security intelligence service that aggregates and analyzes global threat data from millions of sensors to provide real-time protection. It automatically correlates information from intrusion prevention systems, firewalls, and web security devices to dynamically update security rules, reputation filters, and threat intelligence across Cisco's product portfolio."
   },
   {
     "Network Abbreviation": "SLA",
@@ -728,6 +1073,11 @@
     "Network Abbreviation": "SMTP",
     "Stands For": "Simple Mail Transfer Protocol",
     "Meaning": "SMTP is a fundamental technology that powers the process of sending emails over the internet. It is an application layer protocol that facilitates the transmission of electronic mail from one user to another."
+  },
+  {
+    "Network Abbreviation": "SNI",
+    "Stands For": "Server Name Indication",
+    "Meaning": "SNI is an extension of the TLS protocol that allows a client to specify the hostname it is trying to reach during the SSL/TLS handshake process. This enables servers to present the correct SSL certificate when multiple HTTPS websites are hosted on the same IP address, making it essential for modern web hosting and cloud architectures."
   },
   {
     "Network Abbreviation": "SNMP",
@@ -750,6 +1100,11 @@
     "Meaning": "Networks designed for small businesses and home offices, typically supporting fewer than 10 users with basic networking needs."
   },
   {
+    "Network Abbreviation": "something for something",
+    "Stands For": "quid pro quo | something for something attacks",
+    "Meaning": "Something for something relates to cybersecurity concepts involving reciprocal exchange, potentially including man-in-the-middle scenarios where attackers intercept communications by presenting themselves as legitimate endpoints."
+  },
+  {
     "Network Abbreviation": "SONET",
     "Stands For": "synchronous optical networking",
     "Meaning": "A standardized protocol for transferring multiple digital bit streams synchronously over optical fiber using lasers or LEDs."
@@ -765,9 +1120,24 @@
     "Meaning": "Spear phishing is a targeted form of phishing where attackers customize their fraudulent communications for specific individuals or organizations using gathered personal or professional information. This tailored approach increases credibility and success rates, often targeting executives or employees with access to sensitive systems."
   },
   {
+    "Network Abbreviation": "spyware",
+    "Stands For": "spyware",
+    "Meaning": "Spyware is a type of malicious software designed to secretly monitor and collect information about a user's activities, keystrokes, browsing habits, or sensitive data without their knowledge or consent."
+  },
+  {
     "Network Abbreviation": "SSH",
     "Stands For": "Secure Shell",
     "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
+  },
+  {
+    "Network Abbreviation": "SSID",
+    "Stands For": "Service Set Identifier",
+    "Meaning": "SSID is the public name assigned to a wireless network that clients use to identify and select which WLAN to connect to, typically broadcast by access points in beacon frames."
+  },
+  {
+    "Network Abbreviation": "SSO",
+    "Stands For": "Single Sign-On",
+    "Meaning": "SSO is an authentication method that allows users to access multiple independent applications, systems, or services with a single set of login credentials."
   },
   {
     "Network Abbreviation": "STIX",
@@ -800,6 +1170,11 @@
     "Meaning": "SWG is an on-premises or cloud-delivered network security technology that filters internet traffic and enforces corporate and regulatory policy compliance."
   },
   {
+    "Network Abbreviation": "SXP",
+    "Stands For": "SGT Exchange Protocol",
+    "Meaning": "SXP  is a Cisco-developed protocol used in Trustsec architectures to propagate Security Group Tag (SGT) mappings across network devices that do not support inline tagging, such as legacy routers, firewalls, or third-party equipment. It operates over TCP (typically port 64999) by establishing peer relationships between SXP speakers (sources) and listeners (receivers), enabling the exchange of IP-to-SGT mapping information without requiring hardware upgrades. This allows organizations to extend consistent identity-based security policies throughout hybrid environments while gradually migrating toward fully Trustsec-enabled infrastructure."
+  },
+  {
     "Network Abbreviation": "TACACS+",
     "Stands For": "Terminal access controller access controll system",
     "Meaning": "TACACS+ stands for Terminal Access Controller Access Control System. It is a Cisco proprietary AAA protocol. It separates each of the AAA functions. It uses TCP port 49 for communication. It encrypts all communications. TACACS+ works in a client/server architecture."
@@ -825,6 +1200,11 @@
     "Meaning": "A connection-oriented transport layer protocol that provides reliable, ordered, and error-checked delivery of data between applications."
   },
   {
+    "Network Abbreviation": "Telnet",
+    "Stands For": "Telnet",
+    "Meaning": "Telnet is an older application-layer protocol that provides bidirectional, interactive text-oriented communication between devices using a virtual terminal connection over TCP port 23. In cybersecurity contexts, Telnet is considered highly insecure because it transmits all data, including usernames and passwords, in plaintext without encryption, making it vulnerable to eavesdropping, session hijacking, and credential theft. As a result, it has been largely replaced by secure alternatives like SSH."
+  },
+  {
     "Network Abbreviation": "TIP",
     "Stands For": "Threat Intelligence Platform",
     "Meaning": "Threat Intelligence Platforms (TIPs) are essential because they aggregate, enrich, and prioritize this data into actionable intelligence, integrate with existing security systems (like SIEM, SOAR, and EDR), and help analysts cut through noise to respond faster and more effectively."
@@ -838,6 +1218,21 @@
     "Network Abbreviation": "TLV",
     "Stands For": "Type‑Length‑Value",
     "Meaning": "Type-Length-Value (TLV) - also called Tag-Length-Value - is a common data encoding scheme used in communication protocols, file formats, and data serialization."
+  },
+  {
+    "Network Abbreviation": "traffic interception",
+    "Stands For": "traffic interception",
+    "Meaning": "Traffic interception is the practice of capturing, monitoring, and potentially modifying data as it flows between communicating parties across a network infrastructure. "
+  },
+  {
+    "Network Abbreviation": "trojan horse",
+    "Stands For": "trojan horse",
+    "Meaning": "A Trojan horse is a malicious program that disguises itself as legitimate or useful software to trick users into installing it, hiding its true destructive intent behind seemingly innocent functionality. Unlike viruses, trojans do not self-replicate but create backdoors, steal sensitive information, download additional malware, or enroll infected systems into botnets once activated, exploiting user trust to breach network defenses from within."
+  },
+  {
+    "Network Abbreviation": "TrustSec",
+    "Stands For": "Trusted Security ",
+    "Meaning": "Cisco TrustSec is a software-defined segmentation architecture that simplifies network security by enforcing access policies based on identity and context rather than IP addresses or VLANs. It works by assigning Security Group Tags (SGTs) to users, devices, and applications upon authentication, managed centrally by Cisco ISE, which are then used throughout the network to control access and restrict the lateral movement of threats. TrustSec enables organizations to reduce operational complexity, enforce consistent policies across domains, and achieve micro-segmentation without redesigning the underlying network infrastructure."
   },
   {
     "Network Abbreviation": "Type 1 hypervisor",
@@ -870,6 +1265,11 @@
     "Meaning": "An underlay network consists of the physical hardware and infrastructure routers, switches, and cabling that form the backbone of a network, providing the foundational connectivity responsible for forwarding frames and packets between devices."
   },
   {
+    "Network Abbreviation": "UPS",
+    "Stands For": "Uninterruptible Power Supply",
+    "Meaning": "UPS is an electrical device that provides emergency backup power to connected network equipment - such as routers, switches, servers, and firewalls when the main power source fails or experiences voltage fluctuations."
+  },
+  {
     "Network Abbreviation": "URL",
     "Stands For": "Uniform Resource Locator",
     "Meaning": "This defines the network location of a specific resource on the network. HTTP or HTTPS URLs are typically used with web browsers."
@@ -893,6 +1293,11 @@
     "Network Abbreviation": "VDC",
     "Stands For": "Virtual Device Context",
     "Meaning": "A feature that allows a single physical Cisco Nexus switch to be partitioned into multiple virtual switches with independent configurations."
+  },
+  {
+    "Network Abbreviation": "virus",
+    "Stands For": "virus",
+    "Meaning": "A virus is a type of malicious code that attaches itself to legitimate programs or files and replicates by modifying other programs to insert its own code when executed. In network environments, viruses spread when infected files are transferred between systems via email attachments, file shares, removable media, or downloaded content, requiring user interaction to propagate and potentially corrupting data or disrupting operations across connected devices."
   },
   {
     "Network Abbreviation": "vishing",
@@ -955,9 +1360,39 @@
     "Meaning": "VXLAN is a network virtualization technology that uses a VLAN -like encapsulation technique to encapsulate OSI layer 2 Ethernet frames within layer 4 UDP datagrams, using 4789 as the default IANA -assigned destination UDP port number, although many implementations that predate the IANA assignment use port 8472. "
   },
   {
+    "Network Abbreviation": "WAF",
+    "Stands For": "Web Application Firewall",
+    "Meaning": "WAF is a security appliance or service that monitors, filters, and blocks HTTP/HTTPS traffic between web applications and the internet, protecting against common attacks such as SQL injection, cross-site scripting (XSS), and session hijacking."
+  },
+  {
+    "Network Abbreviation": "WEP",
+    "Stands For": "Wired Equivalent Privacy",
+    "Meaning": "WEP is an outdated security algorithm introduced as part of the IEEE 802.11 standard in 1997 to provide data confidentiality over wireless networks comparable to wired networks, using the RC4 stream cipher for encryption. It relies on static 64-bit or 128-bit keys shared among all devices on the network, which makes it highly vulnerable to cracking, attackers can collect enough data packets to decrypt the key in under a minute using readily available tools. Due to its inherent security flaws, WEP was officially retired in 2004 and has been superseded by WPA, WPA2, and WPA3, which offer dynamic keys, stronger encryption (AES), and message integrity checks."
+  },
+  {
     "Network Abbreviation": "white box",
     "Stands For": "white box | clear box | open box",
     "Meaning": "White box is a penetration testing methodology where the tester is granted full knowledge and access to the target system's internal architecture, source code, credentials, and network diagrams before testing begins. This approach enables thorough code review, configuration analysis, and comprehensive vulnerability assessment, simulating an insider threat or developer-level access to identify deep-seated security flaws that external testers might miss."
+  },
+  {
+    "Network Abbreviation": "worms",
+    "Stands For": "worms",
+    "Meaning": "Worms are standalone malicious programs that replicate themselves across networks without requiring user interaction or host file attachment, spreading automatically by exploiting vulnerabilities in network services, operating systems, or misconfigurations. In networking contexts, worms propagate rapidly through interconnected systems, consuming bandwidth, overloading servers, and carrying payloads that can delete files, install backdoors, or launch distributed denial-of-service attacks, making them particularly dangerous due to their ability to infect thousands of devices within minutes."
+  },
+  {
+    "Network Abbreviation": "WPA2",
+    "Stands For": "Wi-Fi Protected Access 2",
+    "Meaning": "WPA2 is a security protocol and certification program introduced in 2004 that implements the IEEE 802.11i standard, providing enhanced wireless network security through mandatory AES-CCMP encryption and 802.1X-based authentication. As the dominant Wi-Fi security standard for over a decade, WPA2 replaced the severely flawed WEP and improved upon WPA by introducing stronger cryptographic controls, though it remains vulnerable to KRACK attacks and dictionary attacks against pre-shared keys in personal mode deployments."
+  },
+  {
+    "Network Abbreviation": "zero-day attack ",
+    "Stands For": "zero-day attack ",
+    "Meaning": "Zero-day attack refers to a cyberattack that exploits a previously unknown vulnerability in software, hardware, or firmware for which no patch or security fix exists at the time of discovery. The term \"zero-day\" indicates that developers have had zero days to address the flaw, making these attacks particularly dangerous as traditional signature-based defenses cannot detect them, requiring behavioral analysis, anomaly detection, and defense-in-depth strategies for mitigation."
+  },
+  {
+    "Network Abbreviation": "zombies",
+    "Stands For": "zombies",
+    "Meaning": "Zombies refer to individual compromised devices within a botnet that have been infected with malicious software, allowing remote control by attackers while appearing to function normally to their legitimate users. These unwitting systems, which can include personal computers, servers, routers, security cameras, and other IoT devices await commands from command-and-control servers to participate in coordinated attacks or malicious activities, often showing no obvious signs of compromise while being exploited for nefarious purposes across network infrastructure."
   },
   {
     "Network Abbreviation": "ZTNA",
