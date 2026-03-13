@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network & Cybersecurity Abbreviations</title>
-    <meta name="description" content="Search and find explanations of networking and cybersecurity abbreviations. Your complete reference guide.">
-    
+    <meta name="description"
+        content="Search and find explanations of networking and cybersecurity abbreviations. Your complete reference guide.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -18,11 +20,20 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
+
 <body>
     <div id="root"></div>
 
     <script type="text/babel">
         const { useState, useEffect, useMemo, useRef } = React;
+
+        const topSupportersData = [
+            { name: 'Your Company #1', amountBTC: 0.00005000, link: '#' },
+            { name: 'Your Company #2', amountBTC: 0.00002500, link: '#' },
+            { name: 'Your Company #3', amountBTC: 0.00001500, link: '#' },
+            { name: 'Your Company #4', amountBTC: 0.00001000, link: '#' },
+            { name: 'Your Company #5', amountBTC: 0.00000750, link: '#' }
+        ];
 
         function App() {
             const [searchTerm, setSearchTerm] = useState('');
@@ -31,6 +42,38 @@
             const [error, setError] = useState(null);
             const btcAddressRef = useRef(null);
             const [showScrollTop, setShowScrollTop] = useState(false);
+            const [sortConfig, setSortConfig] = useState({ key: 'amountBTC', direction: 'desc' });
+            const [highlightedRow, setHighlightedRow] = useState(null);
+
+            const sortedSupporters = useMemo(() => {
+                let sortableSupporters = [...topSupportersData];
+                if (sortConfig !== null) {
+                    sortableSupporters.sort((a, b) => {
+                        let aVal = a[sortConfig.key];
+                        let bVal = b[sortConfig.key];
+                        if (typeof aVal === 'string') {
+                            aVal = aVal.toLowerCase();
+                            bVal = bVal.toLowerCase();
+                        }
+                        if (aVal < bVal) {
+                            return sortConfig.direction === 'asc' ? -1 : 1;
+                        }
+                        if (aVal > bVal) {
+                            return sortConfig.direction === 'asc' ? 1 : -1;
+                        }
+                        return 0;
+                    });
+                }
+                return sortableSupporters;
+            }, [sortConfig]);
+
+            const requestSort = (key) => {
+                let direction = 'desc';
+                if (sortConfig && sortConfig.key === key && sortConfig.direction === 'desc') {
+                    direction = 'asc';
+                }
+                setSortConfig({ key, direction });
+            };
 
             // Simulerar AJAX-hämtning av JSON-data
             useEffect(() => {
@@ -39,14 +82,14 @@
                         setLoading(true);
                         // I produktion: ersätt med din JSON-fil URL
                         // const response = await fetch('network_abbr.json');
-                        
+
                         // För demo: använd inbäddad data eller extern URL
                         const response = await fetch('network_abbr.json');
-                        
+
                         if (!response.ok) {
                             throw new Error('Failed to fetch data');
                         }
-                        
+
                         const data = await response.json();
                         setAbbreviations(data);
                         setLoading(false);
@@ -68,25 +111,25 @@
                 }
 
                 const searchLower = searchTerm.toLowerCase();
-                
+
                 return abbreviations.filter(item => {
                     const abbr = item['Network Abbreviation'].toLowerCase();
                     const standsFor = item['Stands For'].toLowerCase();
                     const meaning = item['Meaning'].toLowerCase();
-                    
-                    return abbr.includes(searchLower) || 
-                           standsFor.includes(searchLower) || 
-                           meaning.includes(searchLower);
+
+                    return abbr.includes(searchLower) ||
+                        standsFor.includes(searchLower) ||
+                        meaning.includes(searchLower);
                 });
             }, [searchTerm, abbreviations]);
 
             // Highlightar matchande text
             const highlightText = (text, search) => {
                 if (!search.trim()) return text;
-                
+
                 const parts = text.split(new RegExp(`(${search})`, 'gi'));
-                return parts.map((part, i) => 
-                    part.toLowerCase() === search.toLowerCase() ? 
+                return parts.map((part, i) =>
+                    part.toLowerCase() === search.toLowerCase() ?
                         <span key={i} className="highlight">{part}</span> : part
                 );
             };
@@ -96,12 +139,12 @@
                 const btcElement = btcAddressRef.current;
                 const originalText = btcElement.textContent;
                 const btcAddress = 'bc1qhkn7uvcajuuss8l07hhl9ux2as0cc9uj2zdcwf';
-                
+
                 try {
                     await navigator.clipboard.writeText(btcAddress);
                     btcElement.textContent = '✓ Copied!';
                     btcElement.style.background = 'rgba(46, 204, 113, 0.3)';
-                    
+
                     setTimeout(() => {
                         btcElement.textContent = originalText;
                         btcElement.style.background = 'rgba(255, 255, 255, 0.1)';
@@ -110,7 +153,7 @@
                     // Fallback for older browsers
                     btcElement.textContent = '✓ Copied!';
                     btcElement.style.background = 'rgba(46, 204, 113, 0.3)';
-                    
+
                     setTimeout(() => {
                         btcElement.textContent = originalText;
                         btcElement.style.background = 'rgba(255, 255, 255, 0.1)';
@@ -121,14 +164,14 @@
             // Share URL copy handler
             const handleShareCopy = async () => {
                 const currentUrl = window.location.href;
-                
+
                 try {
                     await navigator.clipboard.writeText(currentUrl);
                     const btn = document.querySelector('.copy-url-btn');
                     const originalText = btn.textContent;
                     btn.textContent = 'Copied!';
                     btn.style.background = 'rgba(46, 204, 113, 0.8)';
-                    
+
                     setTimeout(() => {
                         btn.textContent = originalText;
                         btn.style.background = '';
@@ -207,20 +250,20 @@
                             />
                         </div>
                         <div className="results-info">
-                            Showing {filteredResults.length} by {abbreviations.length} abbreviations/terms 
+                            Showing {filteredResults.length} by {abbreviations.length} abbreviations/terms
                             <p><a href="#donation">Donate</a> ❤️</p>
                         </div>
 
                         <div className="share-box">
                             <div className="share-title">Share with classmates & colleagues:</div>
                             <div className="share-url-container">
-                                <input 
-                                    type="text" 
-                                    className="share-url-input" 
+                                <input
+                                    type="text"
+                                    className="share-url-input"
                                     value={window.location.href}
                                     readOnly
                                 />
-                                <button 
+                                <button
                                     className="copy-url-btn"
                                     onClick={handleShareCopy}
                                 >
@@ -244,7 +287,7 @@
                         <div className="no-results">
                             <div className="no-results-icon">🔎</div>
                             <p>No results found for "{searchTerm}"</p>
-                            <p style={{fontSize: '0.9rem', marginTop: '0.5rem', opacity: 0.8}}>
+                            <p style={{ fontSize: '0.9rem', marginTop: '0.5rem', opacity: 0.8 }}>
                                 Try searching for a different abbreviation or term.
                             </p>
                         </div>
@@ -269,12 +312,12 @@
                     )}
 
                     <footer>
-                        <div className="footer-content">                            
+                        <div className="footer-content">
                             <div id="donation" className="donation-section">
-                                <div style={{fontSize: '0.9rem', opacity: 0.9}}>
+                                <div style={{ fontSize: '0.9rem', opacity: 0.9 }}>
                                     ₿ Bitcoin Donations
                                 </div>
-                                <div 
+                                <div
                                     ref={btcAddressRef}
                                     className="bitcoin-address"
                                     onClick={handleBitcoinCopy}
@@ -284,19 +327,58 @@
                                 </div>
                             </div>
 
-                            <a 
-                                href="https://www.linkedin.com/in/vien-hoang-5077bb96/" 
-                                target="_blank" 
+                            <a
+                                href="https://www.linkedin.com/in/vien-hoang-5077bb96/"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="linkedin-link"
                             >
-                               LinkedIn
+                                LinkedIn
                             </a>
+
+                            <div className="supporters-section">
+                                <h3 className="supporters-title">Top Supporters</h3>
+                                <div className="donation-table-container">
+                                    <table className="donation-table">
+                                        <thead>
+                                            <tr>
+                                                <th onClick={() => requestSort('name')}>
+                                                    Name <span className="sort-indicator">{sortConfig.key === 'name' ? (sortConfig.direction === 'asc' ? '↑' : '↓') : '⇅'}</span>
+                                                </th>
+                                                <th onClick={() => requestSort('amountBTC')}>
+                                                    Amount (BTC) <span className="sort-indicator">{sortConfig.key === 'amountBTC' ? (sortConfig.direction === 'asc' ? '↑' : '↓') : '⇅'}</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {sortedSupporters.map((supporter, idx) => (
+                                                <tr
+                                                    key={idx}
+                                                    className={`donation-row ${highlightedRow === idx ? 'highlighted' : ''}`}
+                                                    onClick={() => setHighlightedRow(idx === highlightedRow ? null : idx)}
+                                                >
+                                                    <td><a href={supporter.link} target="_blank" rel="noopener noreferrer">{supporter.name}</a></td>
+                                                    <td>{supporter.amountBTC.toFixed(8)} BTC</td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div className="donation-message">
+                                    <p>Would you like your name or company featured here as a supporter after a donation?
+                                        &nbsp;<a href="mailto:hoang.vien@proton.me">Contact me</a> :)
+                                    </p>
+
+                                    <p>If you find this website useful, please consider supporting my work by making a donation. Every contribution helps me maintain and improve the site. Thank you for your support! 🧡</p>
+                                </div>
+
+                            </div>
                         </div>
                     </footer>
 
                     {/* Scroll to top button */}
-                    <button 
+                    <button
                         className={`scroll-to-top ${showScrollTop ? 'visible' : ''}`}
                         onClick={scrollToTop}
                         aria-label="Scroll to top"
@@ -311,4 +393,5 @@
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
+
 </html>
