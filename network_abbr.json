@@ -15,6 +15,11 @@
     "Meaning": "Adware is software that automatically displays or downloads unwanted advertisements, often in the form of pop-ups, banners, or redirects, typically bundled with free programs or injected through compromised websites. While less overtly malicious than spyware, adware degrades network performance through excessive ad traffic, compromises user privacy by tracking browsing behavior, and frequently serves as a delivery mechanism for more dangerous malware, requiring network monitoring to detect unusual advertising domains and traffic patterns."
   },
   {
+    "Network Abbreviation": "AFRINIC",
+    "Stands For": "African Network Information Centre",
+    "Meaning": "AFRINIC is the Regional Internet Registry (RIR) responsible for managing and distributing IPv4 and IPv6 address space, as well as Autonomous System Numbers (ASNs), across the African continent and the Indian Ocean region. It serves as the authoritative WHOIS database for its region, enabling network operators and security analysts to identify responsible parties for IP addresses originating from African networks."
+  },
+  {
     "Network Abbreviation": "AH",
     "Stands For": "Authentication Header",
     "Meaning": "AH is a component of the IPsec protocol suite that provides connectionless integrity, data origin authentication, and optional anti-replay protection for IP packets by adding a cryptographic authentication header without encrypting the packet contents."
@@ -40,6 +45,11 @@
     "Meaning": "AMP is a security solution developed by Cisco that provides continuous monitoring, detection, and remediation of advanced malware across endpoints, networks, and email systems . It operates through three core processes: File Reputation (checking files against cloud threat intelligence), File Analysis (detonating unknown files in a sandbox environment), and Retrospective security (continuously monitoring file behavior and alerting if previously cleared files become malicious) ."
   },
   {
+    "Network Abbreviation": "ANDing",
+    "Stands For": "Binary address calculation",
+    "Meaning": "ANDing is a binary operation used in IP networking to determine the network address of a given IP address by performing a bitwise logical AND between the IP address and its subnet mask. This process reveals which portion of the IP address belongs to the network prefix and which portion identifies the host, enabling routers and hosts to determine whether a destination IP is on the local network or requires routing through a gateway."
+  },
+  {
     "Network Abbreviation": "Ansible",
     "Stands For": "IT automation tool",
     "Meaning": "Ansible is an open-source automation tool that automates IT infrastructure provisioning, configuration management, and application deployment using a simple, agentless architecture based on YAML playbooks and SSH connectivity."
@@ -48,6 +58,11 @@
     "Network Abbreviation": "Anycast",
     "Stands For": "network addressing and routing technique",
     "Meaning": "Anycast is a network addressing and routing technique where multiple geographically distributed servers share the same IP address, and traffic is routed to the nearest or best-performing server based on routing protocol metrics such as BGP hop count. This architecture enables high availability, load distribution, and resilience by ensuring that client requests automatically fail over to alternative servers when network paths fail or when specific servers become unreachable."
+  },
+  {
+    "Network Abbreviation": "APNIC",
+    "Stands For": "Asia-Pacific Network Information Centre",
+    "Meaning": "APNIC is the Regional Internet Registry for the Asia-Pacific region, responsible for distributing and managing Internet number resources-including IPv4 and IPv6 addresses and ASNs-across 56 economies from Japan to New Zealand and east to India. It operates a publicly accessible WHOIS database and provides resource certification (RPKI) services to help network operators secure routing infrastructure against hijacking and route leaks."
   },
   {
     "Network Abbreviation": "application gateway",
@@ -63,6 +78,11 @@
     "Network Abbreviation": "APT",
     "Stands For": "Advanced Persistent Threat",
     "Meaning": "APT refers to sophisticated, well-resourced cyber adversaries, often nation-state actors or organized criminal groups, that conduct prolonged, targeted attacks against specific organizations, industries, or governments to steal sensitive information, disrupt operations, or establish strategic footholds."
+  },
+  {
+    "Network Abbreviation": "ARIN",
+    "Stands For": "American Registry for Internet Numbers",
+    "Meaning": "ARIN is the Regional Internet Registry (RIR) responsible for allocating and managing IP addresses (IPv4 and IPv6) and Autonomous System Numbers (ASNs) for the United States, Canada, and many Caribbean and North Atlantic islands. It serves as the authoritative source for WHOIS data in its region, allowing network administrators and security professionals to query ownership information for IP address blocks and ASNs."
   },
   {
     "Network Abbreviation": "ARP",
@@ -160,6 +180,11 @@
     "Meaning": "BPDU Guard is a Cisco switching feature that enforces proper Spanning Tree Protocol (STP) boundaries by protecting against unauthorized switches or devices connecting to access ports. When enabled on ports configured with PortFast (typically end-user ports), it immediately shuts down (errdisables) the port upon receiving any BPDU, preventing potential topology changes, bridging loops, or STP manipulation attacks that could destabilize the network. This proactive defense mechanism is critical in campus networks for maintaining predictable Layer 2 behavior and blocking rogue switch introductions."
   },
   {
+    "Network Abbreviation": "broadcast storm",
+    "Stands For": "Network traffic flood",
+    "Meaning": "A broadcast storm is a network phenomenon where broadcast or multicast frames multiply and traverse a Layer 2 network in a loop, causing exponential growth in traffic that consumes all available bandwidth and cripples network devices. It typically occurs when switches are connected in a loop without Spanning Tree Protocol (STP) enabled or when STP fails, causing switches to continuously flood and refood broadcast frames endlessly."
+  },
+  {
     "Network Abbreviation": "brute-force attacks",
     "Stands For": "exhaustive password cracking",
     "Meaning": "Brute-force attacks are password-cracking methods where attackers systematically attempt every possible combination of characters, symbols, and numbers until the correct password is discovered."
@@ -182,7 +207,7 @@
   {
     "Network Abbreviation": "CatOS",
     "Stands For": "Catalyst Operating System",
-    "Meaning": "Older OS för Ciscos Catalyst switches."
+    "Meaning": "Older OS fÃ¶r Ciscos Catalyst switches."
   },
   {
     "Network Abbreviation": "CDN",
@@ -263,6 +288,11 @@
     "Network Abbreviation": "CoS",
     "Stands For": "Class of Service",
     "Meaning": "A field in Layer 2 frames used to prioritize different types of network traffic for quality of service."
+  },
+  {
+    "Network Abbreviation": "CRC",
+    "Stands For": "Cyclic Redundancy Check",
+    "Meaning": "CRC is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data, calculated by performing polynomial division over the data being transmitted. The sender appends this calculated value to the data frame, and the receiver performs the same calculation-if the results do not match, the frame is considered corrupted and is typically discarded."
   },
   {
     "Network Abbreviation": "cryptojacking ",
@@ -405,6 +435,11 @@
     "Meaning": "Drive-by Download is an attack where malware is unintentionally downloaded to a user's device simply by visiting a compromised or malicious website, without requiring any user interaction like clicking a link or opening an attachment. These attacks exploit vulnerabilities in browsers, plugins, or operating systems through exploit kits that silently execute code in the background while the page loads."
   },
   {
+    "Network Abbreviation": "DSCP",
+    "Stands For": "Differentiated Services Code Point",
+    "Meaning": "DSCP is a 6-bit field within the Differentiated Services (DS) field of an IP packet header (replacing the older IP precedence field) that classifies network traffic for quality of service (QoS) prioritization and per-hop behavior (PHB) decisions. It enables network devices to differentiate between traffic types-such as voice (EF), video (AF41), or best-effort (default)-allowing routers and switches to apply appropriate queuing, dropping, and scheduling policies during congestion."
+  },
+  {
     "Network Abbreviation": "DSIE",
     "Stands For": "Defense Security Information Exchange",
     "Meaning": "DSIE is an exclusive, highly trusted community within the U.S. defense industrial base focused on sharing actionable threat intelligence and mitigation strategies to defend against sophisticated cyberattacks targeting critical infrastructure. Operating as a premier \"center of excellence\" for cybersecurity threats, its members (primarily defense contractors) collaborate with full attribution and confidentiality to protect sensitive defense networks and supply chains from nation-state adversaries and advanced persistent threats."
@@ -420,6 +455,11 @@
     "Meaning": "DVWA is an intentionally vulnerable web application built with PHP and MySQL, designed for security professionals and students to practice and test penetration testing skills in a safe, legal environment."
   },
   {
+    "Network Abbreviation": "DWDM",
+    "Stands For": "Dense Wavelength Division Multiplexing",
+    "Meaning": "DWDM is an optical fiber transmission technology that combines multiple data signals simultaneously on different wavelengths (colors) of light within the same fiber, significantly increasing the bandwidth capacity of existing fiber infrastructure. It can support dozens to hundreds of channels, each operating at different wavelengths with spacing as tight as 0.8 nanometers (100 GHz grid), enabling long-haul transmissions exceeding 1,000 kilometers without signal regeneration."
+  },
+  {
     "Network Abbreviation": "EC2",
     "Stands For": "Amazon Elastic Compute Cloud",
     "Meaning": "Amazon Elastic Compute Cloud (EC2) is a part of Amazon 's cloud-computing platform, Amazon Web Services (AWS), that allows users to rent virtual computers on which to run their own computer applications."
@@ -428,6 +468,11 @@
     "Network Abbreviation": "ECMP",
     "Stands For": "Equal-Cost Multi-Path",
     "Meaning": "ECMP is a routing mechanism that allows traffic to be distributed across multiple paths of equal cost to improve bandwidth utilization and redundancy. "
+  },
+  {
+    "Network Abbreviation": "ECN",
+    "Stands For": "Explicit Congestion Notification",
+    "Meaning": "ECN is an extension to the IP and TCP protocols that allows network devices to signal incipient congestion before packet loss occurs, rather than relying solely on dropped packets as congestion indicators. It uses the two least significant bits of the Differentiated Services (DS) field in the IP header to indicate whether a network path supports ECN (ECT bits) and whether congestion has been experienced (CE bit)."
   },
   {
     "Network Abbreviation": "EFS",
@@ -510,6 +555,11 @@
     "Meaning": "A protocol that encapsulates Fibre Channel frames over Ethernet networks, enabling storage and data networks to be consolidated."
   },
   {
+    "Network Abbreviation": "FCS",
+    "Stands For": "Frame Check Sequence",
+    "Meaning": "FCS is a 4-byte (32-bit) error-detecting code appended to the end of an Ethernet frame, calculated by the sending device using a CRC (Cyclic Redundancy Check) algorithm over the frame's header and payload. The receiving device performs the same calculation and compares its result with the received FCS value-if they match, the frame is considered intact; if not, the frame is silently discarded as corrupted during transmission."
+  },
+  {
     "Network Abbreviation": "FEC",
     "Stands For": "Fast EtherChannel",
     "Meaning": "A technology that bundles multiple Fast Ethernet links together to increase bandwidth and provide redundancy."
@@ -547,7 +597,7 @@
   {
     "Network Abbreviation": "FWaaS",
     "Stands For": "Firewall as a Service",
-    "Meaning": "Network security technology known as “firewall as a service” (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
+    "Meaning": "Network security technology known as âfirewall as a serviceâ (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
   },
   {
     "Network Abbreviation": "GCP",
@@ -603,6 +653,11 @@
     "Network Abbreviation": "GRE",
     "Stands For": "Generic Routing Encapsulation",
     "Meaning": "A tunneling protocol that encapsulates a wide variety of network layer protocols inside virtual point-to-point links over an IP network."
+  },
+  {
+    "Network Abbreviation": "HA",
+    "Stands For": "High Availability",
+    "Meaning": "HA refers to a system design approach and operational characteristic where network components, servers, or services are configured with redundancy and automatic failover capabilities to ensure continuous operation despite component failures. It is typically measured as a percentage of uptime over a given period, with \"five nines\" (99.999%) availability representing approximately 5 minutes of downtime per year, achieved through redundant hardware, load balancing, clustering, and fast failure detection mechanisms."
   },
   {
     "Network Abbreviation": "hairpinning",
@@ -712,7 +767,7 @@
   {
     "Network Abbreviation": "IETF",
     "Stands For": "Internet Engineering Task Force",
-    "Meaning": "IETF is a nonprofit open standards organization that develops internet standards. It’s an international community of network designers, operators, vendors and researchers cooperating in a wide variety of working groups."
+    "Meaning": "IETF is a nonprofit open standards organization that develops internet standards. Itâs an international community of network designers, operators, vendors and researchers cooperating in a wide variety of working groups."
   },
   {
     "Network Abbreviation": "IGMP",
@@ -723,6 +778,11 @@
     "Network Abbreviation": "IGP",
     "Stands For": "Internal Gateway Protocol",
     "Meaning": "A category of routing protocols used within a single autonomous system to exchange routing information between routers."
+  },
+  {
+    "Network Abbreviation": "IHL",
+    "Stands For": "Internet Header Length",
+    "Meaning": "IHL is a 4-bit field in the IPv4 header that specifies the length of the IP header in 32-bit words (4-byte increments), with a minimum value of 5 (indicating a 20-byte header) and a maximum value of 15 (indicating a 60-byte header when IP options are present). This field is necessary because the IPv4 header includes an optional Options field that can vary in length, unlike the fixed-length IPv6 header."
   },
   {
     "Network Abbreviation": "IKE",
@@ -783,6 +843,16 @@
     "Network Abbreviation": "IPsec",
     "Stands For": "Internet Protocol Security",
     "Meaning": "IPsec is a protocol used to secure IP communications by encrypting and authenticating IP packets."
+  },
+  {
+    "Network Abbreviation": "IPv4",
+    "Stands For": "Internet Protocol version 4",
+    "Meaning": "IPv4 is the fourth version of the Internet Protocol and the most widely deployed network layer protocol, using 32-bit addresses expressed in dotted-decimal notation (e.g., 192.168.1.1) that provides approximately 4.3 billion unique addresses. Its header includes fields for source/destination addresses, time-to-live (TTL), protocol, and header checksum, with options for fragmentation and IP options."
+  },
+  {
+    "Network Abbreviation": "IPv6",
+    "Stands For": "Internet Protocol version 6",
+    "Meaning": "IPv6 (Internet Protocol version 6) is the successor to IPv4, designed to address IP address exhaustion by using 128-bit addresses represented as eight groups of four hexadecimal digits (e.g., 2001:0db8:85a3::8a2e:0370:7334), providing approximately 340 undecillion unique addresses. It features a simplified, fixed 40-byte header with no options field (extension headers are used instead), built-in IPsec support, simplified fragmentation handling, and removal of the header checksum for improved router performance."
   },
   {
     "Network Abbreviation": "IS-IS",
@@ -858,6 +928,11 @@
     "Network Abbreviation": "KVM",
     "Stands For": "Kernel-based Virtual Machine",
     "Meaning": "KVM is an open-source virtualization technology built into Linux that enables the operating system to function as a hypervisor, allowing it to run multiple virtual machines on a single physical host."
+  },
+  {
+    "Network Abbreviation": "LACNIC",
+    "Stands For": "Latin America and Caribbean Network Information Centre",
+    "Meaning": "LACNIC is the Regional Internet Registry responsible for allocating and managing IP addresses (IPv4 and IPv6) and Autonomous System Numbers (ASNs) for Latin America and the Caribbean region, including both Spanish and Portuguese-speaking countries. It maintains the public WHOIS database for its service region, operates RPKI infrastructure for routing security, and promotes best practices for network operations and cybersecurity across member states."
   },
   {
     "Network Abbreviation": "LACP",
@@ -952,7 +1027,7 @@
   {
     "Network Abbreviation": "MFA",
     "Stands For": "Multi-Factor Authentication",
-    "Meaning": "MFA is a security mechanism that requires users to provide two or more verification factors—such as something they know (password), something they have (security token), or something they are (biometric)-to gain access to network resources or applications. This layered approach significantly enhances security by ensuring that compromised passwords alone are insufficient for unauthorized access, protecting against credential theft, phishing, and brute-force attacks."
+    "Meaning": "MFA is a security mechanism that requires users to provide two or more verification factorsâsuch as something they know (password), something they have (security token), or something they are (biometric)-to gain access to network resources or applications. This layered approach significantly enhances security by ensuring that compromised passwords alone are insufficient for unauthorized access, protecting against credential theft, phishing, and brute-force attacks."
   },
   {
     "Network Abbreviation": "mitigation ",
@@ -1098,6 +1173,11 @@
     "Network Abbreviation": "NTP amplification",
     "Stands For": "reflective DDoS technique",
     "Meaning": "NTP amplification is a reflection-based distributed denial-of-service (DDoS) attack that exploits Network Time Protocol servers to overwhelm a target with amplified traffic. Attackers send small requests with spoofed source IP addresses (the victim's address) to vulnerable NTP servers using commands like \"monlist\" that generate large responses, achieving amplification factors of up to 200x and saturating the victim's network infrastructure."
+  },
+  {
+    "Network Abbreviation": "NUC",
+    "Stands For": "Next Unit of Computing",
+    "Meaning": "NUC is a small-form-factor computer platform designed by Intel, featuring compact, energy-efficient systems that pack desktop-level computing capabilities into a form factor roughly the size of a portable hard drive. In networking contexts, NUCs are popular for building low-power routers, firewalls (running pfSense, OPNsense), VPN gateways, network monitoring appliances, edge computing nodes, and home lab servers due to their small size, low power consumption, and multiple Ethernet port options."
   },
   {
     "Network Abbreviation": "NVGRE",
@@ -1252,7 +1332,7 @@
   {
     "Network Abbreviation": "pretexting",
     "Stands For": "fabricated scenario deception",
-    "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victim’s trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
+    "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victimâs trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
   },
   {
     "Network Abbreviation": "Privilege Escalation",
@@ -1360,6 +1440,21 @@
     "Meaning": "A distance-vector routing protocol that uses hop count as a metric and is limited to 15 hops maximum."
   },
   {
+    "Network Abbreviation": "RIPE NCC",
+    "Stands For": "Réseaux IP Européens Network Coordination Centre",
+    "Meaning": "RIPE NCC is the Regional Internet Registry serving Europe, the Middle East, and parts of Central Asia, responsible for the allocation and registration of IP addresses and Autonomous System Numbers across its service region. It supports the RIPE community through maintaining the publicly accessible RIPE Database (WHOIS), developing DNS monitoring tools like RIPE Atlas and RIS (Routing Information Service), and coordinating policy development among its members."
+  },
+  {
+    "Network Abbreviation": "RIR",
+    "Stands For": "Regional Internet Registry",
+    "Meaning": "RIR is a non-governmental organization responsible for the allocation, administration, and registration of Internet number resources-including IP addresses (IPv4 and IPv6) and Autonomous System Numbers (ASNs)-within a defined geographical region. There are five RIRs worldwide: ARIN (North America), RIPE NCC (Europe, Middle East, Central Asia), APNIC (Asia-Pacific), AFRINIC (Africa), and LACNIC (Latin America and Caribbean), each operating independently but coordinating through the Number Resource Organization (NRO)."
+  },
+  {
+    "Network Abbreviation": "RJ45",
+    "Stands For": "Registered Jack 45",
+    "Meaning": "RJ45 is a standardized physical connector interface commonly used for terminating twisted pair Ethernet cables, featuring eight pins (8P8C) that support data transmission speeds from 10 Mbps up to 10 Gbps and beyond. It is the standard connector for copper Ethernet networks, used on patch cables, wall jacks, and device ports for connecting computers, switches, routers, and other networked equipment."
+  },
+  {
     "Network Abbreviation": "rlogin",
     "Stands For": "Remote Login",
     "Meaning": "rlogin is an older Unix-based protocol and command that allowed users to log into remote systems over a network, providing terminal access similar to Telnet but with trusted host-based authentication capabilities. Like Telnet, rlogin transmits data in plaintext and lacks encryption, making it fundamentally insecure for modern networks, while its trust-based authentication model (relying on host IP addresses and /etc/hosts.equiv files) creates significant vulnerabilities that have led to its deprecation in favor of SSH for secure remote access."
@@ -1422,7 +1517,7 @@
   {
     "Network Abbreviation": "S2S VPN",
     "Stands For": "Site-to-Site VPN",
-    "Meaning": "A S2S VPN establishes a secure, encrypted tunnel over the public internet to connect entire networks—such as branch offices or data centers—as if they were on the same private network. This connection typically relies on protocols like IPsec to authenticate endpoints, encrypt data, and ensure its integrity."
+    "Meaning": "A S2S VPN establishes a secure, encrypted tunnel over the public internet to connect entire networksâsuch as branch offices or data centersâas if they were on the same private network. This connection typically relies on protocols like IPsec to authenticate endpoints, encrypt data, and ensure its integrity."
   },
   {
     "Network Abbreviation": "SaaS",
@@ -1488,6 +1583,16 @@
     "Network Abbreviation": "Session Hijacking",
     "Stands For": "token theft attack",
     "Meaning": "Session Hijacking is an attack where an adversary steals or predicts a valid session token to gain unauthorized access to a web application or network service, effectively impersonating a legitimate user. This can be accomplished through various methods, including packet sniffing to capture unencrypted cookies, cross-site scripting attacks to steal session tokens, or session fixation, where the attacker forces a user to use a known session ID. Successful session hijacking allows attackers to bypass authentication mechanisms, access sensitive data, and perform actions within the network with the privileges of the compromised user session."
+  },
+  {
+    "Network Abbreviation": "SFD",
+    "Stands For": "Start Frame Delimiter",
+    "Meaning": "SFD is a 1-byte field in an Ethernet frame that immediately follows the 7-byte preamble, with a fixed binary pattern of 10101011 (or 0xAB in hexadecimal). It signals to the receiving network interface that the upcoming bits are the actual frame header (destination and source MAC addresses), marking the exact point where frame transmission begins."
+  },
+  {
+    "Network Abbreviation": "SFP ",
+    "Stands For": "Small Form-factor Pluggable",
+    "Meaning": "SFP is a compact, hot-swappable transceiver module used in networking equipment to interface a switch, router, or network interface card with fiber optic or copper Ethernet cables. It supports various communication standards, data rates (from 100 Mbps to 4 Gbps), and transmission distances (from a few meters up to 80+ kilometers), with higher-speed versions including SFP+ (10 Gbps), QSFP (40 Gbps), and QSFP28 (100 Gbps)."
   },
   {
     "Network Abbreviation": "SFTP",
@@ -1627,7 +1732,7 @@
   {
     "Network Abbreviation": "SSH",
     "Stands For": "Secure Shell",
-    "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
+    "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network â especially in Linux, networking, and system administration."
   },
   {
     "Network Abbreviation": "SSID",
@@ -1762,7 +1867,7 @@
   {
     "Network Abbreviation": "Type 1 hypervisor",
     "Stands For": "Type 1 hypervisor | bare-metal virtualization",
-    "Meaning": "A Type 1 hypervisor, also known as a bare-metal hypervisor, is the type of hypervisor that runs directly on the host machine’s physical hardware without requiring a host operating system in between. This direct interaction with the CPU, memory, storage, and network interfaces allows it to deliver high performance, low latency, and strong isolation for virtual machines (VMs) ."
+    "Meaning": "A Type 1 hypervisor, also known as a bare-metal hypervisor, is the type of hypervisor that runs directly on the host machineâs physical hardware without requiring a host operating system in between. This direct interaction with the CPU, memory, storage, and network interfaces allows it to deliver high performance, low latency, and strong isolation for virtual machines (VMs) ."
   },
   {
     "Network Abbreviation": "Type 2 hypervisor",
@@ -1793,6 +1898,11 @@
     "Network Abbreviation": "underlay network",
     "Stands For": "underlay | physical network foundation",
     "Meaning": "An underlay network consists of the physical hardware and infrastructure routers, switches, and cabling that form the backbone of a network, providing the foundational connectivity responsible for forwarding frames and packets between devices."
+  },
+  {
+    "Network Abbreviation": "unknown unicast",
+    "Stands For": "Undelivered single destination",
+    "Meaning": "Unknown unicast refers to a unicast frame whose destination MAC address is not present in a switch's MAC address table (CAM table), typically because the switch has not yet learned where that particular MAC address resides. When a switch receives an unknown unicast frame, it floods the frame out of all ports (except the receiving port) within the same VLAN, similar to broadcast behavior, until the destination location is learned."
   },
   {
     "Network Abbreviation": "UPS",
@@ -1908,6 +2018,11 @@
     "Network Abbreviation": "WAF",
     "Stands For": "Web Application Firewall",
     "Meaning": "WAF is a security appliance or service that monitors, filters, and blocks HTTP/HTTPS traffic between web applications and the internet, protecting against common attacks such as SQL injection, cross-site scripting (XSS), and session hijacking."
+  },
+  {
+    "Network Abbreviation": "WAN",
+    "Stands For": "Wide Area Network",
+    "Meaning": "WAN is a telecommunications network that extends over a large geographical area-spanning cities, countries, or continents-connecting multiple Local Area Networks (LANs) and other smaller networks to enable long-distance communication. It typically uses leased telecommunications circuits, MPLS, fiber optics, satellite links, or public internet connections, with routers and WAN switches managing traffic between disparate locations."
   },
   {
     "Network Abbreviation": "Warm Site",
