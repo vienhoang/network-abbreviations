@@ -595,6 +595,11 @@
     "Meaning": "A standard network protocol used to transfer files between a client and server over TCP/IP networks."
   },
   {
+    "Network Abbreviation": "FTP cable",
+    "Stands For": "Foiled Twisted Pair cable",
+    "Meaning": "In cabling contexts, FTP (Foiled Twisted Pair) refers to a shielded cable variant where an overall foil shield surrounds all four twisted pairs (often called F/UTP), providing protection against external interference while keeping pairs individually unshielded for flexibility. This contrasts with STP which typically shields each pair individually, and S/FTP which uses both braided screening and individual foil shielding."
+  },
+  {
     "Network Abbreviation": "FWaaS",
     "Stands For": "Firewall as a Service",
     "Meaning": "Network security technology known as âfirewall as a serviceâ (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
@@ -1007,7 +1012,7 @@
   {
     "Network Abbreviation": "MAC",
     "Stands For": "Media Access Control",
-    "Meaning": "A unique identifier that is assigned to a network interface."
+    "Meaning": "MAC is a unique hardware identifier assigned to a network interface controller (NIC) by the manufacturer, serving as the device's physical address at Layer 2 (Data Link Layer) of the OSI model for communication within a local network segment. These 48-bit or 64-bit addresses are typically expressed in hexadecimal notation (e.g., 00:1A:2B:3C:4D:5E) and are essential for Ethernet switching, ARP resolution, and wireless access control."
   },
   {
     "Network Abbreviation": "MD5",
@@ -1755,6 +1760,11 @@
     "Meaning": "A Layer 2 protocol that prevents network loops in Ethernet networks by creating a loop-free logical topology."
   },
   {
+    "Network Abbreviation": "STP",
+    "Stands For": "Shielded Twisted Pair",
+    "Meaning": "STP is a type of copper cabling that adds a metallic foil or braided shield around each pair of wires (or around all four pairs together) to protect against external electromagnetic interference (EMI) and crosstalk. This shielding makes STP more resistant to signal degradation than UTP, making it suitable for industrial environments, data centers with high EMI sources, and long cable runs near heavy electrical equipment."
+  },
+  {
     "Network Abbreviation": "STRIDE",
     "Stands For": "Spoofing. Tampering. Repudiation. Information Disclosure. Denial of Service. Elevation of Privilege",
     "Meaning": "The STRIDE model is a threat modeling framework developed by Microsoft that helps identify and classify potential security threats to systems. "
@@ -1923,6 +1933,11 @@
     "Network Abbreviation": "UTM",
     "Stands For": "Unified Threat Management",
     "Meaning": "UTM refers to when multiple security features or services are combined into a single device within your network."
+  },
+  {
+    "Network Abbreviation": "UTP",
+    "Stands For": "Unshielded Twisted Pair",
+    "Meaning": "UTP is the most common type of copper cabling used in Ethernet networks, consisting of four pairs of copper wires twisted together to reduce electromagnetic interference (crosstalk) without any additional shielding layers. It is categorized by performance levels from Cat5e (1 Gbps) to Cat6a (10 Gbps) and Cat8 (40 Gbps), with higher categories featuring tighter twisting and better noise rejection for faster data rates."
   },
   {
     "Network Abbreviation": "VACL",
