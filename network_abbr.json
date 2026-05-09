@@ -207,7 +207,7 @@
   {
     "Network Abbreviation": "CatOS",
     "Stands For": "Catalyst Operating System",
-    "Meaning": "Older OS fÃ¶r Ciscos Catalyst switches."
+    "Meaning": "Older OS för Ciscos Catalyst switches."
   },
   {
     "Network Abbreviation": "CDN",
@@ -590,6 +590,11 @@
     "Meaning": "Flow control is a mechanism that manages the rate of data transmission between a sender and receiver to prevent a fast sender from overwhelming a slow receiver, ensuring that data is not lost due to buffer overflow."
   },
   {
+    "Network Abbreviation": "FQDN",
+    "Stands For": "Fully Qualified Domain Name",
+    "Meaning": "FQDN is the complete, unambiguous domain name that specifies the exact location of a host or device within the DNS hierarchy, including the hostname and all domain levels up to the root (e.g., mail.example.com.). Unlike partial or relative domain names, an FQDN ends with a trailing dot representing the DNS root zone, explicitly distinguishing it from potentially ambiguous local names."
+  },
+  {
     "Network Abbreviation": "FTP",
     "Stands For": "File Transfer Protocol",
     "Meaning": "A standard network protocol used to transfer files between a client and server over TCP/IP networks."
@@ -602,7 +607,7 @@
   {
     "Network Abbreviation": "FWaaS",
     "Stands For": "Firewall as a Service",
-    "Meaning": "Network security technology known as âfirewall as a serviceâ (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
+    "Meaning": "Network security technology known as “firewall as a service” (FWaaS) describes a cloud firewall that offers advanced Layer 7/next-generation firewall (NGFW) capabilities, including access controls like URL filtering, advanced threat prevention, intrusion prevention systems (IPS), and DNS security."
   },
   {
     "Network Abbreviation": "GCP",
@@ -772,7 +777,7 @@
   {
     "Network Abbreviation": "IETF",
     "Stands For": "Internet Engineering Task Force",
-    "Meaning": "IETF is a nonprofit open standards organization that develops internet standards. Itâs an international community of network designers, operators, vendors and researchers cooperating in a wide variety of working groups."
+    "Meaning": "IETF is a nonprofit open standards organization that develops internet standards. It’s an international community of network designers, operators, vendors and researchers cooperating in a wide variety of working groups."
   },
   {
     "Network Abbreviation": "IGMP",
@@ -868,6 +873,11 @@
     "Network Abbreviation": "ISE",
     "Stands For": "Identity Services Engine",
     "Meaning": "ISE is Cisco's flagship network access control (NAC) and policy management platform that enables organizations to enforce granular security policies based on user identity, device type, location, and security posture. As a cornerstone of zero-trust architectures, ISE profiles connected endpoints, enforces access controls through VLAN assignment or scalable group tags (SGTs), and can automatically quarantine compromised devices to prevent lateral movement across the network while providing comprehensive visibility into all connected users and devices."
+  },
+  {
+    "Network Abbreviation": "ISN",
+    "Stands For": "Initial Sequence Number",
+    "Meaning": "ISN is a randomly generated 32-bit value chosen by each endpoint during TCP connection establishment (three-way handshake) to initialize the sequence number counter for tracking bytes transmitted in each direction. Proper ISN randomization is critical for TCP security, as predictable ISNs historically allowed attackers to hijack sessions, inject spoofed packets, or reset connections without seeing bidirectional traffic."
   },
   {
     "Network Abbreviation": "ISO",
@@ -1032,7 +1042,7 @@
   {
     "Network Abbreviation": "MFA",
     "Stands For": "Multi-Factor Authentication",
-    "Meaning": "MFA is a security mechanism that requires users to provide two or more verification factorsâsuch as something they know (password), something they have (security token), or something they are (biometric)-to gain access to network resources or applications. This layered approach significantly enhances security by ensuring that compromised passwords alone are insufficient for unauthorized access, protecting against credential theft, phishing, and brute-force attacks."
+    "Meaning": "MFA is a security mechanism that requires users to provide two or more verification factors—such as something they know (password), something they have (security token), or something they are (biometric)-to gain access to network resources or applications. This layered approach significantly enhances security by ensuring that compromised passwords alone are insufficient for unauthorized access, protecting against credential theft, phishing, and brute-force attacks."
   },
   {
     "Network Abbreviation": "mitigation ",
@@ -1075,6 +1085,11 @@
     "Meaning": "MSP is a company that remotely manages a customer's IT infrastructure and end-user systems on a subscription basis, typically including network monitoring, security management, backup services, and help desk support. MSPs deliver these services through specialized tools and platforms, allowing organizations to outsource complex network operations while maintaining service level agreements (SLAs) for availability and performance."
   },
   {
+    "Network Abbreviation": "MSS",
+    "Stands For": "Maximum Segment Size",
+    "Meaning": "MSS is a TCP option parameter that specifies the largest amount of data (payload) a device is willing to accept in a single TCP segment, excluding TCP and IP headers, typically derived from the path MTU minus 40 bytes (20 for IP header + 20 for TCP header). MSS is negotiated during the TCP three-way handshake and is used to prevent IP fragmentation along the path, with a typical Ethernet value of 1460 bytes (calculated as 1500-byte MTU minus 40 bytes of headers)."
+  },
+  {
     "Network Abbreviation": "MTU",
     "Stands For": "Maximum Transmission Unit",
     "Meaning": "The largest size packet or frame that can be sent in a single network transaction without fragmentation."
@@ -1083,6 +1098,11 @@
     "Network Abbreviation": "Multicast",
     "Stands For": "one-to-many communication",
     "Meaning": "Multicast is a communication method in IP networks that enables one-to-many transmission of data to multiple recipients simultaneously, delivering packets to a group of interested hosts rather than broadcasting to all hosts or sending individual copies to each recipient. It optimizes bandwidth utilization by transmitting a single stream of data from the source that is replicated only at network branch points where multiple receivers exist, making it essential for applications such as IPTV, video conferencing, and financial market data distribution."
+  },
+  {
+    "Network Abbreviation": "multiplexing",
+    "Stands For": "simultaneous signal combination",
+    "Meaning": "Multiplexing is a technique that combines multiple data streams, signals, or communication sessions into a single transmission medium or channel, maximizing the utilization of network bandwidth. Common types include Time-Division Multiplexing (TDM) for sharing time slots, Frequency-Division Multiplexing (FDM) and Wavelength-Division Multiplexing (WDM) for optical networks, and Statistical Multiplexing used in packet-switched networks like IP routing."
   },
   {
     "Network Abbreviation": "NAC",
@@ -1315,14 +1335,14 @@
     "Meaning": "PKI is a comprehensive framework of policies, hardware, software, and procedures that manages the creation, distribution, storage, and revocation of digital certificates, enabling secure electronic communications through public key cryptography. It relies on Certificate Authorities (CAs) to issue and validate digital certificates that bind public keys to verified identities, enabling authentication, encryption, and digital signatures across networks."
   },
   {
-    "Network Abbreviation": "POP",
-    "Stands For": "Post Office Protocol",
-    "Meaning": "Used by email clients to retreive email and attachments from remote server."
-  },
-  {
     "Network Abbreviation": "PoP",
     "Stands For": "Point of Presence",
     "Meaning": "PoP is a physical location where a service provider, telecommunications company, or content delivery network (CDN) houses networking equipment to establish access to their network infrastructure. PoPs contain servers, routers, switches, and other equipment that connect users and edge networks to the provider's backbone, reducing latency by bringing services geographically closer to end users."
+  },
+  {
+    "Network Abbreviation": "POP",
+    "Stands For": "Post Office Protocol",
+    "Meaning": "Used by email clients to retreive email and attachments from remote server."
   },
   {
     "Network Abbreviation": "PPP",
@@ -1337,7 +1357,7 @@
   {
     "Network Abbreviation": "pretexting",
     "Stands For": "fabricated scenario deception",
-    "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victimâs trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
+    "Meaning": "Pretexting is a social engineering technique where attackers create a fabricated scenario or pretext to gain a victim’s trust and extract sensitive information. This often involves impersonating authority figures, such as IT staff or law enforcement, to justify their requests for data or access."
   },
   {
     "Network Abbreviation": "Privilege Escalation",
@@ -1368,6 +1388,11 @@
     "Network Abbreviation": "PVC",
     "Stands For": "Permanent Virtual Circuit ",
     "Meaning": "A permanently established virtual circuit in Frame Relay or ATM networks that provides a dedicated path between two endpoints."
+  },
+  {
+    "Network Abbreviation": "PXE",
+    "Stands For": "Preboot Execution Environment",
+    "Meaning": "PXE is a client-server interface that enables network booting of computers without requiring local storage devices (hard drives, SSDs), allowing devices to boot an operating system directly from a network server using DHCP and TFTP protocols. When a PXE-enabled device starts, it broadcasts a DHCP discovery request, receives an IP address and the address of a boot server, then downloads a bootloader via TFTP which proceeds to load the full operating system or installation environment."
   },
   {
     "Network Abbreviation": "QEMU",
@@ -1446,7 +1471,7 @@
   },
   {
     "Network Abbreviation": "RIPE NCC",
-    "Stands For": "Réseaux IP Européens Network Coordination Centre",
+    "Stands For": "R�seaux IP Europ�ens Network Coordination Centre",
     "Meaning": "RIPE NCC is the Regional Internet Registry serving Europe, the Middle East, and parts of Central Asia, responsible for the allocation and registration of IP addresses and Autonomous System Numbers across its service region. It supports the RIPE community through maintaining the publicly accessible RIPE Database (WHOIS), developing DNS monitoring tools like RIPE Atlas and RIS (Routing Information Service), and coordinating policy development among its members."
   },
   {
@@ -1522,12 +1547,17 @@
   {
     "Network Abbreviation": "S2S VPN",
     "Stands For": "Site-to-Site VPN",
-    "Meaning": "A S2S VPN establishes a secure, encrypted tunnel over the public internet to connect entire networksâsuch as branch offices or data centersâas if they were on the same private network. This connection typically relies on protocols like IPsec to authenticate endpoints, encrypt data, and ensure its integrity."
+    "Meaning": "A S2S VPN establishes a secure, encrypted tunnel over the public internet to connect entire networks—such as branch offices or data centers—as if they were on the same private network. This connection typically relies on protocols like IPsec to authenticate endpoints, encrypt data, and ensure its integrity."
   },
   {
     "Network Abbreviation": "SaaS",
     "Stands For": "Software as a Service",
     "Meaning": "A SaaS company delivers software applications over the internet, allowing users to access them via web browsers or mobile apps without installation or local maintenance. The SaaS provider hosts, manages, and updates the software in the cloud, freeing customers from infrastructure concerns and enabling subscription-based, on-demand usage."
+  },
+  {
+    "Network Abbreviation": "SACK",
+    "Stands For": "Selective Acknowledgment",
+    "Meaning": "SACK is a TCP option that enables a receiver to acknowledge non-contiguous blocks of data, allowing the sender to retransmit only the specific lost segments rather than everything after the first missing packet. This improves performance significantly over standard cumulative acknowledgments, particularly in lossy networks or high-bandwidth-long-latency paths where multiple packet losses may occur."
   },
   {
     "Network Abbreviation": "salt",
@@ -1737,7 +1767,7 @@
   {
     "Network Abbreviation": "SSH",
     "Stands For": "Secure Shell",
-    "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network â especially in Linux, networking, and system administration."
+    "Meaning": "An encrypted protocol used to remotely connect to other computers or servers over a network — especially in Linux, networking, and system administration."
   },
   {
     "Network Abbreviation": "SSID",
@@ -1830,9 +1860,19 @@
     "Meaning": "Telnet is an older application-layer protocol that provides bidirectional, interactive text-oriented communication between devices using a virtual terminal connection over TCP port 23. In cybersecurity contexts, Telnet is considered highly insecure because it transmits all data, including usernames and passwords, in plaintext without encryption, making it vulnerable to eavesdropping, session hijacking, and credential theft. As a result, it has been largely replaced by secure alternatives like SSH."
   },
   {
+    "Network Abbreviation": "TFTP",
+    "Stands For": "Trivial File Transfer Protocol",
+    "Meaning": "TFTP is a simple, lightweight file transfer protocol that uses UDP port 69 and provides basic read/write functionality without authentication, directory listing, or encryption mechanisms. It is commonly used for network device bootstrapping (PXE boot), uploading configuration backups to routers and switches, and transferring firmware images to IP phones or diskless workstations due to its minimal overhead and ease of implementation."
+  },
+  {
     "Network Abbreviation": "TIP",
     "Stands For": "Threat Intelligence Platform",
     "Meaning": "Threat Intelligence Platforms (TIPs) are essential because they aggregate, enrich, and prioritize this data into actionable intelligence, integrate with existing security systems (like SIEM, SOAR, and EDR), and help analysts cut through noise to respond faster and more effectively."
+  },
+  {
+    "Network Abbreviation": "TLD",
+    "Stands For": "Top-Level Domain",
+    "Meaning": "TLD is the highest level in the hierarchical Domain Name System (DNS), representing the rightmost segment of a domain name (e.g., .com, .org, .net, .se, or country-code TLDs like .uk). These are classified into gTLDs (generic TLDs like .com), ccTLDs (country-code TLDs like .se), and sponsored TLDs (sTLDs like .gov or .edu), each managed by designated registries. "
   },
   {
     "Network Abbreviation": "TLS",
@@ -1877,7 +1917,7 @@
   {
     "Network Abbreviation": "Type 1 hypervisor",
     "Stands For": "Type 1 hypervisor | bare-metal virtualization",
-    "Meaning": "A Type 1 hypervisor, also known as a bare-metal hypervisor, is the type of hypervisor that runs directly on the host machineâs physical hardware without requiring a host operating system in between. This direct interaction with the CPU, memory, storage, and network interfaces allows it to deliver high performance, low latency, and strong isolation for virtual machines (VMs) ."
+    "Meaning": "A Type 1 hypervisor, also known as a bare-metal hypervisor, is the type of hypervisor that runs directly on the host machine’s physical hardware without requiring a host operating system in between. This direct interaction with the CPU, memory, storage, and network interfaces allows it to deliver high performance, low latency, and strong isolation for virtual machines (VMs) ."
   },
   {
     "Network Abbreviation": "Type 2 hypervisor",
